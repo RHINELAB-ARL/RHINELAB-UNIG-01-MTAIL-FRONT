@@ -1,0 +1,83 @@
+# Gateway
+
+This is the starting page for **double descent research**. Insofar, it will also include thoughts and debates on such matter, aside from actual contents in manuscripts and other pages. 
+
+## Resources
+
+As far as it is considered, the reading list covers the reading requirement already. However, for logistics, 
+
+- [The Universal Guideline on Artificial Automata](https://github.com/Amane-Fujimiya/UAI_Book) - still under construction, is the foremost document itself. The name is again, Amane Fujimiya or Bui Gia Khanh (as I use two names), and is more about theoretical attempts on AI theory in its entirety. So far, [this link will be the one](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/UAI_Book/master/A/A1.AI/A1%20-%20UAI/main.pdf) that gives you the last available rendered manuscript of the book (note that it is on the `master` branch). 
+- **Main manuscript** - constructed on [This Particular Repository (TPR)](https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper) of which holds from the first to the last manuscript. Current active manuscript in total is the `Draft` folder itself document. Alongside that, [this paper](https://arxiv.org/pdf/2103.05127) would form chapter 6 of the manuscript itself. The manuscript of the *Theoretical Learning manuscript* of **this project** can be found [in here](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf) of its latest version. 
+- The code repository includes [this one on GitHub](https://github.com/Izzie1911/DD-with-basic-model-), with its copy and extension on GitLab. The link will be routed later.
+
+## Discussions
+
+### 2025/03/12 - On data complexity
+
+The idea of data complexity - model flexibility was thought of me 3 days ago. Simply put, I realized that the more flexibility of the model, even in every circumstance, will inherently lead to overfitting, according to classical statistical learning. 
+
+However, when you think of it, why then would it exhibit the sort of double descent? 
+
+There can be two ideas on this: 
+- Self-regularization: perhaps because of the landscape of the way that the "world" of the model operating in, and the model itself, inherently penalize unnecessary 'axis' of flexibility. The process might be slow, or costly, but it seems to suggest so, since afterward some parameters are reduced to near 0, or being in a neutral point.
+- Complexity+Flexibility: When the model do not have enough complexity to fit the flexibility of the model, that is for example, 4 input parameter, but 10 axes, or weighted input receiver, hence 6 free axis. Because of this, during randomized initialization of the weight of the model, and various processing unit, overfitting can happen, and then, double descent will occur.
+
+I am not so sure about the second idea, because it seems quite far-fetch. However, it would be nice to test them out. 
+
+### 2025/01/14 - Double descent itself (soft introduction)
+
+So, we haven't really talked about what direction I want to get this research on. Which is kind of bad, since doing research is like venturing into the unknowns, for whatever reasons and incentives there might be around there. Then a guiding light might be better than none, even though at certain point there will be occasions for us to turn our tail back at the start and rethink everything. 
+
+Now, since this research project is also about something that is very complex theoretically, but very accessible empirically, I think it still fits our current team's strength of such. However, we need to have quite a discrete and concrete direction to follow as guideline for whatever experiments we are doing. It's a hybrid, so I want to expect myself as well as everyone, but mainly me, to clear out the confusion. 
+
+#### What is double descent anyway?
+
+Double descent came from the phrase "larger models are better" of machine learning practitioner (or, user). What does that mean? It means that for a machine learning model to do its task, the more complex it is, the more, well, effective it will be. 
+
+It seems pretty intuitive, in certain aspect - since if you consider some of the complex aspect in daily life, the performance is quite 'better' than the average would be. It's more of the 'professional company' vs 'amateur company' for people working in business, kind of. But there would be nothing to talk about if there's no problem with this kind of rigged "intuition" - because in machine learning, it goes off the rail of what is considered the optimal.
+
+In machine learning, you have two aspects in confrontation - generality of the hypothesis of which the model makes, and the complexity of that hypothesis. All of which is concerned the single thing that machine learning model outputs - the hypothesis of the true, actual concept that it is tasked to learn from. In that consideration, a "hypothesis" was born, cited as Bias-variance tradeoff, of which propose the following conjecture: 
+
+> For more complex the model is, the more instability it gets, and vice versa. 
+
+What is considered in this case? In inspection of the model, we look at one things for machine learning - error. Because it's learning, error measures the "wrongness" of the model, after training or let in running with data. In error, you can break it down into two separated part, for statistical inference: bias - of which measure the true accuracy of the prediction (from the hypothesis - hypothesis is still just guessing) and the true concept, and variance, the stability of such hypothesis. The definition of variance is a bit difficult to get your head into, because while it is like that, it basically means how consistent the hypothesis is, in predicting the concept. 
+
+It sounds very intuitive too, and has been cited and described at first, largely to the ML public by Geman et al. in 1992. Of his work, it seems like an intuition is suggested, of also the example of a student-exam situation. Overthinking might, and will lead to false leads, and false answer, kind of. But underthinking will also make you wrong. So it's better to balance both out.
+
+Everything would be fine if it's just turn out to be like that. But, the problem with bias-variance tradeoff, is that it's very recent, even in statistics, as being only described in the past as "uncertainty error". There is no concrete and direct theory that support the tradeoff, guarantee its de-facto position as a hypothesis rather than an actual law of observation thereof. And double descent is one of the major crack in that hypothesis. 
+
+Double descent starts with the crack-down over distance of bias-variance tradeoff - by the hypothesis, the error after certain "optimal point" that the model achieve total harmony between stability and power (the bias measure how powerful a model will fit to data, or the learning ability) will increase indefinitely. However, as all cliché is supposed to turn out to, it does not happen. In fact, quite the opposite - it goes up, yes, to some extent, the tradeoff is still correct - but then it falls down again, and seems to converge to 0. 
+
+How does this work? We simply do not actually have an answer. There are research on it (I tried, they kinda suck), but the best we can do for certain, would be to do empirical research on it. Simply because the nature of it is still, unknown. But that's why this topic is chosen, otherwise, there would be nothing to do in the first place.
+
+### 2025/06/20 - Phase 1 ending
+
+Our phase 1, as of current, focus on the work of trying to do as much test as possible. Several question arises: 
+
+- What model should we test? 
+- How we should test?
+- Of what aspect should we do the test onto? 
+- What is there to measure the test (i.e. the purpose)? 
+
+Considering this, we will need to make sure of our purpose first. The following would be some requirements.
+
+1. Our purpose is to do experiments to finding patterns that lead to further assessment, which leads to theories and our own hypothesis. To do that, we need to focus on finding the relation between different model metric, and, well, the representation of such. 
+2. Our models need to be scalable, and hence, would need to be variedly easy to implement, easy to scale up (since double descent appears when you scale the model up - increase the complexity). 
+3. Our data would be graphs, but most of the time, please provide it with a metric and table list of parameters. Specifically, if you can, please export the result that is relevant into a `numpy` tensor format. 
+
+All of this is my current specification, of which to support the very first goal and central theme of phase 1 - to do testing and figure out from those data what is there, and what patterns are there to learn from. Model lists are actually quite small, but heavy on computation in certain parts. 
+
+- Transformer (big, complex, but quite hard to know where to break it down). 
+- CNN/ResNet: Nice to test on
+- Random Fourier Network (RFN): Nice to test on
+- RNN/BPTT: Nice to test on (perhaps)
+- LSTM: very famous, good with moving parts
+- $n$-depth normal deep learning models: Nice to test on. 
+  PLR (polynomial linear regression): Good with the theory, testing is quite questionable (easy). 
+- Multicollinearity models (statistical/regression-based): Seems to have something to do with this kind of scenario. 
+- Generative models (NBayes, etc) - nice to test on (easy to scale).
+
+
+
+
+

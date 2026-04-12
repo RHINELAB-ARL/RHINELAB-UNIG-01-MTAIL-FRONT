@@ -1,0 +1,55 @@
+---
+format:
+  html:
+    grid:
+      body-width: 1200px
+---
+# Introduction
+
+This is the documentation page for may of the development of the **Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group** (MTAIL) and documentation thereof. It will also include several notes and exposure of the lab itself here, including the *ranking order* framework itself, many notes and question debates, and more. First created by the necessity of purpose for reorganizing the research program into a multi-people central consensus rather than a solo-working environment, the website is minimally created to hook with the main website of the laboratory, and host all capable form of documents and writing relevant to the work that the lab group conducts itself of. 
+
+Currently, the list of inclusion, to-do works and many requests for migration of details, build-up and so on, are listed as followed. 
+
+1. **Neural network formalism**: This one has a website, however that is right now outdated and out of control, so it should be reorganized soon so we can start. Such is to realize of the capacity of the *neural formalism* using neural units to its full interpretation, not the narrow definition taken of virtue by normal scientific approaches of the minimal neuron. 
+2. **Foundational modelling theory** in construction. We are still having to migrate the contents here, especially on *encoding dependency* and the formalization of *gauge invariance* formalism beside the age-old incomprehensible stack of explanations that serve no one but misunderstanding and implicit notions. 
+3. Theoretical computer science, evolution theory, theoretical learning theory (*computational learning theory*, statistical learning theory and more), mathematical theories and epistemology, with certain aspects a few fields like iterative process, simulation theories and so on are in list of construction. 
+4. Question sites and justification template. So for each question, asking such requires you to form certain *line of thoughts*: justification, logic of deliverance, and then unresolved tension and specification of what the question entails, or would it give more questions to come. 
+
+The goal would be long, and I will have to include them more in the future. But for now, I guess this is fairly enough. Further clarification would be delivered in their respective section instead, so it should worry not about said topic than the one held responsible, i.e. the group leader. 
+
+The current group leader is **Bui Gia Khanh**, simultaneous the laboratory leader of RHINELAB. So far, only **one** (1) person are responsible for the group, with all others are collaborators. 
+
+### Relevant information
+
+Some of the below information are also supplants for other groups. Most of which would be included elsewhere nominally, but well, yes. 
+
+#### For the double descent and learning theory section
+
+The current active information pages includes (this is duplicated in the main page), as:
+
+- [The Universal Guideline on Artificial Automata](https://github.com/Amane-Fujimiya/UAI_Book) - still under construction, is the foremost document itself. The name is again, Amane Fujimiya or Bui Gia Khanh (as I use two names), and is more about theoretical attempts on AI theory in its entirety. So far, [this link will be the one](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/UAI_Book/master/A/A1.AI/A1%20-%20UAI/main.pdf) that gives you the last available rendered manuscript of the book (note that it is on the `master` branch). 
+- **Main manuscript** - constructed on [This Particular Repository (TPR)](https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper) of which holds from the first to the last manuscript. Current active manuscript in total is the `Draft` folder itself document. Alongside that, [this paper](https://arxiv.org/pdf/2103.05127) would form chapter 6 of the manuscript itself. The manuscript of the *Theoretical Learning manuscript* of **this project** can be found [in here](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf) of its latest version. 
+- The code repository includes [this one on GitHub](https://github.com/Izzie1911/DD-with-basic-model-), with its copy and extension on GitLab. The link will be routed later. 
+
+#### The rough ordering level
+
+For certain purposes, the rather higher partition in the list contains another foundation group on the **theoretical theory directive**, which is the encompassing category of both the artificial intelligence group and the physics studies group right now. By category, we have the dependency or foundational order concept, which categorizes the following by order of **C(X)** for X count as the ascending level (I being the highest). 
+
+- Theory of modelling (CI). 
+- Mathematical theory and encoding language research (CI). 
+- Theory of computer science and automata realization (CII). 
+- Practical computer instantiation consideration (CIII). 
+- Physics theory and mathematical physics (CII). 
+- Practical-theoretical physical gap (CIII). 
+- Artificial intelligence theory (CII). 
+- Artificial intelligence practical-theoretical implementation (CIII). 
+- Hardware-interfaced-or-designed neural formalism network (CIII). 
+
+And so on. This is also to separate dependency layer from which later on we will expand for experiment, real system or any amount of resources for practical purposes. I.e. we will also do practical stuffs, but have to retain the order of dependency.
+
+#### Updates
+
+- 2025/09/28 - Started drafting.
+- 2026/03/12 - Updated contents. 
+- 2026/03/16 - Updating a few metadata. 
+- 2026/04/13 - Publish the website and add a few more organizations. 

@@ -1,0 +1,126 @@
+/*-- scss:defaults --*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Fira+Mono&display=swap");
+
+/* Core dark palette */
+$body-bg: #121212;
+$body-color: #d8d8d8;
+$link-color: #4cc9f0;
+$code-color: #d6e4ff;
+$code-bg: rgba(255, 255, 255, 0.06);
+$code-block-bg: rgba(255, 255, 255, 0.04);
+$code-block-border-left: rgba(255, 255, 255, 0.16);
+
+/* Optional accents */
+:root {
+  --teal-italic: #42b7c8;
+  --accent-orange: #ff8a3d;
+  --accent-teal: #42b7c8;
+}
+
+/*-- scss:rules --*/
+
+/* Do NOT use brightness() here */
+body {
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+/* bibliography spacing */
+div.csl-entry {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+/* footer */
+.nav-footer-center {
+  min-height: 0 !important;
+}
+
+.nav-footer {
+  background-color: #121212;
+  color: $body-color;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-footer a {
+  color: $body-color;
+}
+
+/* icons */
+.bi-heart-fill {
+  color: #8b1e1e;
+}
+
+/* sidebar */
+.sidebar,
+.sidebar-navigation {
+  background-color: #181818 !important;
+}
+
+.sidebar-navigation li a {
+  line-height: 1.75;
+  color: $body-color;
+  font-size: 14px;
+}
+
+.sidebar-navigation li a:hover,
+.sidebar-navigation li a:focus {
+  color: #ffffff;
+}
+
+/* search box */
+.aa-Autocomplete .aa-Form,
+.aa-DetachedFormContainer .aa-Form {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: $body-color;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* code */
+pre code {
+  padding-left: 5%;
+}
+
+pre code.sourceCode {
+  padding-left: 0;
+}
+
+.downlit code a:any-link {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.35);
+}
+
+/* sidebar text sizing */
+.sidebar-item {
+  font-size: 0.9rem;
+
+  a {
+    font-size: inherit;
+  }
+}
+
+.sidebar-item .sidebar-item {
+  font-size: 0.85rem;
+}
+
+.sidebar-title {
+  font-size: 18px;
+}
+
+/* emphasis */
+p strong, li strong {
+  color: #ff8a3d;
+  font-weight: 800;
+}
+
+p em, li em {
+  color: var(--teal-italic);
+}
+
+
+/* Global Dark Reader–style filter */
+html {
+  filter: brightness(0.7) contrast(0.9);
+}

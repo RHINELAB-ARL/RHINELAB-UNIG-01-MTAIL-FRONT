@@ -1,0 +1,84 @@
+project:
+  type: book
+  output-dir: public
+  resources: 
+    - robot.txt
+
+book:
+  title: "Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTIL)"
+  repo-url: https://github.com/
+  repo-actions: [edit, issue, source]
+  repo-subdir: book
+  favicon: Figures/favicon.ico
+  cover-image: img_core/logos.png
+  #downloads: [pdf]
+  sidebar:
+    style: "docked"
+    pinned: true
+    collapse-level: 1
+    border: true
+    search: true
+  page-footer:
+    left: |
+      All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) <br> &copy; Bui Gia Khanh.
+    center: "[Website](https://amane-fujimiya.github.io/) | [GitHub](https://github.com/Amane-Fujimiya) | [Blog](https://amane-fujimiya.github.io/blogs) | RHINELAB-RINALAB - Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group"
+    right: Built with [Quarto](https://quarto.org/).
+    background: "#f8f9fa"
+  chapters:
+    - index.qmd
+    - part: "Directive"
+      chapters: 
+        - content/reading_list.qmd
+    - part: "Double Descent"
+      chapters: 
+        - content/R1/R1.1.qmd
+        - content/R1/R1.O1.qmd
+    - bibliography.qmd
+
+
+#bibliography: references.bib
+
+format:
+  html:
+    lightbox: true
+    theme:
+      light: [default, style/custom.scss]
+      dark: [default, style/custom_dark.scss]
+    fontsize: "14px"
+    linestretch: 1.6
+    mainfont: "Roboto"
+    monofont: "Fira Mono"
+    smooth-scroll: true
+    toc-depth: 3
+    code-link: true
+    code-tools:
+      toggle: true
+    code-fold: false
+    highlight-style: printing
+    code-block-bg: true
+    code-overflow: wrap
+    reference-location: margin
+    mermaid:
+      theme: neutral
+    grid: 
+      body-width: 1000px
+
+bibliography: references.bib
+
+latex-auto-install: true
+
+knitr:
+  opts_chunk:
+    cache: true
+    cache.lazy: false
+    dpi: 600
+    fig.width: 5.5
+    fig.height: 3
+    out.width: "100%"
+    split: true
+    R.options:
+      knitr.graphics.auto_pdf: true
+      datatable.print.nrows: 10
+      datatable.print.class: false
+      datatable.print.keys: false
+      datatable.print.trunc.cols: TRUE

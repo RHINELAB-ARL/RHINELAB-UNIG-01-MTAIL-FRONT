@@ -1,0 +1,12 @@
+# Reviewing the scripts
+
+Basically giving you the review. These would be some of the papers that are requested (or rather assigned for discovery) of the certain topics that are of interest in the entire body of this particular placement of the documentation site. 
+
+## Physics-Inspired Structural Representations for Molecules and Materials
+
+[The paper itself](https://pubs.acs.org/doi/10.1021/acs.chemrev.1c00021), quite substantially of Chemical Review [@Musil2021PhysicsInspired], is about settle the deal with a **physical representation language** for said physical field in itself. As stated, the method is simple and aimed - it demands certain fixture and movement of which would defer to moving from *Cartesian representation* of the coordinate axis, into **structural encoding** that would be more informed to be used in statistical and automated, machine learning tasks and modelling. 
+
+[Schematic overview of the requirements for an effective structural representation. The mapping between structures and feature space should obey fundamental physical symmetries (equivalent structures should be mapped to the same features), should be complete (inequivalent structures should be mapped to distinct features), and should be smooth (continuous deformations of a structure should map to a smooth deformation of the associated features). Furthermore, whenever dealing with datasets that are not homogeneous in molecular size, the representation should be additive: a structure should be decomposed in a sum of local environments (usually atom-centered), ensuring transferability and extensivity of predictions.](img/chem_feature.png)
+
+
+
