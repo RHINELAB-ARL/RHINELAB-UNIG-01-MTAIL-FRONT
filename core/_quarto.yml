@@ -1,45 +1,54 @@
 project:
-  type: book
-  output-dir: public
-  resources: 
-    - robot.txt
+  type: website
+  resources:
+    - "CNAME"
 
-book:
-  title: "Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTIL)"
+execute:
+  freeze: true
+
+website:
+  title: "Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTAIL)"
   repo-url: https://github.com/
   repo-actions: [edit, issue, source]
-  repo-subdir: book
-  favicon: Figures/favicon.ico
-  cover-image: img_core/logos.png
-  #downloads: [pdf]
+  navbar:
+    right:
+      - href: index.qmd
+        text: Central
+      - href: about.qmd
+        text: Information
+      - href: contents/updates/post.qmd
+        text: Research and Updates
   sidebar:
-    style: "docked"
+    #title: "MTAIL Modelling Documentations. Phase II."
+    #logo: assets/img/shirtpin.png
+    style: "floating"
     pinned: true
-    collapse-level: 1
+    collapse-level: 2
     border: true
     search: true
+    contents: 
+      - index.qmd
+      - section: "Reading"
+        contents:
+          - contents/reading/reading_list_R1.qmd
+      - section: "Research"
+        contents:
+          - section: "Double Descent"
+            contents: 
+              - contents/research/R1-double-descent/R1.1.qmd
+              - contents/research/R1-double-descent/R1.O1.qmd
+      - contents/bibliography.qmd
+    background: "#f0e6e6"
   page-footer:
     left: |
       All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) <br> &copy; Bui Gia Khanh.
     center: "[Website](https://amane-fujimiya.github.io/) | [GitHub](https://github.com/Amane-Fujimiya) | [Blog](https://amane-fujimiya.github.io/blogs) | RHINELAB-RINALAB - Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group"
     right: Built with [Quarto](https://quarto.org/).
     background: "#f8f9fa"
-  chapters:
-    - index.qmd
-    - part: "Directive"
-      chapters: 
-        - content/reading_list.qmd
-    - part: "Double Descent"
-      chapters: 
-        - content/R1/R1.1.qmd
-        - content/R1/R1.O1.qmd
-    - bibliography.qmd
-
-
-#bibliography: references.bib
-
+    foreground: "#f0eed3"
 format:
   html:
+    toc: true
     lightbox: true
     theme:
       light: [default, style/custom.scss]
@@ -51,8 +60,8 @@ format:
     smooth-scroll: true
     toc-depth: 3
     code-link: true
-    code-tools:
-      toggle: true
+    #code-tools:
+    #  toggle: false
     code-fold: false
     highlight-style: printing
     code-block-bg: true
@@ -61,7 +70,7 @@ format:
     mermaid:
       theme: neutral
     grid: 
-      body-width: 1000px
+      body-width: 900px
 
 bibliography: references.bib
 
@@ -82,3 +91,6 @@ knitr:
       datatable.print.class: false
       datatable.print.keys: false
       datatable.print.trunc.cols: TRUE
+
+
+

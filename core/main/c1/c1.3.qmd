@@ -1,3 +1,0 @@
-# Material science, simulations
-
-We have been covering the large swath of material science as of date. For now, we would like to proceed in line with the theoretical treatment that would follow from here, and what to be said of or even capable of, during this section about material science in it whole. It is also where we would introduce the formation of **rung layers**, where we would organize the status of theoretical models coverage. Due in fact note that those rungs are not independent. They are messy, interconnected, and was enumerated - many versions of many models, all in one place. Such is to be remembered before the section itself. 
