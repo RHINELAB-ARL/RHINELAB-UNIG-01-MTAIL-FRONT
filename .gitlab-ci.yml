@@ -7,10 +7,10 @@ image: ghcr.io/quarto-dev/quarto-full:latest
 build:
   stage: build
   script:
-    - quarto render core
+    - quarto render core --output-dir ../public
   artifacts:
     paths:
-      - core/public
+      - public
   rules:
     - if: '$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH'
 
@@ -20,7 +20,7 @@ pages:
     - job: build
       artifacts: true
   script:
-    - mv core/public public
+    - echo "Deploying Pages"
   artifacts:
     paths:
       - public
