@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>r1.1 – Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTAIL)</title>
+<title>Sub-topic - Memo – Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTAIL)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,7 +105,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating nav-fixed slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -310,7 +310,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Research</li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Gateway</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Research</li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.O2.html">Sub-topic - Memo</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -377,7 +377,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../contents/research/R1-double-descent/R1.1.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../contents/research/R1-double-descent/R1.1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Gateway</span></a>
   </div>
 </li>
@@ -389,7 +389,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../contents/research/R1-double-descent/R1.O2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../contents/research/R1-double-descent/R1.O2.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Sub-topic - Memo</span></a>
   </div>
 </li>
@@ -413,116 +413,203 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#gateway" id="toc-gateway" class="nav-link active" data-scroll-target="#gateway">Gateway</a>
+  <li><a href="#memo-001.-perceptron" id="toc-memo-001.-perceptron" class="nav-link active" data-scroll-target="#memo-001.-perceptron">Memo 001. Perceptron</a>
   <ul class="collapse">
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
-  <li><a href="#discussions" id="toc-discussions" class="nav-link" data-scroll-target="#discussions">Discussions</a>
+  <li><a href="#the-difference-of-procedure" id="toc-the-difference-of-procedure" class="nav-link" data-scroll-target="#the-difference-of-procedure">The difference of procedure</a></li>
+  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The data</a></li>
+  </ul></li>
+  <li><a href="#memo-002---graph-generation" id="toc-memo-002---graph-generation" class="nav-link" data-scroll-target="#memo-002---graph-generation">Memo 002 - Graph generation</a>
   <ul class="collapse">
-  <li><a href="#on-data-complexity" id="toc-on-data-complexity" class="nav-link" data-scroll-target="#on-data-complexity">2025/03/12 - On data complexity</a></li>
-  <li><a href="#double-descent-itself-soft-introduction" id="toc-double-descent-itself-soft-introduction" class="nav-link" data-scroll-target="#double-descent-itself-soft-introduction">2025/01/14 - Double descent itself (soft introduction)</a></li>
-  <li><a href="#phase-1-ending" id="toc-phase-1-ending" class="nav-link" data-scroll-target="#phase-1-ending">2025/06/20 - Phase 1 ending</a></li>
-  <li><a href="#phase-ii" id="toc-phase-ii" class="nav-link" data-scroll-target="#phase-ii">2026/01/01 - Phase II</a></li>
+  <li><a href="#i.-representation" id="toc-i.-representation" class="nav-link" data-scroll-target="#i.-representation">I. Representation</a></li>
+  <li><a href="#ii.-generating-principle" id="toc-ii.-generating-principle" class="nav-link" data-scroll-target="#ii.-generating-principle">II. Generating Principle</a></li>
+  <li><a href="#iii.-requirements-of-flavours" id="toc-iii.-requirements-of-flavours" class="nav-link" data-scroll-target="#iii.-requirements-of-flavours">III. Requirements of flavours</a></li>
+  <li><a href="#iv.-datasets" id="toc-iv.-datasets" class="nav-link" data-scroll-target="#iv.-datasets">IV. Datasets</a></li>
   </ul></li>
+  <li><a href="#memo-003---phase-i-resolutions" id="toc-memo-003---phase-i-resolutions" class="nav-link" data-scroll-target="#memo-003---phase-i-resolutions">Memo 003 - Phase I resolutions</a>
+  <ul class="collapse">
+  <li><a href="#interpretation-phase-iii-above" id="toc-interpretation-phase-iii-above" class="nav-link" data-scroll-target="#interpretation-phase-iii-above">Interpretation (Phase III above)</a></li>
+  <li><a href="#probabilistic-dependency-phase-i" id="toc-probabilistic-dependency-phase-i" class="nav-link" data-scroll-target="#probabilistic-dependency-phase-i">Probabilistic Dependency (Phase I)</a></li>
   </ul></li>
+  <li><a href="#memo-004---first-test-revision" id="toc-memo-004---first-test-revision" class="nav-link" data-scroll-target="#memo-004---first-test-revision">Memo 004 - First test revision</a></li>
+  <li><a href="#memo-005---theoretical-considerations" id="toc-memo-005---theoretical-considerations" class="nav-link" data-scroll-target="#memo-005---theoretical-considerations">Memo 005 - theoretical considerations</a></li>
+  <li><a href="#memo-006---underparameterization" id="toc-memo-006---underparameterization" class="nav-link" data-scroll-target="#memo-006---underparameterization">Memo 006 - Underparameterization</a>
+  <ul class="collapse">
+  <li><a href="#experiment-1---underparameterization" id="toc-experiment-1---underparameterization" class="nav-link" data-scroll-target="#experiment-1---underparameterization">Experiment 1 - “Underparameterization”</a></li>
+  </ul></li>
+  <li><a href="#memo-007---neural-testing" id="toc-memo-007---neural-testing" class="nav-link" data-scroll-target="#memo-007---neural-testing">Memo 007 - Neural testing</a></li>
+  <li><a href="#memo-008---new-idea-phase-i" id="toc-memo-008---new-idea-phase-i" class="nav-link" data-scroll-target="#memo-008---new-idea-phase-i">Memo 008 - New idea (Phase I)</a></li>
+  <li><a href="#memo-009---some-idea-in-the-finalization" id="toc-memo-009---some-idea-in-the-finalization" class="nav-link" data-scroll-target="#memo-009---some-idea-in-the-finalization">Memo 009 - Some idea in the finalization</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/edit/main/contents/research/R1-double-descent/R1.1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/blob/main/contents/research/R1-double-descent/R1.1.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/edit/main/contents/research/R1-double-descent/R1.O2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/blob/main/contents/research/R1-double-descent/R1.O2.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Research</li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Gateway</a></li></ol></nav></header>
+<main class="content page-columns page-full" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Research</li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.O2.html">Sub-topic - Memo</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Sub-topic - Memo</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<section id="gateway" class="level1">
-<h1>Gateway</h1>
-<p>This is the starting page for <strong>double descent research</strong>. Insofar, it will also include thoughts and debates on such matter, aside from actual contents in manuscripts and other pages.</p>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<p>As far as it is considered, the reading list covers the reading requirement already. However, for logistics,</p>
-<ul>
-<li><a href="https://github.com/Amane-Fujimiya/UAI_Book">The Universal Guideline on Artificial Automata</a> - still under construction, is the foremost document itself. The name is again, Amane Fujimiya or Bui Gia Khanh (as I use two names), and is more about theoretical attempts on AI theory in its entirety. So far, <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/UAI_Book/master/A/A1.AI/A1%20-%20UAI/main.pdf">this link will be the one</a> that gives you the last available rendered manuscript of the book (note that it is on the <code>master</code> branch).</li>
-<li><strong>Main manuscript</strong> - constructed on <a href="https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper">This Particular Repository (TPR)</a> of which holds from the first to the last manuscript. Current active manuscript in total is the <code>Draft</code> folder itself document. Alongside that, <a href="https://arxiv.org/pdf/2103.05127">this paper</a> would form chapter 6 of the manuscript itself. The manuscript of the <em>Theoretical Learning manuscript</em> of <strong>this project</strong> can be found <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf">in here</a> of its latest version.</li>
-<li>The code repository includes <a href="https://github.com/Izzie1911/DD-with-basic-model-">this one on GitHub</a>, with its copy and extension on GitLab. The link will be routed later.</li>
-</ul>
+</header>
+
+
+<p>Collections of memos and notes about the research topic. Most of them would be not enough, however, as we will soon see. Some will have to be updated, because of many internal discussions.</p>
+<section id="memo-001.-perceptron" class="level2">
+<h2 class="anchored" data-anchor-id="memo-001.-perceptron">Memo 001. Perceptron</h2>
+<p>We have jumped quite far from the usual standard of machine learning theory. Put asides the questions of philosophical <strong>intelligence</strong> (and artificial alike), the main architecture that enables such advancement (if one want to call such probabilistic approach as advancement), is the <strong>neural network</strong> model of itself. Usually, this is established within the basis of a Multilayer Perceptron (MLP) structure. Here, however, we takes more of the form of graph theory, the theory of nodes and edges. Intrinsically, however, they works under the same model of neural unit. Before jumping in, there are perspective to look upon.</p>
+<section id="the-difference-of-procedure" class="level3">
+<h3 class="anchored" data-anchor-id="the-difference-of-procedure">The difference of procedure</h3>
+<p>GNN and MLP is very different. On one side, you have the system of MLP, being represented of <span class="math display">\[\mathsf{MLP}(n)=(I,L^{(k)}_{n}, O)\]</span> with a single flux direction - i.e.&nbsp;the normal I/O procedure. There is no communication between <span class="math inline">\(\{ L^{(i)}_{j} \}_{i\leq k}\)</span> or the <strong>neural processing unit</strong> between layers. Most of the time, neural network can be seen as a system of directed edge, <em>bipartite graph</em> between successive layers, and every neuron is a subgraph containing the following procedure <span class="math display">\[\mathsf{NEU}(I_{{m}}, \cdot, O_{1})= (I_{m}, \Sigma, \phi, u_{t}, O_{1})\]</span> Where <span class="math inline">\(I_{m}, \Sigma,\phi\)</span> and <span class="math inline">\(u_{t}\)</span> are, accordingly, the <span class="math inline">\(m\)</span>-input handler, the input signal processing, <span class="math inline">\(\phi\)</span> is the interpretable unit of the neuron, and <span class="math inline">\(O_{1}\)</span> is the single output directive afterward. Control injection starts with <span class="math inline">\(I_{m},\mathbf{W}_{I}\)</span> for a series of weight accordingly, within the assumption of “change of behaviours through input confidence”, as we have seen. In fact, the entire structure of a single neuron is done as <span class="math display">\[O_{1}^{t}=\underset{t\to 0, I\in \mathcal{D}}{\mathbb{E}}\:\phi[\Sigma(I_{m} \odot u_{t-1}, \mathbf{W}_{{I}}, \mathbf{b})]\]</span></p>
+<p>the <span class="math inline">\(\mathbb{E}\)</span> is there for averaging purpose expression only. And the entire process is a bunch of nested function, of which then <strong>backpropagation</strong> algorithm is used.</p>
+<p>For GNN, backpropagation is still used, but generally, there are a few (if not a lot) differences. First of all, GNN generally do not have <em>directions</em>. Or rather, a mono-directed viewport. There is indeed I/O procedure for such network, but the graph <span class="math inline">\(G(V,E)\)</span> usually have no property of directed node for <span class="math inline">\(e_{i}\in E\)</span>. The graph itself, <span class="math inline">\(G(V,E)\)</span>, is not the operating structure, in most cases of usage. Rather, it is instead, the figurative layer-top aggregation and mask (for example, convolutional pooling mask on top of everything). Hence, for example, the task of graph reconstruction, it is such that we are given <span class="math display">\[\mathcal{D}=\{ \mathcal{G},\mathcal{G}' \}\to \{ (V,0) , (V,E) \}\]</span> in which the given data scenario, and the “true” data mask. This gives plenty flexibility, for every encoded <span class="math inline">\(\mathbf{H}_{v}\in \mathbb{R}^{d}\)</span>, of vertex <span class="math inline">\(v\in V\)</span>, the only thing that is indeed, mutable for control, is the edges. Comparing this to neural network, where the operating system inherently have too many “complexity” in control, it is in a sense, that the restricting behaviours of the communication method - the edges, is nice enough for graph neural network.</p>
 </section>
-<section id="discussions" class="level2">
-<h2 class="anchored" data-anchor-id="discussions">Discussions</h2>
-<section id="on-data-complexity" class="level3">
-<h3 class="anchored" data-anchor-id="on-data-complexity">2025/03/12 - On data complexity</h3>
-<p>The idea of data complexity - model flexibility was thought of me 3 days ago. Simply put, I realized that the more flexibility of the model, even in every circumstance, will inherently lead to overfitting, according to classical statistical learning.</p>
-<p>However, when you think of it, why then would it exhibit the sort of double descent?</p>
-<p>There can be two ideas on this: - Self-regularization: perhaps because of the landscape of the way that the “world” of the model operating in, and the model itself, inherently penalize unnecessary ‘axis’ of flexibility. The process might be slow, or costly, but it seems to suggest so, since afterward some parameters are reduced to near 0, or being in a neutral point. - Complexity+Flexibility: When the model do not have enough complexity to fit the flexibility of the model, that is for example, 4 input parameter, but 10 axes, or weighted input receiver, hence 6 free axis. Because of this, during randomized initialization of the weight of the model, and various processing unit, overfitting can happen, and then, double descent will occur.</p>
-<p>I am not so sure about the second idea, because it seems quite far-fetch. However, it would be nice to test them out.</p>
-</section>
-<section id="double-descent-itself-soft-introduction" class="level3">
-<h3 class="anchored" data-anchor-id="double-descent-itself-soft-introduction">2025/01/14 - Double descent itself (soft introduction)</h3>
-<p>So, we haven’t really talked about what direction I want to get this research on. Which is kind of bad, since doing research is like venturing into the unknowns, for whatever reasons and incentives there might be around there. Then a guiding light might be better than none, even though at certain point there will be occasions for us to turn our tail back at the start and rethink everything.</p>
-<p>Now, since this research project is also about something that is very complex theoretically, but very accessible empirically, I think it still fits our current team’s strength of such. However, we need to have quite a discrete and concrete direction to follow as guideline for whatever experiments we are doing. It’s a hybrid, so I want to expect myself as well as everyone, but mainly me, to clear out the confusion.</p>
-<section id="what-is-double-descent-anyway" class="level4">
-<h4 class="anchored" data-anchor-id="what-is-double-descent-anyway">What is double descent anyway?</h4>
-<p>Double descent came from the phrase “larger models are better” of machine learning practitioner (or, user). What does that mean? It means that for a machine learning model to do its task, the more complex it is, the more, well, effective it will be.</p>
-<p>It seems pretty intuitive, in certain aspect - since if you consider some of the complex aspect in daily life, the performance is quite ‘better’ than the average would be. It’s more of the ‘professional company’ vs ‘amateur company’ for people working in business, kind of. But there would be nothing to talk about if there’s no problem with this kind of rigged “intuition” - because in machine learning, it goes off the rail of what is considered the optimal.</p>
-<p>In machine learning, you have two aspects in confrontation - generality of the hypothesis of which the model makes, and the complexity of that hypothesis. All of which is concerned the single thing that machine learning model outputs - the hypothesis of the true, actual concept that it is tasked to learn from. In that consideration, a “hypothesis” was born, cited as Bias-variance tradeoff, of which propose the following conjecture:</p>
+<section id="the-data" class="level3">
+<h3 class="anchored" data-anchor-id="the-data">The data</h3>
+<p>We can not state a lot of things about the data, however there is. But we can have first, one partial question:</p>
 <blockquote class="blockquote">
-<p>For more complex the model is, the more instability it gets, and vice versa.</p>
+<p>Can MLP interface, be interpreted in the form of graph?</p>
 </blockquote>
-<p>What is considered in this case? In inspection of the model, we look at one things for machine learning - error. Because it’s learning, error measures the “wrongness” of the model, after training or let in running with data. In error, you can break it down into two separated part, for statistical inference: bias - of which measure the true accuracy of the prediction (from the hypothesis - hypothesis is still just guessing) and the true concept, and variance, the stability of such hypothesis. The definition of variance is a bit difficult to get your head into, because while it is like that, it basically means how consistent the hypothesis is, in predicting the concept.</p>
-<p>It sounds very intuitive too, and has been cited and described at first, largely to the ML public by Geman et al.&nbsp;in 1992. Of his work, it seems like an intuition is suggested, of also the example of a student-exam situation. Overthinking might, and will lead to false leads, and false answer, kind of. But underthinking will also make you wrong. So it’s better to balance both out.</p>
-<p>Everything would be fine if it’s just turn out to be like that. But, the problem with bias-variance tradeoff, is that it’s very recent, even in statistics, as being only described in the past as “uncertainty error”. There is no concrete and direct theory that support the tradeoff, guarantee its de-facto position as a hypothesis rather than an actual law of observation thereof. And double descent is one of the major crack in that hypothesis.</p>
-<p>Double descent starts with the crack-down over distance of bias-variance tradeoff - by the hypothesis, the error after certain “optimal point” that the model achieve total harmony between stability and power (the bias measure how powerful a model will fit to data, or the learning ability) will increase indefinitely. However, as all cliché is supposed to turn out to, it does not happen. In fact, quite the opposite - it goes up, yes, to some extent, the tradeoff is still correct - but then it falls down again, and seems to converge to 0.</p>
-<p>How does this work? We simply do not actually have an answer. There are research on it (I tried, they kinda suck), but the best we can do for certain, would be to do empirical research on it. Simply because the nature of it is still, unknown. But that’s why this topic is chosen, otherwise, there would be nothing to do in the first place.</p>
+<p>In one way or another, the answer might be yes. Recalling that MLP is a restricted form of graph GNN, i.e.&nbsp;the bipartite, single-directed, convergent graph tube (the entire structure is indeed a tube). This is inherently similar to GNN. However, the way we treat the data of the structure is different.</p>
+<p>Remember, that MLP itself is a strict I/O process. This means it cannot utilize its internal state. In fact, MLP has the <strong>hidden state</strong> exactly for that reason. It uses the representation itself, in cohesion with the single directed graph, to calculate and push everything to the output node at the end. However, GNN took the over-the-top approach. You are, inherently exposed to the graph structure, or half of it, by the vertices. There, you have all of the data presented, living in its metric space. There, you then extract the latent space of each vertex, according to one’s own agenda of choice, by aggregation - or rather, <em>method of local estimation</em>. From this, essentially, you are acting on the structure of the data on its own. Strictly on the side of functional estimation (MLP representation) and GNN, MLP is in fact, looking only at the inherent mutation of controllers, while GNN use an over-the-top latent space to dictate the structure of the predicted value.</p>
 </section>
 </section>
-<section id="phase-1-ending" class="level3">
-<h3 class="anchored" data-anchor-id="phase-1-ending">2025/06/20 - Phase 1 ending</h3>
-<p>Our phase 1, as of current, focus on the work of trying to do as much test as possible. Several questions arise:</p>
-<ul>
-<li>What model should we test?</li>
-<li>How we should test?</li>
-<li>Of what aspect should we do the test onto?</li>
-<li>What is there to measure the test (i.e.&nbsp;the purpose)?</li>
-</ul>
-<p>Considering this, we will need to make sure of our purpose first. The following would be some requirements.</p>
+<section id="memo-002---graph-generation" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="memo-002---graph-generation">Memo 002 - Graph generation</h2>
+<p>Now, the main memo has been pretty cramped with a lot of information. For the sake of quick insertion and modification, I will attempted to make this note as a separated section, focusing on the task of <em>graph generation</em> for our experiments. <em>Specification</em> will come in handy, as to clarify in such manner.</p>
+<section id="i.-representation" class="level3">
+<h3 class="anchored" data-anchor-id="i.-representation">I. Representation</h3>
+<p>We agreed on the <strong>representation</strong> of the dataset as matrices, comparatively, <em>adjacent</em>, <em>Laplacian</em>, and <em>incident</em> matrices. Those are some of the main matrices available on-duty and is the default of any graph, with certain exceptions (for <em>multidigraph</em>, for example). Note that most of them in some cases would be <strong>sparse matrices</strong>, so please take care of memory conservation and allocation in processing.</p>
+<section id="i.1-intended-structure" class="level4">
+<h4 class="anchored" data-anchor-id="i.1-intended-structure">I.1 Intended structure</h4>
+<p>We typically, and will, use use two model as test beds: <strong>Encoder-Decoder</strong> structure and <strong>Graph Neural Network (GNN)</strong> as a more recent and modern use cases. Both uses matrices, hence why we want them all in such length.</p>
+</section>
+</section>
+<section id="ii.-generating-principle" class="level3">
+<h3 class="anchored" data-anchor-id="ii.-generating-principle">II. Generating Principle</h3>
+<p>The generation principle focus on several case-on basis:</p>
+<section id="ii.1.-orders" class="level4">
+<h4 class="anchored" data-anchor-id="ii.1.-orders">II.1. Orders</h4>
+<p>We want to focus in this case, the ordering of the graph. Suppose a Euclidean-embedded graph <span class="math inline">\(G\)</span> on <span class="math inline">\(\mathbb{E}\subset \mathbb{R}\)</span>. Then, a topology which is order is similar to a linear structure of equivalent and identical edge length, if such edge length exists. In general, we separate such graph into the <strong>main plane</strong> and the <strong>sub-plane</strong>, with the main plane have the same property, for example, as a <em>uniformly spaced grid graph</em> of size <span class="math inline">\(n\)</span> - that is, for every node to its adjacent, the distance is equal, and their ‘angle’ must be 90 degrees. The sub-plane contains elements of dimension for each node (or edge, depends on how you code the dynamic mutation of the topology) that would changes such equality, for example, if the sub-plane is regulated by a <strong>(biased) Gaussian distribution</strong>: <span class="math display">\[
+p(x)= \frac{1}{\sigma \sqrt{ 2\pi }}\exp{\left( - \frac{(x-\mu)^{2}}{2\sigma^{2}} \right)}-b\]</span> evaluating based on the ‘coordinates’ from the origin of the map, then the closer to the biased point, the more probability there are for the distance to either <em>contracts</em> or <em>extends</em>, depends on how the Gaussian distribution is used to add more distance to the edge.</p>
+<p>This effectively can also change the order of the graph. Another way to do this, would be to put in a generative constraint to the generation process. For example, from what we see of the grid graph, the condition must be for all grid graph living on <span class="math inline">\(\mathbb{E}\)</span>:</p>
 <ol type="1">
-<li>Our purpose is to do experiments to finding patterns that lead to further assessment, which leads to theories and our own hypothesis. To do that, we need to focus on finding the relation between different model metric, and, well, the representation of such.</li>
-<li>Our models need to be scalable, and hence, would need to be variedly easy to implement, easy to scale up (since double descent appears when you scale the model up - increase the complexity).</li>
-<li>Our data would be graphs, but most of the time, please provide it with a metric and table list of parameters. Specifically, if you can, please export the result that is relevant into a <code>numpy</code> tensor format.</li>
+<li>For a node <span class="math inline">\(v_{1}\)</span>, its neighbour is at maximum 4.</li>
+<li>For such node <span class="math inline">\(v_{1}\)</span> and their neighbouring node <span class="math inline">\(n_{1},n_{2},n_{3}\)</span> of which forms a closed loop for walk of length 2, we have: <span class="math display">\[
+\left&lt; e(v_{1},n_{1}), e(n_{1}),n_{2} \right&gt; = 0
+\]</span> for all particular pairs, or rather, denoting <span class="math inline">\(v_{1}=n_{1}\)</span> and pushes the indices: <span class="math display">\[
+\sum_{cyc} \left&lt; e(n_{i}), e(n_{i+1}) \right&gt; = 0
+\]</span></li>
+<li>The distance of all edges living on such graph is equal to <span class="math inline">\(d\)</span> of any given real number. Within such, we can add more dynamic constraints, and/or removing constraints to its generations.</li>
 </ol>
-<p>All of this is my current specification, of which to support the very first goal and central theme of phase 1 - to do testing and figure out from those data what is there, and what patterns are there to learn from. Model lists are actually quite small, but heavy on computation in certain parts.</p>
-<ul>
-<li>Transformer (big, complex, but quite hard to know where to break it down).</li>
-<li>CNN/ResNet: Nice to test on</li>
-<li>Random Fourier Network (RFN): Nice to test on.</li>
-<li>RNN/BPTT: Nice to test on (perhaps)</li>
-<li>LSTM: very famous, good with moving parts</li>
-<li><span class="math inline">\(n\)</span>-depth normal deep learning models: Nice to test on. PLR (polynomial linear regression): Good with the theory, testing is quite questionable (easy).</li>
-<li>Multicollinearity models (statistical/regression-based): Seems to have something to do with this kind of scenario.</li>
-<li>Generative models (NBayes, etc) - nice to test on (easy to scale).</li>
-</ul>
-<p>The remaining goals for phase I, as of current, focus on the work of trying to do as much test as possible. Several questions arise:</p>
-<ul>
-<li>What model should we test to concretely adversarial-relatively bring out the structures?</li>
-<li>How we should test?</li>
-<li>Of what aspect should we do the test onto?</li>
-<li>What is there to measure the test (i.e.&nbsp;the purpose)?</li>
-</ul>
-<p>Considering this, we will need to make sure of our final purpose, such that as stating as:</p>
-<ol type="1">
-<li>Our purpose is to do experiments to finding patterns that leads to further assessment, which leads to theories and our own hypothesis. To do that, we need to focus on finding the relation between different model metric, and, well, the representation of such.</li>
-<li>Our models needs to be scalable, and hence, would need to be variedly easy to implement, easy to scale up (since double descent appears when you scale the model up - increase the complexity).</li>
-<li>Our data would be graphs, but most of the time, please provide it with a metric and table list of parameters. Specifically, if you can, please export the result that is relevant into a <code>numpy</code> tensor format.</li>
-</ol>
-<p>Those would be received later on in the future.</p>
 </section>
-<section id="phase-ii" class="level3">
-<h3 class="anchored" data-anchor-id="phase-ii">2026/01/01 - Phase II</h3>
-<p>Phase II will start from now, as it will always be.</p>
+<section id="ii.2.-removal" class="level4">
+<h4 class="anchored" data-anchor-id="ii.2.-removal">II.2. Removal</h4>
+<p>In this, we consider the axis of existence. That is, either generating a graph from scratch, or taking it to be the subgraph of another graph. This is particularly useful in certain cases, where you might want to have symmetric case of insurances for different patterns or laws that is embedded in the network of interest, and those complement of it. In the more versatile setting, take the example of the complete graph <span class="math inline">\(C(m,n)\)</span>. By substituting unnecessary edges, or even nodes, we can have a typical dense graph or raised patterns (which means that because complete graph is <em>completed</em>, there are too many patterns already, so erase some will inherently gives in a typical strong patterns in the graph structure). There are quite a few more, but that might be it for now.</p>
+</section>
+</section>
+<section id="iii.-requirements-of-flavours" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="iii.-requirements-of-flavours">III. Requirements of flavours</h3>
+<p>I require us to be able to at least generates the typical <strong>simple graph</strong> and <strong>directed graph</strong>. Multigraph and multidigraph is important, but also is not as important as the above, since every graph can still be segmented into digraph or simple graph, depends on such. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;In that note, however, then it must be said that <strong>multigraph</strong> is more general than <em>simple graph</em>, but we shall not encounter it for now. I mean, it is hard enough to get to simple graph…</p></div></div></section>
+<section id="iv.-datasets" class="level3">
+<h3 class="anchored" data-anchor-id="iv.-datasets">IV. Datasets</h3>
+<p>Any dataset is fine, as long as we can categorize and aggregate their properties as required. Some can be taken from Kaggle or the Hub, or, as we see, the <a href="https://snap.stanford.edu/data/">Stanford Graph Dataset</a></p>
+</section>
+</section>
+<section id="memo-003---phase-i-resolutions" class="level2">
+<h2 class="anchored" data-anchor-id="memo-003---phase-i-resolutions">Memo 003 - Phase I resolutions</h2>
+<p>In phase I, we focus on how the input was formed. That said, it feels like there is something that is inherent to the data. Supposedly, a ‘dataset’ <span class="math inline">\(\mathbf{X}\)</span> only contains the points in which comprises by size <span class="math inline">\(n=\lvert \mathbf{X} \rvert\)</span>. However, this is pretty flawed and shallow understanding of the input.</p>
+<p>Rigorously, we might be entailed to treat <span class="math inline">\(\mathbf{X}\)</span> a bit different. We say that a dataset <span class="math inline">\(\mathbf{X}\)</span> contains the following systems:</p>
+<ul>
+<li>A discrete number <span class="math inline">\(n\)</span> of instances belong to <span class="math inline">\(\mathbf{X}\)</span>.</li>
+<li>For each input <span class="math inline">\(x\in \mathbf{X}\)</span>, create an index set <span class="math inline">\(I\subset \mathbb{N}\)</span> that denotes <span class="math inline">\(x\)</span> by <span class="math inline">\(x_{i}\)</span> for <span class="math inline">\(i\in I=\{ 1,\dots,n \}\)</span>. To be honest, this can be anything - as long as it contains a placeholder assumption, and a label - one type of abstraction, then it’s fine. The point is, that every data point, ever, is <strong>discrete</strong> - there are no continuous data - even time series use discrete small laps. The only continuous thing happen is for the density of the underlying structure, which will be discussed later.</li>
+<li>For <span class="math inline">\(\mathbf{X}\)</span>, then, the place holder would assume specific shape, that aligns with how it is interpreted. There, we have the feature space embedded into the data frame. That is, the set <span class="math inline">\(\{ x_{i} : i\in I_{{n}}\}\)</span> is provided with a metric <span class="math inline">\(M\)</span> that is its embedding space. This embedding space varies - for example, in regression, the embedding space is exactly the one-dimensional <span class="math inline">\(\mathbb{R}\)</span> space of <span class="math inline">\(x_{1}\)</span>, for single dimensional case, and for multinomial regression, then <span class="math inline">\(\mathbb{R}^{2}\)</span> of <span class="math inline">\(\{ x_{j} \}\in x_{i}\)</span> of individual sample point in the dataset. Depends on the metric, it can characterizes certain relational characteristics on which it is implied to take places within such - or rather, some structure that the data would share, based off their intrinsic interpretation.</li>
+</ul>
+<section id="interpretation-phase-iii-above" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation-phase-iii-above">Interpretation (Phase III above)</h3>
+<p>I had one interpretation that is useful from the paper. It turns out, that you can fit the description of the statistical, or learning in general, to the question of transition of state. That said, the state transition is implicative, in the sense that the <span class="math inline">\(\mathsf{ERM}(X,h)\)</span> machine tries to find a nice absolute-ground transition state - that is, from total non-alignment, to the absolute state of ground zero, no error, for any specific conversion.</p>
+<p>However, are there different notion that can lead to this type of transition to the ground truth state? This is a question worthy of interest, since it underlies the entire thing - the only reason bias-variance appears in the first place, is because <strong>ERM fails</strong> by the No-free-lunch theorem.</p>
+</section>
+<section id="probabilistic-dependency-phase-i" class="level3">
+<h3 class="anchored" data-anchor-id="probabilistic-dependency-phase-i">Probabilistic Dependency (Phase I)</h3>
+<p>We often say that the set <span class="math inline">\(\mathbf{X}_{n}\)</span> is based on the dependency of the probabilistic distribution <span class="math inline">\(p(\mathbf{X},\mathbf{Y})\)</span>, that is, it also depends on the causal’s result set <span class="math inline">\(\mathbf{Y}\)</span> for its distribution. But what if these two sets have different and seemingly same but not distribution of fixation? That is, what governs their appearance and occurrences are <em>different</em>? From this, also, perhaps we also want to test on the <strong>dataset bias</strong>, that is, if the dataset is overgrown to not be representative of the entire dataset, or it is because of the inherent hardship in obtaining data that there exists a <strong>capability bias</strong> such that the model only have access to a non-representative portion of the distribution?</p>
+</section>
+</section>
+<section id="memo-004---first-test-revision" class="level2">
+<h2 class="anchored" data-anchor-id="memo-004---first-test-revision">Memo 004 - First test revision</h2>
+<p>So, here is what to be realized from the first testing scenario.</p>
+<ul>
+<li>There seems to be correlation between the setting’s variables, as <span class="math inline">\(p\)</span>, <span class="math inline">\(d\)</span> and the dataset <span class="math inline">\(n\)</span>. Further analysis into how <span class="math inline">\(n\)</span> is configured might help.</li>
+<li>Double descent within linear regression setting indicts on its formulative error as error on prediction, yet the result is somewhat analogous to the parameter-error instead, which is particularly troublesome. What can be said about such then?</li>
+<li>With those, we have also that the correlation between operators, or rather between what type of error measure if with each other is an interesting focus. This might prompt the similar treatment to quantum mechanical systems, and the concentration of the system itself without analytical form.</li>
+<li>If we extend the double descent, we would notice that in certain setting, it fails or rather, return to bias-variance. So, either it is of that, or we are in the wrong interpretation of double descent as a whole. Perhaps it means bias-variance is actually true, and we are just looking at the wrong picture?</li>
+<li>A quantum mechanical interpretation is possible, but then again, we will have to combine them with the statistical interpretation, structural formation (since we have to know how to treat them in), and potentially some other things.</li>
+</ul>
+</section>
+<section id="memo-005---theoretical-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="memo-005---theoretical-considerations">Memo 005 - theoretical considerations</h2>
+<p>I write this down in a meeting room, so it will both be fast and quick. In all, and of all, what I am thinking of, is the new consideration of the model itself.</p>
+<p>The representation scheme approach seems to be failing in experiment and theory development. Specifically, a model <span class="math inline">\(m\)</span> is very hard to know, if there exists some fundamental structure based on the representation scheme, in such sense. Thereby, we cannot analyse them even in closed-form, or isolated oscillating system - going back and forth of the system.</p>
+<p>However, the representation structure would still have to be considered, just as <span class="math inline">\(\mathcal{R}\)</span> is required in the encoding language. However, doing that requires us to again, pick the <em>depth</em> of the analysis - should we assume that it does then indeed exist the particular structure to analyse, and the effect of double descent is based on that, or partially that, or we would assume them to be trivial? It is there to be seen.</p>
+<p>Nevertheless, some theoretical idea - including neural-like abstraction and generalization is still in the table. We will have to develop it very carefully, though.</p>
+<p>Another way to do them, is by using the classical analysis, namely, redefining complexity and calculate them, for the <span class="math inline">\(\beta\)</span>-complexity as <span class="math display">\[
+M_{\beta}=\left[ \sum_{i=1}^{n}(i+1)\lvert a_{i} \rvert  \right]^{1/\beta}
+\]</span> which propagates and scales down the factoring measure of higher-order terms, in a typical uneven measure system <span class="math inline">\(K\)</span> in the paper. I will write about this later on, if I have time, and if not it would be resulted in the larger manuscript anyway.</p>
+</section>
+<section id="memo-006---underparameterization" class="level2">
+<h2 class="anchored" data-anchor-id="memo-006---underparameterization">Memo 006 - Underparameterization</h2>
+<p>The main problem right now is the finalization of initial plan for testing - so the preliminary experiments and the preliminary theoretical consideration. We have a plan for the theory already, which is the reduction of all fundamental solution to polynomial approximation in close range. Interpolation in such way is then strictly of the same form, as far as it is considered such, and is in theoretical consideration memo. Thereby, let’s talk about the experiment and what to consider in the experiment setting - which is like the most fundamentally confusing and important thing to configure.</p>
+<section id="experiment-1---underparameterization" class="level3">
+<h3 class="anchored" data-anchor-id="experiment-1---underparameterization">Experiment 1 - “Underparameterization”</h3>
+<p>Usually, underparameterization refers to the mismatch in some certain measure unit of the parameter involved in the model itself. So, for example, the number of parameters that is conclusive of the result to the point of parameter count mismatch, synthetic from lower mass to higher mass. This mean we have to rank, and set the setting straight. It also serves as the proxy in which we will use for other analysis.</p>
+<p>The first thing is the analysis of the complexity class often acquired with individual function class. Our problem in such sense is the approximation of any particular encoded function - that can be of any form but restricted in the algebraic function class <span class="math inline">\(\mathcal{F}\)</span>. By encoding on <span class="math inline">\(\mathbb{R}\)</span>, we have <span class="math inline">\(\mathcal{F}_{\mathbb{R}}\)</span>. Then, the description of functions of interest is the:</p>
+<ol type="1">
+<li>Sine function <span class="math inline">\(\sin{(\mathbf{x})}\)</span> of multivariable or single variable, depends on the dimension of the observational space.</li>
+<li>Polynomial function <span class="math inline">\(p_{(n,p)}(\mathbf{x})\)</span> of single or multivariable polynomial class.</li>
+<li>Exponential class <span class="math inline">\(\exp{(\mathbf{x})}\)</span> for various continual setting.</li>
+</ol>
+</section>
+</section>
+<section id="memo-007---neural-testing" class="level2">
+<h2 class="anchored" data-anchor-id="memo-007---neural-testing">Memo 007 - Neural testing</h2>
+<p>I am thinking of a different approach to visualize and analyse models. Specifically, we need to define a <em>measure space</em> that can measure the space of the model complexity et cetera. Furthermore, we need to <em>figure out</em> how to measure the concept and hypothesis differences. This also come in hand with a lot of the… well, more established stuff like making the boundary practical, and testing the theoretical bounds. We also want to have a unified structure in that sense.</p>
+<p>Also, new thing. It seems like polynomial regression kind of… well, fits the general idea. It seems like for a while, we can think of, at least in terms of polynomial regression, the kind of setting being put into it being rather obvious, of <em>soft interpolation</em></p>
+</section>
+<section id="memo-008---new-idea-phase-i" class="level2">
+<h2 class="anchored" data-anchor-id="memo-008---new-idea-phase-i">Memo 008 - New idea (Phase I)</h2>
+<p>I have a lot of ideas right now, so it would be fairly dumb to leave them there.</p>
+<p>First of all, as far as we have considered, the <em>state space</em> and the <em>encoding space</em> relation can explain the probabilistic behaviour that we see. There, we know that, there exists an invertible function from the state space to the encoding space, <em>assuming we know them both</em>. In case we do not know them, such that the inverse mapping and the mapping is false, then, there exists an <em>uncertainty factor</em> between these two interpretation and so forth. Hence, we also might want to introduce the concept of a <em>encoding commutator</em>, such that denoting the inverse function <span class="math inline">\(f,f^{-1}\)</span> pair of encoding, then <span class="math display">\[\left[ f,f^{-1} \right] = 0\]</span> if the two functions coincides. If not, then the most general case would be <span class="math display">\[\left[f ,f^{-1} \right]=\epsilon\]</span> of certain erratic noise, which usually we assume as Gaussian white noise <span class="math inline">\(\mathcal{N}(0,1)\)</span>. This, is our <em>probabilistic interpretation</em>, in a sense, or at least a way to explain it. If the state space itself has correspondence, such that different descriptions living in the description space affects the state space by itself, then, there will also be the other term, <span class="math display">\[
+\left[f ,f^{-1} \right]=\epsilon_{inv} + \epsilon_{str}
+\]</span> where <span class="math inline">\(\epsilon_{str}\)</span> is the structural noise coming from missing information of the structural induced variations. We also note that functions, in here, are <em>information-theoretic functions</em>, in a sense, since they indicates information exchange of a language interpretation.</p>
+<p>Second, the manifold hypothesis then can be conjectured, for analysing the property of the encoding space if there exists condition such that manifold can be compressed to lower form.</p>
+<p>After we define ambiance and encoding space, we would then also want to expand them to the language itself, what fits and what not. And then we also want to examine the working of the system, that is, the working principles of the system by itself, and how those two are related, and therefore we can induce such relation altogether. Also the action inflicted toward it. This requires us to partake on a <em>mutation function</em> <span class="math inline">\(m:\mathcal{S}\to \mathcal{S}\)</span> that acts on the system itself.</p>
+<p>By the last account, we would then perhaps construct the supervised learning setting, based on the cardinality of encoding specified. For example, the simple structure with 2 encodings and 1 ambiance is the supervised learning setup, and so on. On this front, we are now working toward abstract structure and hence perhaps the <strong>categorical machine learning</strong> theory will help.</p>
+</section>
+<section id="memo-009---some-idea-in-the-finalization" class="level2">
+<h2 class="anchored" data-anchor-id="memo-009---some-idea-in-the-finalization">Memo 009 - Some idea in the finalization</h2>
+<p>Just an idea. There maybe several unit-wised bias term we need to define. For example, it would be:</p>
+<ul>
+<li>The procedural bias - bias of successive operations and counts over procedures.</li>
+<li>Unit bias - The bias of singular unit - this comes in handy for procedural bias.</li>
+<li>Path bias - Normal bias of the connections and topology of the network.</li>
+<li>Error correction bias - The bias of the decision machine (for example, SGD bias).</li>
+</ul>
 
 
 </section>
-</section>
-</section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -946,7 +1033,7 @@ window.Quarto = {
 </div>   
     <div class="nav-footer-center">
 <p><a href="https://amane-fujimiya.github.io/">Website</a> | <a href="https://github.com/Amane-Fujimiya">GitHub</a> | <a href="https://amane-fujimiya.github.io/blogs">Blog</a> | RHINELAB-RINALAB - Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/edit/main/contents/research/R1-double-descent/R1.1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/blob/main/contents/research/R1-double-descent/R1.1.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/edit/main/contents/research/R1-double-descent/R1.O2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/blob/main/contents/research/R1-double-descent/R1.O2.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

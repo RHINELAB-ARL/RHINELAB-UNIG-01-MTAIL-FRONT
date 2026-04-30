@@ -37,6 +37,7 @@ website:
             contents: 
               - contents/research/R1-double-descent/R1.1.qmd
               - contents/research/R1-double-descent/R1.O1.qmd
+              - contents/research/R1-double-descent/R1.O2.qmd
       - contents/bibliography.qmd
     background: "#f0e6e6"
   page-footer:

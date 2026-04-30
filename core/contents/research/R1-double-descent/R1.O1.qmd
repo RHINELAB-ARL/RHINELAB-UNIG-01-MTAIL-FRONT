@@ -1,5 +1,5 @@
 ---
-title: The GNN analysis
+title: Sub-topic - GNN Analysis
 ---
 
 This one is **untranslated from a collaborator**. Proceed with discretion on yourself. 

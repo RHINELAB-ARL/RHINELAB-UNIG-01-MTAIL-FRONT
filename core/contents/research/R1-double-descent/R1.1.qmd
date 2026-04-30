@@ -52,7 +52,7 @@ How does this work? We simply do not actually have an answer. There are research
 
 ### 2025/06/20 - Phase 1 ending
 
-Our phase 1, as of current, focus on the work of trying to do as much test as possible. Several question arises: 
+Our phase 1, as of current, focus on the work of trying to do as much test as possible. Several questions arise: 
 
 - What model should we test? 
 - How we should test?
@@ -69,7 +69,7 @@ All of this is my current specification, of which to support the very first goal
 
 - Transformer (big, complex, but quite hard to know where to break it down). 
 - CNN/ResNet: Nice to test on
-- Random Fourier Network (RFN): Nice to test on
+- Random Fourier Network (RFN): Nice to test on.
 - RNN/BPTT: Nice to test on (perhaps)
 - LSTM: very famous, good with moving parts
 - $n$-depth normal deep learning models: Nice to test on. 
@@ -77,7 +77,24 @@ All of this is my current specification, of which to support the very first goal
 - Multicollinearity models (statistical/regression-based): Seems to have something to do with this kind of scenario. 
 - Generative models (NBayes, etc) - nice to test on (easy to scale).
 
+The remaining goals for phase I, as of current, focus on the work of trying to do as much test as possible. Several questions arise: 
 
+- What model should we test to concretely adversarial-relatively bring out the structures?
+- How we should test?
+- Of what aspect should we do the test onto? 
+- What is there to measure the test (i.e. the purpose)? 
+
+Considering this, we will need to make sure of our final purpose, such that as stating as: 
+
+1. Our purpose is to do experiments to finding patterns that leads to further assessment, which leads to theories and our own hypothesis. To do that, we need to focus on finding the relation between different model metric, and, well, the representation of such. 
+2. Our models needs to be scalable, and hence, would need to be variedly easy to implement, easy to scale up (since double descent appears when you scale the model up - increase the complexity). 
+3. Our data would be graphs, but most of the time, please provide it with a metric and table list of parameters. Specifically, if you can, please export the result that is relevant into a `numpy` tensor format. 
+
+Those would be received later on in the future. 
+
+### 2026/01/01 - Phase II
+
+Phase II will start from now, as it will always be. 
 
 
 

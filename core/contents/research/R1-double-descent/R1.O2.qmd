@@ -1,0 +1,181 @@
+---
+title: "Sub-topic - Memo"
+---
+Collections of memos and notes about the research topic. Most of them would be not enough, however, as we will soon see. Some will have to be updated, because of many internal discussions. 
+
+## Memo 001. Perceptron
+
+We have jumped quite far from the usual standard of machine learning theory. Put asides the questions of philosophical **intelligence** (and artificial alike), the main architecture that enables such advancement (if one want to call such probabilistic approach as advancement), is the **neural network** model of itself. Usually, this is established within the basis of a Multilayer Perceptron (MLP) structure. Here, however, we takes more of the form of graph theory, the theory of nodes and edges. Intrinsically, however, they works under the same model of neural unit. Before jumping in, there are perspective to look upon.
+
+### The difference of procedure
+
+GNN and MLP is very different. On one side, you have the system of MLP, being represented of $$\mathsf{MLP}(n)=(I,L^{(k)}_{n}, O)$$
+with a single flux direction - i.e. the normal I/O procedure. There is no communication between $\{ L^{(i)}_{j} \}_{i\leq k}$ or the **neural processing unit** between layers. Most of the time, neural network can be seen as a system of directed edge, *bipartite graph* between successive layers, and every neuron is a subgraph containing the following procedure $$\mathsf{NEU}(I_{{m}}, \cdot, O_{1})= (I_{m}, \Sigma, \phi, u_{t}, O_{1})$$
+Where $I_{m}, \Sigma,\phi$ and $u_{t}$ are, accordingly, the $m$-input handler, the input signal processing, $\phi$ is the interpretable unit of the neuron, and $O_{1}$ is the single output directive afterward. Control injection starts with $I_{m},\mathbf{W}_{I}$ for a series of weight accordingly, within the assumption of "change of behaviours through input confidence", as we have seen. In fact, the entire structure of a single neuron is done as 
+$$O_{1}^{t}=\underset{t\to 0, I\in \mathcal{D}}{\mathbb{E}}\:\phi[\Sigma(I_{m} \odot u_{t-1}, \mathbf{W}_{{I}}, \mathbf{b})]$$
+
+the $\mathbb{E}$ is there for averaging purpose expression only. And the entire process is a bunch of nested function, of which then **backpropagation** algorithm is used. 
+
+For GNN, backpropagation is still used, but generally, there are a few (if not a lot) differences. First of all, GNN generally do not have *directions*. Or rather, a mono-directed viewport. There is indeed I/O procedure for such network, but the graph $G(V,E)$ usually have no property of directed node for $e_{i}\in E$. The graph itself, $G(V,E)$, is not the operating structure, in most cases of usage. Rather, it is instead, the figurative layer-top aggregation and mask (for example, convolutional pooling mask on top of everything). Hence, for example, the task of graph reconstruction, it is such that we are given $$\mathcal{D}=\{ \mathcal{G},\mathcal{G}' \}\to \{ (V,0) , (V,E) \}$$
+in which the given data scenario, and the "true" data mask. This gives plenty flexibility, for every encoded $\mathbf{H}_{v}\in \mathbb{R}^{d}$, of vertex $v\in V$, the only thing that is indeed, mutable for control, is the edges. Comparing this to neural network, where the operating system inherently have too many "complexity" in control, it is in a sense, that the restricting behaviours of the communication method - the edges, is nice enough for graph neural network. 
+
+### The data
+
+We can not state a lot of things about the data, however there is. But we can have first, one partial question: 
+
+> Can MLP interface, be interpreted in the form of graph? 
+
+In one way or another, the answer might be yes. Recalling that MLP is a restricted form of graph GNN, i.e. the bipartite, single-directed, convergent graph tube (the entire structure is indeed a tube). This is inherently similar to GNN. However, the way we treat the data of the structure is different. 
+
+Remember, that MLP itself is a strict I/O process. This means it cannot utilize its internal state. In fact, MLP has the **hidden state** exactly for that reason. It uses the representation itself, in cohesion with the single directed graph, to calculate and push everything to the output node at the end. However, GNN took the over-the-top approach. You are, inherently exposed to the graph structure, or half of it, by the vertices. There, you have all of the data presented, living in its metric space. There, you then extract the latent space of each vertex, according to one's own agenda of choice, by aggregation - or rather, *method of local estimation*. From this, essentially, you are acting on the structure of the data on its own. Strictly on the side of functional estimation (MLP representation) and GNN, MLP is in fact, looking only at the inherent mutation of controllers, while GNN use an over-the-top latent space to dictate the structure of the predicted value. 
+
+## Memo 002 - Graph generation
+
+Now, the main memo has been pretty cramped with a lot of information. For the sake of quick insertion and modification, I will attempted to make this note as a separated section, focusing on the task of *graph generation* for our experiments. *Specification* will come in handy, as to clarify in such manner. 
+
+### I. Representation
+
+We agreed on the **representation** of the dataset as matrices, comparatively, *adjacent*, *Laplacian*, and *incident* matrices. Those are some of the main matrices available on-duty and is the default of any graph, with certain exceptions (for *multidigraph*, for example). Note that most of them in some cases would be **sparse matrices**, so please take care of memory conservation and allocation in processing. 
+
+#### I.1 Intended structure
+
+We typically, and will, use use two model as test beds: **Encoder-Decoder** structure and **Graph Neural Network (GNN)** as a more recent and modern use cases. Both uses matrices, hence why we want them all in such length. 
+
+### II. Generating Principle
+
+The generation principle focus on several case-on basis: 
+
+#### II.1. Orders
+
+We want to focus in this case, the ordering of the graph. Suppose a Euclidean-embedded graph $G$ on $\mathbb{E}\subset \mathbb{R}$. Then, a topology which is order is similar to a linear structure of equivalent and identical edge length, if such edge length exists. In general, we separate such graph into the **main plane** and the **sub-plane**, with the main plane have the same property, for example, as a *uniformly spaced grid graph* of size $n$ - that is, for every node to its adjacent, the distance is equal, and their 'angle' must be 90 degrees. The sub-plane contains elements of dimension for each node (or edge, depends on how you code the dynamic mutation of the topology) that would changes such equality, for example, if the sub-plane is regulated by a **(biased) Gaussian distribution**: 
+$$
+p(x)= \frac{1}{\sigma \sqrt{ 2\pi }}\exp{\left( - \frac{(x-\mu)^{2}}{2\sigma^{2}} \right)}-b$$ 
+evaluating based on the 'coordinates' from the origin of the map, then the closer to the biased point, the more probability there are for the distance to either *contracts* or *extends*, depends on how the Gaussian distribution is used to add more distance to the edge. 
+
+This effectively can also change the order of the graph. Another way to do this, would be to put in a generative constraint to the generation process. For example, from what we see of the grid graph, the condition must be for all grid graph living on $\mathbb{E}$: 
+
+1. For a node $v_{1}$, its neighbour is at maximum 4. 
+2. For such node $v_{1}$ and their neighbouring node $n_{1},n_{2},n_{3}$ of which forms a closed loop for walk of length 2, we have: 
+$$
+\left< e(v_{1},n_{1}), e(n_{1}),n_{2} \right> = 0 
+$$ 
+for all particular pairs, or rather, denoting $v_{1}=n_{1}$ and pushes the indices: 
+$$
+\sum_{cyc} \left< e(n_{i}), e(n_{i+1}) \right> = 0 
+$$
+1. The distance of all edges living on such graph is equal to $d$ of any given real number. Within such, we can add more dynamic constraints, and/or removing constraints to its generations. 
+
+#### II.2. Removal
+
+In this, we consider the axis of existence. That is, either generating a graph from scratch, or taking it to be the subgraph of another graph. This is particularly useful in certain cases, where you might want to have symmetric case of insurances for different patterns or laws that is embedded in the network of interest, and those complement of it. In the more versatile setting, take the example of the complete graph $C(m,n)$. By substituting unnecessary edges, or even nodes, we can have a typical dense graph or raised patterns (which means that because complete graph is *completed*, there are too many patterns already, so erase some will inherently gives in a typical strong patterns in the graph structure). There are quite a few more, but that might be it for now. 
+
+### III. Requirements of flavours
+
+I require us to be able to at least generates the typical **simple graph** and **directed graph**. Multigraph and multidigraph is important, but also is not as important as the above, since every graph can still be segmented into digraph or simple graph, depends on such. [^1]
+
+### IV. Datasets
+Any dataset is fine, as long as we can categorize and aggregate their properties as required. Some can be taken from Kaggle or the Hub, or, as we see, the [Stanford Graph Dataset](https://snap.stanford.edu/data/)
+
+[^1]: In that note, however, then it must be said that **multigraph** is more general than *simple graph*, but we shall not encounter it for now. I mean, it is hard enough to get to simple graph...
+
+## Memo 003 - Phase I resolutions
+
+In phase I, we focus on how the input was formed. That said, it feels like there is something that is inherent to the data. Supposedly, a 'dataset' $\mathbf{X}$ only contains the points in which comprises by size $n=\lvert \mathbf{X} \rvert$. However, this is pretty flawed and shallow understanding of the input. 
+
+Rigorously, we might be entailed to treat $\mathbf{X}$ a bit different. We say that a dataset $\mathbf{X}$ contains the following systems:
+
+- A discrete number $n$ of instances belong to $\mathbf{X}$. 
+- For each input $x\in \mathbf{X}$, create an index set $I\subset \mathbb{N}$ that denotes $x$ by $x_{i}$ for $i\in I=\{ 1,\dots,n \}$. To be honest, this can be anything - as long as it contains a placeholder assumption, and a label - one type of abstraction, then it's fine. The point is, that every data point, ever, is **discrete** - there are no continuous data - even time series use discrete small laps. The only continuous thing happen is for the density of the underlying structure, which will be discussed later. 
+- For $\mathbf{X}$, then, the place holder would assume specific shape, that aligns with how it is interpreted. There, we have the feature space embedded into the data frame. That is, the set $\{ x_{i} : i\in I_{{n}}\}$ is provided with a metric $M$ that is its embedding space. This embedding space varies - for example, in regression, the embedding space is exactly the one-dimensional $\mathbb{R}$ space of $x_{1}$, for single dimensional case, and for multinomial regression, then $\mathbb{R}^{2}$ of $\{ x_{j} \}\in x_{i}$ of individual sample point in the dataset. Depends on the metric, it can characterizes certain relational characteristics on which it is implied to take places within such - or rather, some structure that the data would share, based off their intrinsic interpretation. 
+
+### Interpretation (Phase III above)
+
+I had one interpretation that is useful from the paper. It turns out, that you can fit the description of the statistical, or learning in general, to the question of transition of state. That said, the state transition is implicative, in the sense that the $\mathsf{ERM}(X,h)$ machine tries to find a nice absolute-ground transition state - that is, from total non-alignment, to the absolute state of ground zero, no error, for any specific conversion. 
+
+However, are there different notion that can lead to this type of transition to the ground truth state? This is a question worthy of interest, since it underlies the entire thing - the only reason bias-variance appears in the first place, is because **ERM fails** by the No-free-lunch theorem. 
+
+### Probabilistic Dependency (Phase I)
+
+We often say that the set $\mathbf{X}_{n}$ is based on the dependency of the probabilistic distribution $p(\mathbf{X},\mathbf{Y})$, that is, it also depends on the causal's result set $\mathbf{Y}$ for its distribution. But what if these two sets have different and seemingly same but not distribution of fixation? That is, what governs their appearance and occurrences are *different*? From this, also, perhaps we also want to test on the **dataset bias**, that is, if the dataset is overgrown to not be representative of the entire dataset, or it is because of the inherent hardship in obtaining data that there exists a **capability bias** such that the model only have access to a non-representative portion of the distribution? 
+
+## Memo 004 - First test revision
+
+So, here is what to be realized from the first testing scenario. 
+
+- There seems to be correlation between the setting's variables, as $p$, $d$ and the dataset $n$. Further analysis into how $n$ is configured might help. 
+- Double descent within linear regression setting indicts on its formulative error as error on prediction, yet the result is somewhat analogous to the parameter-error instead, which is particularly troublesome. What can be said about such then? 
+- With those, we have also that the correlation between operators, or rather between what type of error measure if with each other is an interesting focus. This might prompt the similar treatment to quantum mechanical systems, and the concentration of the system itself without analytical form. 
+- If we extend the double descent, we would notice that in certain setting, it fails or rather, return to bias-variance. So, either it is of that, or we are in the wrong interpretation of double descent as a whole. Perhaps it means bias-variance is actually true, and we are just looking at the wrong picture?
+- A quantum mechanical interpretation is possible, but then again, we will have to combine them with the statistical interpretation, structural formation (since we have to know how to treat them in), and potentially some other things. 
+
+## Memo 005 - theoretical considerations
+
+I write this down in a meeting room, so it will both be fast and quick. In all, and of all, what I am thinking of, is the new consideration of the model itself. 
+
+The representation scheme approach seems to be failing in experiment and theory development. Specifically, a model $m$ is very hard to know, if there exists some fundamental structure based on the representation scheme, in such sense. Thereby, we cannot analyse them even in closed-form, or isolated oscillating system - going back and forth of the system. 
+
+However, the representation structure would still have to be considered, just as $\mathcal{R}$ is required in the encoding language. However, doing that requires us to again, pick the *depth* of the analysis - should we assume that it does then indeed exist the particular structure to analyse, and the effect of double descent is based on that, or partially that, or we would assume them to be trivial? It is there to be seen. 
+
+Nevertheless, some theoretical idea - including neural-like abstraction and generalization is still in the table. We will have to develop it very carefully, though. 
+
+Another way to do them, is by using the classical analysis, namely, redefining complexity and calculate them, for the $\beta$-complexity as 
+$$
+M_{\beta}=\left[ \sum_{i=1}^{n}(i+1)\lvert a_{i} \rvert  \right]^{1/\beta}
+$$
+which propagates and scales down the factoring measure of higher-order terms, in a typical uneven measure system $K$ in the paper. I will write about this later on, if I have time, and if not it would be resulted in the larger manuscript anyway. 
+
+## Memo 006 - Underparameterization
+
+The main problem right now is the finalization of initial plan for testing - so the preliminary experiments and the preliminary theoretical consideration. We have a plan for the theory already, which is the reduction of all fundamental solution to polynomial approximation in close range. Interpolation in such way is then strictly of the same form, as far as it is considered such, and is in theoretical consideration memo. Thereby, let's talk about the experiment and what to consider in the experiment setting - which is like the most fundamentally confusing and important thing to configure. 
+
+### Experiment 1 - "Underparameterization"
+
+Usually, underparameterization refers to the mismatch in some certain measure unit of the parameter involved in the model itself. So, for example, the number of parameters that is conclusive of the result to the point of parameter count mismatch, synthetic from lower mass to higher mass. This mean we have to rank, and set the setting straight. It also serves as the proxy in which we will use for other analysis. 
+
+The first thing is the analysis of the complexity class often acquired with individual function class. Our problem in such sense is the approximation of any particular encoded function - that can be of any form but restricted in the algebraic function class $\mathcal{F}$. By encoding on $\mathbb{R}$, we have $\mathcal{F}_{\mathbb{R}}$. Then, the description of functions of interest is the: 
+
+1. Sine function $\sin{(\mathbf{x})}$ of multivariable or single variable, depends on the dimension of the observational space. 
+2. Polynomial function $p_{(n,p)}(\mathbf{x})$ of single or multivariable polynomial class. 
+3. Exponential class $\exp{(\mathbf{x})}$ for various continual setting. 
+
+## Memo 007 - Neural testing
+
+I am thinking of a different approach to visualize and analyse models. Specifically, we need to define a *measure space* that can measure the space of the model complexity et cetera. Furthermore, we need to *figure out* how to measure the concept and hypothesis differences. This also come in hand with a lot of the... well, more established stuff like making the boundary practical, and testing the theoretical bounds. We also want to have a unified structure in that sense. 
+
+Also, new thing. It seems like polynomial regression kind of... well, fits the general idea. It seems like for a while, we can think of, at least in terms of polynomial regression, the kind of setting being put into it being rather obvious, of *soft interpolation*
+
+## Memo 008 - New idea (Phase I)
+
+I have a lot of ideas right now, so it would be fairly dumb to leave them there. 
+
+First of all, as far as we have considered, the *state space* and the *encoding space* relation can explain the probabilistic behaviour that we see. There, we know that, there exists an invertible function from the state space to the encoding space, *assuming we know them both*. In case we do not know them, such that the inverse mapping and the mapping is false, then, there exists an *uncertainty factor* between these two interpretation and so forth. Hence, we also might want to introduce the concept of a *encoding commutator*, such that denoting the inverse function $f,f^{-1}$ pair of encoding, then $$\left[ f,f^{-1} \right] = 0$$
+if the two functions coincides. If not, then the most general case would be $$\left[f ,f^{-1} \right]=\epsilon$$
+of certain erratic noise, which usually we assume as Gaussian white noise $\mathcal{N}(0,1)$. This, is our *probabilistic interpretation*, in a sense, or at least a way to explain it. If the state space itself has correspondence, such that different descriptions living in the description space affects the state space by itself, then, there will also be the other term, 
+$$
+\left[f ,f^{-1} \right]=\epsilon_{inv} + \epsilon_{str}
+$$
+where $\epsilon_{str}$ is the structural noise coming from missing information of the structural induced variations. We also note that functions, in here, are *information-theoretic functions*, in a sense, since they indicates information exchange of a language interpretation. 
+
+Second, the manifold hypothesis then can be conjectured, for analysing the property of the encoding space if there exists condition such that manifold can be compressed to lower form. 
+
+After we define ambiance and encoding space, we would then also want to expand them to the language itself, what fits and what not. And then we also want to examine the working of the system, that is, the working principles of the system by itself, and how those two are related, and therefore we can induce such relation altogether. Also the action inflicted toward it. This requires us to partake on a *mutation function* $m:\mathcal{S}\to \mathcal{S}$ that acts on the system itself. 
+
+By the last account, we would then perhaps construct the supervised learning setting, based on the cardinality of encoding specified. For example, the simple structure with 2 encodings and 1 ambiance is the supervised learning setup, and so on. On this front, we are now working toward abstract structure and hence perhaps the **categorical machine learning** theory will help. 
+
+## Memo 009 - Some idea in the finalization
+
+Just an idea. There maybe several unit-wised bias term we need to define. For example, it would be: 
+
+- The procedural bias - bias of successive operations and counts over procedures. 
+- Unit bias - The bias of singular unit - this comes in handy for procedural bias. 
+- Path bias - Normal bias of the connections and topology of the network. 
+- Error correction bias - The bias of the decision machine (for example, SGD bias). 
+
+
+
+
+
+
+
+
+
