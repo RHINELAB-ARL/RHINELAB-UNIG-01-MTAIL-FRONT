@@ -36,6 +36,7 @@ website:
           - section: "Double Descent"
             contents: 
               - contents/research/R1-double-descent/R1.1.qmd
+              - contents/research/R1-double-descent/R1.2.qmd
               - contents/research/R1-double-descent/R1.O1.qmd
               - contents/research/R1-double-descent/R1.O2.qmd
       - contents/bibliography.qmd
@@ -71,7 +72,7 @@ format:
     mermaid:
       theme: neutral
     grid: 
-      body-width: 900px
+      body-width: 1000px
 
 bibliography: references.bib
 
