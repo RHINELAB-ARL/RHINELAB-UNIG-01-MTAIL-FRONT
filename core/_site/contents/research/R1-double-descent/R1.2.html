@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>r1.1 – Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTAIL)</title>
+<title>Discussions – Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTAIL)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,9 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-16365895d012c6821ad2015e20b8b579.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-34b26106342900f6735ad8d39bc20b94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-236b8879aaa2b40f4a6355e44ee61d48.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-34b26106342900f6735ad8d39bc20b94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-9c00740cdb88fb64a2449d2bcd0b5743.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-3ab47a163548d401f28061a2b37854c6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-9c00740cdb88fb64a2449d2bcd0b5743.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -281,7 +310,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Research</li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Gateway</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Research</li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.2.html">Discussions</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -348,13 +377,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../contents/research/R1-double-descent/R1.1.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../contents/research/R1-double-descent/R1.1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Gateway</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../contents/research/R1-double-descent/R1.2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../contents/research/R1-double-descent/R1.2.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Discussions</span></a>
   </div>
 </li>
@@ -390,36 +419,112 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#gateway" id="toc-gateway" class="nav-link active" data-scroll-target="#gateway">Gateway</a>
+  <li><a href="#descriptions" id="toc-descriptions" class="nav-link active" data-scroll-target="#descriptions">Descriptions</a>
   <ul class="collapse">
-  <li><a href="#information" id="toc-information" class="nav-link" data-scroll-target="#information">Information</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#on-data-complexity" id="toc-on-data-complexity" class="nav-link" data-scroll-target="#on-data-complexity">2025/03/12 - On data complexity</a></li>
+  <li><a href="#double-descent-itself-soft-introduction" id="toc-double-descent-itself-soft-introduction" class="nav-link" data-scroll-target="#double-descent-itself-soft-introduction">2025/01/14 - Double descent itself (soft introduction)</a></li>
+  <li><a href="#phase-1-ending" id="toc-phase-1-ending" class="nav-link" data-scroll-target="#phase-1-ending">2025/06/20 - Phase 1 ending</a></li>
+  <li><a href="#phase-ii" id="toc-phase-ii" class="nav-link" data-scroll-target="#phase-ii">2026/01/01 - Phase II</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/edit/main/contents/research/R1-double-descent/R1.1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/blob/main/contents/research/R1-double-descent/R1.1.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/edit/main/contents/research/R1-double-descent/R1.2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/blob/main/contents/research/R1-double-descent/R1.2.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Research</li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Gateway</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Research</li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.2.html">Discussions</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Discussions</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<section id="gateway" class="level1">
-<h1>Gateway</h1>
-<p>This is the starting page for <strong>double descent research</strong>. Insofar, it will also include thoughts and debates on such matter, aside from actual contents in manuscripts and other pages.</p>
-<section id="information" class="level2">
-<h2 class="anchored" data-anchor-id="information">Information</h2>
-<p>TBD</p>
+</header>
+
+
+<section id="descriptions" class="level2">
+<h2 class="anchored" data-anchor-id="descriptions">Descriptions</h2>
+<p>As the title goes, most of the operations here would be reserved for laboratory discussion on the topic. I intended for this part to be separated anyway from the start, so not so much of a big problem.</p>
+<section id="on-data-complexity" class="level3">
+<h3 class="anchored" data-anchor-id="on-data-complexity">2025/03/12 - On data complexity</h3>
+<p>The idea of data complexity - model flexibility was thought of me 3 days ago. Simply put, I realized that the more flexibility of the model, even in every circumstance, will inherently lead to overfitting, according to classical statistical learning.</p>
+<p>However, when you think of it, why then would it exhibit the sort of double descent? There can be many reasons for that, though conflicting as it be.</p>
+<p>There can be two ideas on this: - Self-regularization: perhaps because of the landscape of the way that the “world” of the model operating in, and the model itself, inherently penalize unnecessary ‘axis’ of flexibility. The process might be slow, or costly, but it seems to suggest so, since afterward some parameters are reduced to near 0, or being in a neutral point. - Complexity + Flexibility: When the model does not have enough complexity to fit the flexibility of the model, that is for example, 4 input parameter, but 10 axes, or weighted input receiver, hence 6 free axis. Because of this, during randomized initialization of the weight of the model, and various processing unit, overfitting can happen, and then, double descent will occur.</p>
+<p>I am not so sure about the second idea, because it seems quite far-fetch. However, it would be nice to test them out.</p>
 </section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<p>As far as it is considered, the reading list covers the reading requirement already. However, for logistics,</p>
+<section id="double-descent-itself-soft-introduction" class="level3">
+<h3 class="anchored" data-anchor-id="double-descent-itself-soft-introduction">2025/01/14 - Double descent itself (soft introduction)</h3>
+<p>So, we haven’t really talked about what direction I want to get this research on. Which is kind of bad, since doing research is like venturing into the unknowns, for whatever reasons and incentives there might be around there. Then a guiding light might be better than none, even though at certain point there will be occasions for us to turn our tail back at the start and rethink everything.</p>
+<p>Now, since this research project is also about something that is very complex theoretically, but very accessible empirically, I think it still fits our current team’s strength of such. However, we need to have quite a discrete and concrete direction to follow as guideline for whatever experiments we are doing. It’s a hybrid, so I want to expect myself as well as everyone, but mainly me, to clear out the confusion.</p>
+<section id="what-is-double-descent-anyway" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-double-descent-anyway">What is double descent anyway?</h4>
+<p>Double descent came from the phrase “larger models are better” of machine learning practitioner (or, user). What does that mean? It means that for a machine learning model to do its task, the more complex it is, the more, well, effective it will be.</p>
+<p>It seems pretty intuitive, in certain aspect - since if you consider some of the complex aspect in daily life, the performance is quite ‘better’ than the average would be. It’s more of the ‘professional company’ vs ‘amateur company’ for people working in business, kind of. But there would be nothing to talk about if there’s no problem with this kind of rigged “intuition” - because in machine learning, it goes off the rail of what is considered the optimal.</p>
+<p>In machine learning, you have two aspects in confrontation - generality of the hypothesis of which the model makes, and the complexity of that hypothesis. All of which is concerned the single thing that machine learning model outputs - the hypothesis of the true, actual concept that it is tasked to learn from. In that consideration, a “hypothesis” was born, cited as Bias-variance tradeoff, of which propose the following conjecture:</p>
+<blockquote class="blockquote">
+<p>For more complex the model is, the more instability it gets, and vice versa.</p>
+</blockquote>
+<p>What is considered in this case? In inspection of the model, we look at one things for machine learning - error. Because it’s learning, error measures the “wrongness” of the model, after training or let in running with data. In error, you can break it down into two separated part, for statistical inference: bias - of which measure the true accuracy of the prediction (from the hypothesis - hypothesis is still just guessing) and the true concept, and variance, the stability of such hypothesis. The definition of variance is a bit difficult to get your head into, because while it is like that, it basically means how consistent the hypothesis is, in predicting the concept.</p>
+<p>It sounds very intuitive too, and has been cited and described at first, largely to the ML public by Geman et al.&nbsp;in 1992. Of his work, it seems like an intuition is suggested, of also the example of a student-exam situation. Overthinking might, and will lead to false leads, and false answer, kind of. But underthinking will also make you wrong. So it’s better to balance both out.</p>
+<p>Everything would be fine if it’s just turn out to be like that. But, the problem with bias-variance tradeoff, is that it’s very recent, even in statistics, as being only described in the past as “uncertainty error”. There is no concrete and direct theory that support the tradeoff, guarantee its de-facto position as a hypothesis rather than an actual law of observation thereof. And double descent is one of the major crack in that hypothesis.</p>
+<p>Double descent starts with the crack-down over distance of bias-variance tradeoff - by the hypothesis, the error after certain “optimal point” that the model achieve total harmony between stability and power (the bias measure how powerful a model will fit to data, or the learning ability) will increase indefinitely. However, as all cliché is supposed to turn out to, it does not happen. In fact, quite the opposite - it goes up, yes, to some extent, the tradeoff is still correct - but then it falls down again, and seems to converge to 0.</p>
+<p>How does this work? We simply do not actually have an answer. There are research on it (I tried, they kinda suck), but the best we can do for certain, would be to do empirical research on it. Simply because the nature of it is still, unknown. But that’s why this topic is chosen, otherwise, there would be nothing to do in the first place.</p>
+</section>
+</section>
+<section id="phase-1-ending" class="level3">
+<h3 class="anchored" data-anchor-id="phase-1-ending">2025/06/20 - Phase 1 ending</h3>
+<p>Our phase 1, as of current, focus on the work of trying to do as much test as possible. Several questions arise:</p>
 <ul>
-<li><a href="https://github.com/Amane-Fujimiya/UAI_Book">The Universal Guideline on Artificial Automata</a> - still under construction, is the foremost document itself. The name is again, Amane Fujimiya or Bui Gia Khanh (as I use two names), and is more about theoretical attempts on AI theory in its entirety. So far, <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/UAI_Book/master/A/A1.AI/A1%20-%20UAI/main.pdf">this link will be the one</a> that gives you the last available rendered manuscript of the book (note that it is on the <code>master</code> branch).</li>
-<li><strong>Main manuscript</strong> - constructed on <a href="https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper">This Particular Repository (TPR)</a> of which holds from the first to the last manuscript. Current active manuscript in total is the <code>Draft</code> folder itself document. Alongside that, <a href="https://arxiv.org/pdf/2103.05127">this paper</a> would form chapter 6 of the manuscript itself. The manuscript of the <em>Theoretical Learning manuscript</em> of <strong>this project</strong> can be found <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf">in here</a> of its latest version.</li>
-<li>The code repository includes <a href="https://github.com/Izzie1911/DD-with-basic-model-">this one on GitHub</a>, with its copy and extension on GitLab. The link will be routed later.</li>
+<li>What model should we test?</li>
+<li>How we should test?</li>
+<li>Of what aspect should we do the test onto?</li>
+<li>What is there to measure the test (i.e.&nbsp;the purpose)?</li>
 </ul>
+<p>Considering this, we will need to make sure of our purpose first. The following would be some requirements.</p>
+<ol type="1">
+<li>Our purpose is to do experiments to finding patterns that lead to further assessment, which leads to theories and our own hypothesis. To do that, we need to focus on finding the relation between different model metric, and, well, the representation of such.</li>
+<li>Our models need to be scalable, and hence, would need to be variedly easy to implement, easy to scale up (since double descent appears when you scale the model up - increase the complexity).</li>
+<li>Our data would be graphs, but most of the time, please provide it with a metric and table list of parameters. Specifically, if you can, please export the result that is relevant into a <code>numpy</code> tensor format.</li>
+</ol>
+<p>All of this is my current specification, of which to support the very first goal and central theme of phase 1 - to do testing and figure out from those data what is there, and what patterns are there to learn from. Model lists are actually quite small, but heavy on computation in certain parts.</p>
+<ul>
+<li>Transformer (big, complex, but quite hard to know where to break it down).</li>
+<li>CNN/ResNet: Nice to test on</li>
+<li>Random Fourier Network (RFN): Nice to test on.</li>
+<li>RNN/BPTT: Nice to test on (perhaps)</li>
+<li>LSTM: very famous, good with moving parts</li>
+<li><span class="math inline">\(n\)</span>-depth normal deep learning models: Nice to test on. PLR (polynomial linear regression): Good with the theory, testing is quite questionable (easy).</li>
+<li>Multicollinearity models (statistical/regression-based): Seems to have something to do with this kind of scenario.</li>
+<li>Generative models (NBayes, etc) - nice to test on (easy to scale).</li>
+</ul>
+<p>The remaining goals for phase I, as of current, focus on the work of trying to do as much test as possible. Several questions arise:</p>
+<ul>
+<li>What model should we test to concretely adversarial-relatively bring out the structures?</li>
+<li>How we should test?</li>
+<li>Of what aspect should we do the test onto?</li>
+<li>What is there to measure the test (i.e.&nbsp;the purpose)?</li>
+</ul>
+<p>Considering this, we will need to make sure of our final purpose, such that as stating as:</p>
+<ol type="1">
+<li>Our purpose is to do experiments to finding patterns that leads to further assessment, which leads to theories and our own hypothesis. To do that, we need to focus on finding the relation between different model metric, and, well, the representation of such.</li>
+<li>Our models needs to be scalable, and hence, would need to be variedly easy to implement, easy to scale up (since double descent appears when you scale the model up - increase the complexity).</li>
+<li>Our data would be graphs, but most of the time, please provide it with a metric and table list of parameters. Specifically, if you can, please export the result that is relevant into a <code>numpy</code> tensor format.</li>
+</ol>
+<p>Those would be received later on in the future.</p>
+</section>
+<section id="phase-ii" class="level3">
+<h3 class="anchored" data-anchor-id="phase-ii">2026/01/01 - Phase II</h3>
+<p>Phase II will start from now, as it will always be.</p>
 
 
 </section>
@@ -847,7 +952,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
 <p><a href="https://amane-fujimiya.github.io/">Website</a> | <a href="https://github.com/Amane-Fujimiya">GitHub</a> | <a href="https://amane-fujimiya.github.io/blogs">Blog</a> | RHINELAB-RINALAB - Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/edit/main/contents/research/R1-double-descent/R1.1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/blob/main/contents/research/R1-double-descent/R1.1.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/edit/main/contents/research/R1-double-descent/R1.2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/blob/main/contents/research/R1-double-descent/R1.2.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

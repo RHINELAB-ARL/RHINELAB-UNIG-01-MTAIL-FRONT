@@ -1,5 +1,10 @@
 /*-- scss:defaults --*/
 
+$sidebar-bg: #e2e2e2;
+$sidebar-fg: #555555;
+$sidebar-hl: #d35400;
+$sidebar-border: true;
+
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Fira+Mono&display=swap");
 
@@ -19,16 +24,10 @@ div.csl-entry {
         color: darkred;
 }
 
-// sidebar
-.sidebar-navigation li a {
-        line-height: 1.75;
-        color: var(--bs-body-color);
-        font-size: 14px;
-}
 
 .aa-Autocomplete .aa-Form,
 .aa-DetachedFormContainer .aa-Form {
-        background-color: rgba(233, 236, 239, 0.65) !important;
+        background-color: rgba(223, 220, 220, 0.856) !important;
 }
 
 // $code-block-bg: rgba(192, 192, 192, 0.2);
@@ -39,6 +38,8 @@ $code-bg: rgba(192, 192, 192, 0.2);
 $code-block-bg: rgba(192, 192, 192, 0.16);
 // $code-block-bg: #f8f8f8;
 
+$footer-fg: #666666;
+//$footer-bg: #ffffff;  // optional, only if you also want the footer background
 
 pre code {
   padding-left: 5%;
@@ -87,4 +88,22 @@ p em, li em {
   --dr-overlay: 0.06;
   --accent-orange: #d35400;
   --accent-teal:   #2C9AB0;
+}
+
+// sidebar
+.sidebar-navigation li a {
+        line-height: 1.75;
+        color: $sidebar-fg;
+        font-size: 14px;
+}
+
+
+
+.sidebar-navigation li a {
+  color: $sidebar-fg;
+}
+
+.sidebar-navigation li a:hover,
+.sidebar-navigation li a.active {
+  color: $sidebar-hl;
 }
