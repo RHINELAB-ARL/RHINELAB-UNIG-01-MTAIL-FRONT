@@ -28,11 +28,15 @@ website:
     search: true
     contents: 
       - index.qmd
+      - section: "System Documentations"
+        contents: 
+          - contents\research\R0-core-knowledge\R0.Core_Knowledge.qmd
       - section: "Reading"
         contents:
           - contents/reading/reading_list_R1.qmd
       - section: "Research"
         contents:
+          - contents/research/research.qmd
           - section: "Double Descent"
             contents: 
               - contents/research/R1-double-descent/R1.1.qmd
