@@ -18,7 +18,13 @@ Currently, the list of inclusion, to-do works and many requests for migration of
 
 The goal would be long, and I will have to include them more in the future. But for now, I guess this is fairly enough. Further clarification would be delivered in their respective section instead, so it should worry not about said topic than the one held responsible, i.e. the group leader. 
 
-The current group leader is **Bui Gia Khanh**, simultaneous the laboratory leader of RHINELAB. So far, only **one** (1) person are responsible for the group, with all others are collaborators. 
+The current group leader is **Bui Gia Khanh**, simultaneous the laboratory leader of RHINELAB. So far, only **one** (1) person are responsible for the group, with all others are collaborators. We are looking for people sharing our visions, as described in [Information](about.qmd). 
+
+:::{.callout-important}
+
+Many of the contents for this website are under construction, and similarly for the wiki. We have not been able to push all of the contents in research for the last two years up immediately, thus a lot would be missing. Apologize for the delay. 
+
+:::
 
 ### Relevant information
 
