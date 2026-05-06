@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -76,9 +41,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-16365895d012c6821ad2015e20b8b579.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bdd9ba97c7d7c97df9740070859ae18d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-96e5a49697d1d15e5dfbe37894d18aa4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-bdd9ba97c7d7c97df9740070859ae18d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9c00740cdb88fb64a2449d2bcd0b5743.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-6d5557c1878762e76b5f1d40131a1066.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9c00740cdb88fb64a2449d2bcd0b5743.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,10 +73,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating nav-fixed slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -300,6 +294,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">Information</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contents/updates/post.html"> 
+<span class="menu-text">Research and Updates</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -339,7 +337,99 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text">Welcome to MTAIL</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">System Documentations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contents/research/R0-core-knowledge/R0.Core_Knowledge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R0. Documentations and Knowledge</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Reading</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contents/reading/reading_list_R1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R1 Reading List - Double Descent</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Research</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contents/research/research.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research and Development</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Double Descent</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contents/research/R1-double-descent/R1.1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gateway</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contents/research/R1-double-descent/R1.2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discussions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contents/research/R1-double-descent/R1.O1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sub-topic - GNN Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contents/research/R1-double-descent/R1.O2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sub-topic - Memo</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contents/bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
   </div>
 </li>
     </ul>
@@ -347,14 +437,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-general-theoretical-empirical-research" id="toc-the-general-theoretical-empirical-research" class="nav-link active" data-scroll-target="#the-general-theoretical-empirical-research">The general theoretical-empirical research</a></li>
+  <li><a href="#modelling-theory" id="toc-modelling-theory" class="nav-link" data-scroll-target="#modelling-theory">Modelling theory</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/edit/main/about.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/blob/main/about.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Information</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title">Information</h1>
 </div>
 
 
@@ -371,10 +470,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>About this site and more of the group itself.</p>
+<p>While most of the contents of this page centred around the main works, research and observations realized in operation, it is fairly necessary to also outlines what are to be of the <strong>motivation</strong>, condition of existence, our philosophies and what to believe in. Furthermore, it is also the concentrated analysis that we would have to make, in dealing with any given scientific pursuit, any form of novelty and research, and any process of dealing with experimental-theoretical propositions, in the case we should not make it sounds like a bunch of crackpots.</p>
+<p>Nominally, RHINE-MTAIL is the <em>core splinter group</em>, under direct and incorporated control of the main laboratory, RHINELAB (or RINALAB, as the second name), focus on delivering and outlining the <em>work mode operation</em> of subsequent components, <em>governance models</em> and analysis during its operation, a large portion of <em>modelling-theoretic theory of science</em>, which simply means we treat science, largely initiated of this line of thinking from Kuhnian cycle, to be a system of model, arbitrary given <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, and is capable to be changed, diluted <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, deferred <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, and so on. One of the main goal in such regard is to <strong>diagnose the structure</strong>, and to see the failure point, as if nothing is seen or recognized, nothing can even be done. That is why you would see the initial idea when MTAIL was formed, is to create the <strong>ordering level</strong> of fundamentality, from CI to CIII, respectively.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;If pushed far enough, this central view admits that even <strong>mathematics</strong> is under scrutiny as for it to be also, a model - a very good one that a lot used it for.</p></div><div id="fn2"><p><sup>2</sup>&nbsp;When a theory is operated upon, there exists the risk, or rather the inevitability of it reaching further out, thus diluting the main framework into a proliferated view of different applications, different apparatus and contexts, and so on. Another notion that also falls into this umbrella is when <em>heuristics are too much</em> and dilute the field of its central tenet, and thus make it so to be an in-depth dilution, both in the stacks that every heuristic and empirical claims have made, and in the depth of the dependency track follows.</p></div><div id="fn3"><p><sup>3</sup>&nbsp;When a theory fails something, or in contest, it usually <em>defers</em> the topic into unsolvable, claiming of correctness and reevaluation of such problem of its existence, projecting to correct one problem in opposition while laying out severals, or defers directly the problem as a <em>special case</em>, perhaps.</p></div></div><p>Aside from such governing role that feeds into the <em>philosophy and operational mode</em> of RHINELAB itself, the subject of MTAIL is pointed, and foundational in its core. The main subject of the lab includes several ‘doctrines’, each of which can be considered or thought of as specific analytical views, subject of studies and expansion, or analytical direction on many fields (basically means the posture and the upper-theoretical that would be applied or stationed when working on particular fields). Some of them are about <em>artificial intelligence</em>, some of them are about <em>theoretical research</em>, such as pure mathematics, theoretical physics and the contact with non-pure, applied sections. Some of them are about the thesis of a more <em>foundational stack</em>, i.e.&nbsp;mathematical modelling and the entirety of modelling theory in full, information theory and adjacent arguments.</p>
+<p>Perhaps, before we list them in details of the philosophy and what to cover thereof, we can think of the central research of MTAIL as the <em>scientific rigorous framework</em> itself - concerning of all relevant topics, of all load-bearing foundational field or systems, and the extension thereof. It is really hard to say without committing to any specific form of framework, because those contain their own bias or structural views, of which all can be considered a piece of reality or the actual substance itself. Thus, in a sense, MTAIL’s interest, even if the topic and starting point varies, all point to a singular thread - the deepest <em>possible investigation and research of the bodies of (rigorous) theoretical-empirical studies, and their connections to the realized world</em> <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. And lastly, the research</p>
+<div class="no-row-height column-margin column-container"><div id="fn4"><p><sup>4</sup>&nbsp;By realized world, we note that the word <em>world</em> in particular is often <strong>overloaded with meanings</strong>. In retrospect, one can have the <strong>phase world</strong> (space), which already presupposes a specific form of encoding to express the expression thereof relevant to the properties or description desired, a proxical world where it is an idealized setting of a more complex situation, and then the <em>physical world</em> where the physical manifestation and existential condition is forced (i.e.&nbsp;instead of infinite apples, you have finite <span class="math inline">\(n\)</span> apples instead). Such would also be representative of what the laboratory would study as a topic, because while saying such, we are not satisfied by philosophical talk, but also unsatisfied of the technical jargon either.</p></div></div><section id="the-general-theoretical-empirical-research" class="level3">
+<h3 class="anchored" data-anchor-id="the-general-theoretical-empirical-research">The general theoretical-empirical research</h3>
+<p>The posture that MTAIL wants to equip itself with, under investigation, and in build-up for RHINELAB, can be perhaps minimally expressed of the following points. Note that they function mostly, or rather deliberately like an assertions list, less than typically what to be ‘study and go’, perspectively. That said, if to summarize it in a few parts, such would be that we aim to <em>formalize and research of everything from scratch</em>, of each assumption, each choice, of all the historical records and evolution, of all logical lines of evolution and not just the end results, and even more so the entire field of its open problem and the load-bearing pillars that are scaffolding the entire modern system of studies.</p>
+</section>
+<section id="modelling-theory" class="level3">
+<h3 class="anchored" data-anchor-id="modelling-theory">Modelling theory</h3>
+<p>What we dubbed as <strong>modelling theory</strong> here is different from what is typically assumed of, or matched of when we talk about the word <em>model</em> and <em>theory</em>.</p>
 
 
-<!-- -->
+</section>
 
 
 </main> <!-- /main -->
@@ -461,57 +570,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
-    }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
-        } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -841,13 +899,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Information"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>About this site and more of the group itself. </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
-</div></div></div></div></div>
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -856,7 +908,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>   
     <div class="nav-footer-center">
 <p><a href="https://amane-fujimiya.github.io/">Website</a> | <a href="https://github.com/Amane-Fujimiya">GitHub</a> | <a href="https://amane-fujimiya.github.io/blogs">Blog</a> | RHINELAB-RINALAB - Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/edit/main/about.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/blob/main/about.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/edit/main/about.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/blob/main/about.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

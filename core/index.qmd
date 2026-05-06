@@ -7,7 +7,7 @@ format:
 ---
 ## Introduction
 
-This is the documentation page for may of the development of the **Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group** (MTAIL) and documentation thereof. It will also include several notes and exposure of the lab itself here, including the *ranking order* framework itself, many notes and question debates, and more. First created by the necessity of purpose for reorganizing the research program into a multi-people central consensus rather than a solo-working environment, the website is minimally created to hook with the main website of the laboratory, and host all capable form of documents and writing relevant to the work that the lab group conducts itself of. 
+This is the documentation page for may of the development of the **Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group** (MTAIL) and documentation thereof. It will also include several notes and exposure of the lab itself here, including the *ranking order* framework itself (this one is under-developed, but sure, we might as well include the bare-bone), many notes and question debates, and more. First created by the necessity of purpose for reorganizing the research program into a multi-people central consensus rather than a solo-working environment, the website is minimally created to hook with the main website of the laboratory, and host all capable form of documents and writing relevant to the work that the lab group conducts itself of. 
 
 Currently, the list of inclusion, to-do works and many requests for migration of details, build-up and so on, are listed as followed. Note that some of them are still in settlement stage.  
 
@@ -39,17 +39,19 @@ So far, only **two** (2) person are responsible for the group, with all others a
 
 #### For the double descent and learning theory sections
 
-The current active information pages include (this is duplicated in the main page for each respective parts of such), as:
+Double descent is **one of the main research**, started back from the early 2024. As for current active information pages, they include mostly (this is duplicated in the main page for each respective parts of such), certain form of pre-completion drafts, such as:
 
 - [The Universal Guideline on Artificial Automata](https://github.com/Amane-Fujimiya/UAI_Book) - still under construction, is the foremost document itself. The name is again, Amane Fujimiya or Bui Gia Khanh (as I use two names), and is more about theoretical attempts on AI theory in its entirety. So far, [this link will be the one](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/UAI_Book/master/A/A1.AI/A1%20-%20UAI/main.pdf) that gives you the last available rendered manuscript of the book (note that it is on the `master` branch). 
-- **Main manuscript** - constructed on [This Particular Repository (TPR)](https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper) of which holds from the first to the last manuscript. Current active manuscript in total is the `Draft` folder itself document. Alongside that, [this paper](https://arxiv.org/pdf/2103.05127) would form chapter 6 of the manuscript itself. The manuscript of the *Theoretical Learning manuscript* of **this project** can be found [in here](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf) of its latest version. 
+- **Main manuscript** - constructed on [This Particular Repository (TPR)](https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper) of which holds from the first to the last manuscript. Current active manuscript in total is the `Draft` folder itself document. Alongside that, [this paper](https://arxiv.org/pdf/2103.05127) would form chapter 6 of the manuscript itself. The manuscript of the *Theoretical Learning manuscript* of **this project** can be found [in here](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf) of its latest version. Recently, the statistical direction has been **updated** substantially, and currently intensive tests are going on. 
 - The code repository includes [this one on GitHub](https://github.com/Izzie1911/DD-with-basic-model-), with its copy and extension on GitLab. The link will be routed later. 
 
-#### The rough ordering level
+#### Temporary Framework: The rough ordering level
 
-For certain purposes, the rather higher partition in the list contains another foundation group on the **theoretical theory directive**, which is the encompassing category of both the artificial intelligence group and the physics studies group right now. By category, we have the dependency or foundational order concept, which categorizes the following by order of **C(X)** for X count as the ascending level (I being the highest). 
+For certain purposes, the rather higher partition in the list contains another foundation group on the **theoretical theory directive**, which is the encompassing category of both the artificial intelligence group and the physics studies group right now. By category, we have the dependency or foundational order concept, which categorizes the following by order of **C(X)** for X count as the ascending level (I being the highest). By virtue of the position that *modelling precedes axiom* [^1], the inversion invites the following ladder as to be true, in a restricted form, yet nevertheless appropriate of its propensity to be taken forward:
 
-- Theory of modelling (CI). 
+[^1]: Of this, befitting of the goal thereof to be said, picking out structure, deciding what to represent, choosing what relationships matter - which represents the part of which modelling takes place, and of which such word gains its strength - is epistemically and ontologically prior to the formalization that axioms represent, nor the act of isolation. One can see the fact that idealization and of which universality, is the fact being compressed, of the messy world where one to controls it requires simplification, not the act to be disbanded and berated, but the delusion thereof to subsume of the reality it belongs toward. 
+
+- Theory of modelling and the application thereof (CI). 
 - Mathematical theory and encoding language research (CI). 
 - Theory of computer science and automata realization (CII). 
 - Practical computer instantiation consideration (CIII). 
@@ -59,11 +61,21 @@ For certain purposes, the rather higher partition in the list contains another f
 - Artificial intelligence practical-theoretical implementation (CIII). 
 - Hardware-interfaced-or-designed neural formalism network (CIII). 
 
-And so on. This is also to separate dependency layer from which later on we will expand for experiment, real system or any amount of resources for practical purposes. I.e. we will also do practical stuffs, but have to retain the order of dependency.
+And so on, with more to add on the list, and more to relinquish such description to a dedicated section rather than passing words of sketchwork. This is also to separate *dependency* layer from which later on we will expand for experiment, real system or any amount of resources for practical purposes. I.e. we will also do practical stuffs, but have to retain the order of dependency. The reasoning would have to be seen elsewhere, as it would require a series of intensive illustration, justification and overall subjective view, opinionated analysis and henceforth, much to the description being rather long and tedious, within reason of helpfulness and completeness be rather treated carefully, or of the worst outcome be the **invalidation** of efforts taken to enforce such programme. Nevertheless, such is useful, and one should also take into account why modelling is stayed on top. 
 
 #### Updates
+
+:::{.callout-note}
+
+### Your local bulletin on updates. 
+
+Since no one has taken upon this job, I figured I will. 
 
 - 2025/09/28 - Started drafting.
 - 2026/03/12 - Updated contents. 
 - 2026/03/16 - Updating a few metadata. 
 - 2026/04/13 - Publish the website and add a few more organizations. 
+- 2026/05/06 - Updated a fair bit of contents, reorganized and updating descriptions, starting to migrate. 
+
+:::
+
