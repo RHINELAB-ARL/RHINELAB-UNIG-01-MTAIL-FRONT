@@ -1,5 +1,5 @@
 ---
-title: Discussions
+title: R.1.2. Discussions
 ---
 ## Descriptions
 
@@ -87,4 +87,4 @@ Those would be received later on in the future.
 
 ### 2026/01/01 - Phase II
 
-Phase II will start from now, as it will always be. 
+Phase II will start from now, as it will always be. We would be able to wrap up quite a lot of procedures, and such would be what to be required under the later analysis. We have quite a big plan going forward. 

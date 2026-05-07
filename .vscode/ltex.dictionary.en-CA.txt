@@ -25,3 +25,4 @@ fundamentality
 MTAIL
 Kuhnian
 severals
+artefacts

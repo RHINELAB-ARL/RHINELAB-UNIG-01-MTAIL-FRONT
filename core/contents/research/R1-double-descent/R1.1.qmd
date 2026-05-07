@@ -1,19 +1,42 @@
-# Gateway
+---
+title: Introducton and Navigation
+---
 
-This is the starting page for **double descent research**. Insofar, it will also include thoughts and debates on such matter, aside from actual contents in manuscripts and other pages. 
+This is the main central page for **double descent research**, including documentations, current work, updates, many and much about what is going on with the research, and just simply the dump we pull stuffs here and showcase our research progress (with a crowbar, or a progress bar if someone is good on it). Insofar, it will also include thoughts and debates on such matter, aside from actual contents in manuscripts and other pages, mainly the wiki page, which has been up for a long time now. 
+
+:::{.callout-tip}
+
+### Connection to theoretical machine learning
+
+Double descent research is part of the *series* of theoretical machine learning, and as a subseries also of the **theoretical artificial intelligence** course. The status of double descent is particularly to diagnose specific foundational problems, and thus it remains contingent to the wider scope. Identification of the majority of double descent occurrence and investigation lies in *statistical machine learning*, and not computational machine learning, respectively. 
+
+:::
 
 ## Information
 
-TBD
 
-## Resources
 
-As far as it is considered, the reading list covers the reading requirement already. However, for logistics, 
+### Research goal
 
-- [The Universal Guideline on Artificial Automata](https://github.com/Amane-Fujimiya/UAI_Book) - still under construction, is the foremost document itself. The name is again, Amane Fujimiya or Bui Gia Khanh (as I use two names), and is more about theoretical attempts on AI theory in its entirety. So far, [this link will be the one](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/UAI_Book/master/A/A1.AI/A1%20-%20UAI/main.pdf) that gives you the last available rendered manuscript of the book (note that it is on the `master` branch). 
+
+
+### Current progress and research artefacts
+
+As far as it is considered, our progresses are in the end of **phase II**, i.e. the final phase of the core theoretical discourse, analysis and dissection. Phase I is the **probing, analytical fundamentals gathering**, and *review performing*, basically to build the relevant resources and materials needed for a serious critique and expansion thereof. Insofar, 
+
+- [The Universal Guideline on Artificial Automata](https://github.com/Amane-Fujimiya/UAI_Book) - still under construction, is the foremost document itself. The name is again, Amane Fujimiya or Bui Gia Khanh (as I use two names), and is more about theoretical attempts on AI theory in its entirety. So far, [this link will be the one](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/UAI_Book/master/A/A1.AI/A1%20-%20UAI/main.pdf) that gives you the last available rendered manuscript of the book (note that it is on the `master` branch). The other documents, the one accessible of *physical learning theory*, is also avaialble.
 - **Main manuscript** - constructed on [This Particular Repository (TPR)](https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper) of which holds from the first to the last manuscript. Current active manuscript in total is the `Draft` folder itself document. Alongside that, [this paper](https://arxiv.org/pdf/2103.05127) would form chapter 6 of the manuscript itself. The manuscript of the *Theoretical Learning manuscript* of **this project** can be found [in here](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf) of its latest version. 
-- The code repository includes [this one on GitHub](https://github.com/Izzie1911/DD-with-basic-model-), with its copy and extension on GitLab. The link will be routed later.
+- **Main manuscripts, statistical physics** - is a separation. 
 
+For experimental setup, code and implementations, we have a few one, most of their results are given in the major manuscript. 
+
+- The code repository includes [this one on GitHub](https://github.com/Izzie1911/DD-with-basic-model-), with its copy and extension on GitLab. The link will be routed later. We note that this is the *canonical repository* for *testing* and crude *experimental sessions*. Some of them would be messy, and in the meantime, a second repository is coming up as expansion. 
+- A **separated library** for testing and identifying double descent, and structural analysis. Currently, it is in private build-up, with many features and analytical toolings missing.  
+
+
+### Navigating the current materials
+
+TBD (again?)
 
 
 

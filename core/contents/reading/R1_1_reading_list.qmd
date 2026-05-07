@@ -1,14 +1,18 @@
 ---
-title: "R1 Reading List - Double Descent"
+title: "R.R.1. Theoretical Reading List A"
 ---
 
-As of present, the name speaks for itself. It contains documents and interesting reading (finished of not) that are relevant per context of the laboratory works. The first few would rather be about *double descent*, because that is what the lab was initially tested of, so much of it would be the foundational groundwork reading that has been here since perhaps the beginning. 
+This reading list is a **themed reading list**, focus on the topic of **theoretical learning theory**, with the main bulk as *double descent in this case*. It contains documents and interesting reading (finished of not) that are relevant per context of the laboratory works. The first few would rather be about *double descent*, because that is what the lab was initially tested of, so much of it would be the foundational groundwork reading that has been here since perhaps the beginning. 
+
+Certain section of the theoretical learning theory, statistical learning theory and computational learning theories, are in discussion of the preceding reading lists. Particularly, the more accessible literature would be almost trivially around *double descent*, the problem of *grokking*, catastrophic forgetting, indetermination, and so on.
 
 ## Learning theory 
 
+Some of those literatures are **principle materials** and papers. For catastrophic forgetting, because it has become a *wild horse* of artificial intelligence studies
+
 ### Double descent
 
-Fairly a lot of things are there to read in double descent section. 
+Fairly a lot of things are there to read in double descent section. For the canonical introduction and first appearance of the problem itself, see:
 
 - [Deep double descent - where bigger models and more data hurts](https://iopscience.iop.org/article/10.1088/1742-5468/ac3a74/meta)
 - [A model of double descent for high-dimensional binary linear classification](https://academic.oup.com/imaiai/article-abstract/11/2/435/6209694). 
@@ -48,4 +52,4 @@ Most of them are done for now, with foundational papers being Belkin's paper and
 - Double-Descent Curves in Neural Networks: A New Perspective Using Gaussian Processes – link [here](https://ojs.aaai.org/index.php/AAAI/article/view/29071)
 - To understand double descent, we need to understand VC theory – link [here](https://pdf.sciencedirectassets.com/271125/1-s2.0-S0893608023X00100/1-s2.0-S0893608023005658/am.pdf)
 
-Some of which are already analyzed, including the *reinforcement learning* one. Most of them would be in the manuscript. 
+Some of which are already analyzed, including the *reinforcement learning* paper on double descent identificaton and potential explanatory isometry to the wider general theory. Most of them would be in the manuscript already, and we defer to there for such analysis. 

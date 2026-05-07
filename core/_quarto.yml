@@ -33,7 +33,8 @@ website:
           - contents/research/R0-core-knowledge/R0.Core_Knowledge.qmd
       - section: "Reading"
         contents:
-          - contents/reading/reading_list_R1.qmd
+          - contents/reading/R1_1_reading_list.qmd
+          - contents/reading/R1_2_reading_list.qmd
       - section: "Research"
         contents:
           - contents/research/research.qmd
