@@ -1,0 +1,130 @@
+/*-- scss:defaults --*/
+/* We leave standard defaults blank here as we are hijacking the theme via dynamic CSS variables */
+
+/*-- scss:rules --*/
+
+/* Define dynamic color palettes tied to Quarto's native theme states */
+:root {
+  --custom-sidebar-bg: #f8fafc;
+  --custom-sidebar-fg: #475569;
+  --custom-sidebar-hl: #4f46e5;
+  --custom-sidebar-border: #e2e8f0;
+  --custom-sidebar-hover-bg: rgba(79, 70, 229, 0.06);
+  --custom-sidebar-hover-fg: #0f172a;
+  --custom-sidebar-scroll-thumb: #cbd5e1;
+  --custom-sidebar-scroll-hover: #94a3b8;
+  --custom-sidebar-muted: #94a3b8;
+}
+
+[data-bs-theme="dark"] {
+  --custom-sidebar-bg: #181818; /* Incorporated from your provided snippet */
+  --custom-sidebar-fg: #a1a1aa;
+  --custom-sidebar-hl: #818cf8;
+  --custom-sidebar-border: #27272a;
+  --custom-sidebar-hover-bg: rgba(255, 255, 255, 0.05);
+  --custom-sidebar-hover-fg: #ffffff; /* Incorporated from your provided snippet */
+  --custom-sidebar-scroll-thumb: #3f3f46;
+  --custom-sidebar-scroll-hover: #52525b;
+  --custom-sidebar-muted: #52525b;
+}
+
+/* Global Container and Ergonomic Scrollbar Modification */
+#quarto-sidebar {
+  background-color: var(--custom-sidebar-bg) !important;
+  border-right: 1px solid var(--custom-sidebar-border);
+  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.015);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--custom-sidebar-scroll-thumb);
+    border-radius: 4px;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background: var(--custom-sidebar-scroll-hover);
+  }
+}
+
+/* Volumetric Compression of Layout Spacing */
+#quarto-sidebar .sidebar-menu-container {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#quarto-sidebar ul.sidebar-navigation {
+  margin-bottom: 0;
+  background-color: transparent !important; /* Overriding your snippet to prevent overlapping backgrounds */
+}
+
+/* Typographic Miniaturization and Link Ergonomics */
+/* Maintaining 13px equivalent and tight line-height to reject the airy 1.75 spacing */
+#quarto-sidebar .sidebar-item-text {
+  font-size: 0.8125rem; 
+  line-height: 1.3;
+  color: var(--custom-sidebar-fg);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#quarto-sidebar .sidebar-link {
+  padding: 0.3rem 0.6rem; 
+  margin: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* Interactive Hover States */
+#quarto-sidebar .sidebar-link:hover,
+#quarto-sidebar .sidebar-link:focus {
+  background-color: var(--custom-sidebar-hover-bg);
+  color: var(--custom-sidebar-hover-fg);
+  transform: translateX(3px);
+  text-decoration: none;
+}
+
+/* State Affirmation for Active Modules */
+#quarto-sidebar .sidebar-link.active {
+  background-color: var(--custom-sidebar-hover-bg);
+  color: var(--custom-sidebar-hl);
+  font-weight: 600;
+  border-left: 3px solid var(--custom-sidebar-hl);
+  padding-left: calc(0.6rem - 3px); 
+}
+
+/* Structural Taxonomy Headers */
+#quarto-sidebar .sidebar-section > .sidebar-item-container > .sidebar-link {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--custom-sidebar-muted);
+  margin-top: 0.8rem;
+  padding-bottom: 0.2rem;
+}
+
+#quarto-sidebar .sidebar-section > .sidebar-item-container > .sidebar-link:hover {
+  background-color: transparent;
+  transform: none;
+  color: var(--custom-sidebar-fg);
+}
+
+/* Spatial Mapping for Deep Nesting */
+#quarto-sidebar ul.collapse {
+  margin-left: 0.8rem;
+  padding-left: 0.4rem;
+  border-left: 1px solid var(--custom-sidebar-border); 
+}
+
+/* Chevron Miniaturization */
+#quarto-sidebar .sidebar-item-toggle {
+  font-size: 0.65rem;
+  color: var(--custom-sidebar-muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#quarto-sidebar .sidebar-item-toggle:hover {
+  color: var(--custom-sidebar-hl);
+}

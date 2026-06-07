@@ -30,10 +30,18 @@ Some of the below information are also supplants for other groups. Most of which
 
 #### Current members
 
-The following are the current members of the laboratory group: 
+The following lists the current members of the laboratory group, for MTAIL and also potential collaborators outside. 
 
-- 藤宮天音 (Fujimiya Amane), or *Bui Gia Khanh* - Lab leader of RHINELAB, and also principle researcher for MTAIL. 
+##### Principle researcher and leader
+
+- 藤宮天音 (Fujimiya Amane), or *Bui Gia Khanh* - Lab leader of RHINELAB, and also **principle researcher** for MTAIL. 
+
+##### Researcher
+
 - Luong Van Tam - Researcher, working mainly on double descent. 
+- Dang Tri Trung - Researcher, working mainly on double descent and aspect inquiry on them for reinforcement learning. Currently on *passive status*[^1]
+
+[^1]: Per usual configuration, there exists the two extremum: *passive* where the member is still in the laboratory section, but with reduced notice, effort available and commitment, however expertises and contributions upon help are still available. The other is the *active* status, where they actively contribute with major efforts of the laboratory effect. In between them is the *semi-active/passive* phase where these are balanced out, and with the consideration of *fuzzy boundary*, I guess we can make it so that gauging commitment is a rather deliberate move than not.  
 
 So far, only **two** (2) person are responsible for the group, with all others are collaborators or rather major additions. We are looking for people sharing our visions, as described in [Information](about.qmd). 
 
@@ -47,9 +55,9 @@ Double descent is **one of the main research**, started back from the early 2024
 
 #### Temporary Framework: The rough ordering level
 
-For certain purposes, the rather higher partition in the list contains another foundation group on the **theoretical theory directive**, which is the encompassing category of both the artificial intelligence group and the physics studies group right now. By category, we have the dependency or foundational order concept, which categorizes the following by order of **C(X)** for X count as the ascending level (I being the highest). By virtue of the position that *modelling precedes axiom* [^1], the inversion invites the following ladder as to be true, in a restricted form, yet nevertheless appropriate of its propensity to be taken forward:
+For certain purposes, the rather higher partition in the list contains another foundation group on the **theoretical theory directive**, which is the encompassing category of both the artificial intelligence group and the physics studies group right now. By category, we have the dependency or foundational order concept, which categorizes the following by order of **C(X)** for X count as the ascending level (I being the highest). By virtue of the position that *modelling precedes axiom* [^2], the inversion invites the following ladder as to be true, in a restricted form, yet nevertheless appropriate of its propensity to be taken forward:
 
-[^1]: Of this, befitting of the goal thereof to be said, picking out structure, deciding what to represent, choosing what relationships matter - which represents the part of which modelling takes place, and of which such word gains its strength - is epistemically and ontologically prior to the formalization that axioms represent, nor the act of isolation. One can see the fact that idealization and of which universality, is the fact being compressed, of the messy world where one to controls it requires simplification, not the act to be disbanded and berated, but the delusion thereof to subsume of the reality it belongs toward. 
+[^2]: Of this, befitting of the goal thereof to be said, picking out structure, deciding what to represent, choosing what relationships matter - which represents the part of which modelling takes place, and of which such word gains its strength - is epistemically and ontologically prior to the formalization that axioms represent, nor the act of isolation. One can see the fact that idealization and of which universality, is the fact being compressed, of the messy world where one to controls it requires simplification, not the act to be disbanded and berated, but the delusion thereof to subsume of the reality it belongs toward. 
 
 - Theory of modelling and the application thereof (CI). 
 - Mathematical theory and encoding language research (CI). 

@@ -3,8 +3,8 @@ project:
   resources:
     - "CNAME"
 
-execute:
-  freeze: true
+#execute:
+#  freeze: true
 
 website:
   title: "Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTAIL)"
@@ -60,8 +60,8 @@ format:
     toc: true
     lightbox: true
     theme:
-      light: [default, style/custom.scss]
-      dark: [default, style/custom_dark.scss]
+      light: [default, style/custom.scss, style/sidebar.scss]
+      dark: [default, style/custom_dark.scss, style/sidebar.scss]
     fontsize: "14px"
     linestretch: 1.6
     mainfont: "Roboto"
@@ -80,6 +80,9 @@ format:
       theme: neutral
     grid: 
       body-width: 1000px
+      sidebar-width: 250px
+      margin-width: 400px
+      gutter-width: 1.7rem
 
 bibliography: references.bib
 
