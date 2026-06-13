@@ -1,0 +1,7 @@
+---
+title: R.R.2. Theoretical Reading List B
+author: Fujimiya Amane (Bui Gia Khanh)
+date: 2025/02/07
+date-modified: 2026/06/08
+---
+Nothing much going on. This list is reserved for theoretical computer science literatures, and furthermore perhaps standard theoretical computer science literatures with critiques, modern computer science approach, papers and so on. Primary focus would be niche topic, more specifically, the *extension of cellular automata*. 

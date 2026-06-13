@@ -1,4 +1,0 @@
----
-title: R.R.2. Theoretical Reading List B
----
-Nothing much going on. This list is reserved for theoretical computer science literatures. 

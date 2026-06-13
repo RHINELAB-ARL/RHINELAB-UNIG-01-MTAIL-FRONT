@@ -1,5 +1,8 @@
 ---
 title: "R.R.1. Theoretical Reading List A"
+author: Fujimiya Amane
+date: 2026/04/07
+date-modified: 2026/06/08
 ---
 
 This reading list is a **themed reading list**, focus on the topic of **theoretical learning theory**, with the main bulk as *double descent in this case*. It contains documents and interesting reading (finished of not) that are relevant per context of the laboratory works. The first few would rather be about *double descent*, because that is what the lab was initially tested of, so much of it would be the foundational groundwork reading that has been here since perhaps the beginning. 

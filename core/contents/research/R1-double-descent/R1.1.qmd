@@ -1,5 +1,6 @@
 ---
 title: Introducton and Navigation
+description: "The introduction to double descent - the particular phenomenon where current dogma faces reality as it sees fit."
 ---
 
 This is the main central page for **double descent research**, including documentations, current work, updates, many and much about what is going on with the research, and just simply the dump we pull stuffs here and showcase our research progress (with a crowbar, or a progress bar if someone is good on it). Insofar, it will also include thoughts and debates on such matter, aside from actual contents in manuscripts and other pages, mainly the wiki page, which has been up for a long time now. 
@@ -36,7 +37,7 @@ For experimental setup, code and implementations, we have a few one, most of the
 
 ### Navigating the current materials
 
-TBD (again?)
+The current materials are rather quite messy, so we will leave it to also, entries inside [literature review page](literature.qmd). Other materials are being included at speed, so please wait for the development and sanitization (not in the bad sense) thereof of the documents. 
 
 
 

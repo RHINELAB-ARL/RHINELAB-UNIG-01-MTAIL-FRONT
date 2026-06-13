@@ -5,9 +5,25 @@ format:
     grid:
       body-width: 1000px
 ---
+
+## Specification
+
+As for RHINELAB tradition, we are to present the laboratory specific *classification identification*. 
+
+### Lab type
+
+The lab is **UNIG-1**, Universal (Scientific) Research Group. Designation follows from `DOC-OR-PROP-07` and subsequent `MNU-OR-02`. 
+
+### Principal Investigator & Advisors & Members
+
+- Bui Gia Khanh, RHINELAB Laboratory Director (Vietnam National University, Hanoi University of Science). 
+- Luong Van Tam, Researcher and Partial Advisor (Vietnam National University, Hanoi University of Science)
+- Dang Tri Trung, Researcher and Experimental Design (Monash University, Australia). Currently passive. 
+- Associate Professor Nguyen Ai Viet, Advisor (IGNITE Institute, Vietnam National University).
+
 ## Introduction
 
-This is the documentation page for may of the development of the **Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group** (MTAIL) and documentation thereof. It will also include several notes and exposure of the lab itself here, including the *ranking order* framework itself (this one is under-developed, but sure, we might as well include the bare-bone), many notes and question debates, and more. First created by the necessity of purpose for reorganizing the research program into a multi-people central consensus rather than a solo-working environment, the website is minimally created to hook with the main website of the laboratory, and host all capable form of documents and writing relevant to the work that the lab group conducts itself of. 
+This is the documentation page for many of the development of the **Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group** (MTAIL) and documentation thereof. It will also include several notes and exposure of the lab itself here, including the *ranking order* framework itself (this one is under-developed, but sure, we might as well include the bare-bone), many notes and question debates, and more. First created by the necessity of purpose for reorganizing the research program into a multi-people central consensus rather than a solo-working environment, the website is minimally created to hook with the main website of the laboratory, and host all capable form of documents and writing relevant to the work that the lab group conducts itself of. 
 
 Currently, the list of inclusion, to-do works and many requests for migration of details, build-up and so on, are listed as followed. Note that some of them are still in settlement stage.  
 
@@ -20,13 +36,15 @@ The goal would be long, and I will have to include them more in the future. But 
 
 :::{.callout-important}
 
-Many of the contents for this website are under construction, and similarly for the wiki. We have not been able to push all of the contents in research for the last two years up immediately, thus a lot would be missing. Apologize for the delay. 
+Many of the contents for this website are under construction, and similarly for the wiki. We have not been able to push all the contents in research for the last two years up immediately, thus a lot would be missing. Apologize for the delay. 
+
+For better experience viewing this website, you can try using [Dark Reader](https://darkreader.org/) as additionals for dark mode, if able. 
 
 :::
 
-### Relevant information
+### I. Logistical Information
 
-Some of the below information are also supplants for other groups. Most of which would be included elsewhere nominally, but well, yes. Some of the following contents would be *outdated*, as it serves here only as a *quick gateway* into what is possible from within, and different constructions thereof. 
+Some of the below information are also supplants for other groups. Most of which would be included elsewhere nominally (for example, some on the *specification already*), but well, yes. Some of the following contents would be *outdated*, as it serves here only as a *quick gateway* into what is possible from within, and different constructions thereof. 
 
 #### Current members
 
@@ -34,16 +52,21 @@ The following lists the current members of the laboratory group, for MTAIL and a
 
 ##### Principle researcher and leader
 
-- 藤宮天音 (Fujimiya Amane), or *Bui Gia Khanh* - Lab leader of RHINELAB, and also **principle researcher** for MTAIL. 
+- 藤宮天音 (Fujimiya Amane), or *Bui Gia Khanh* - Lab leader of RHINELAB, and also **principle researcher** for MTAIL.
 
 ##### Researcher
 
 - Luong Van Tam - Researcher, working mainly on double descent. 
-- Dang Tri Trung - Researcher, working mainly on double descent and aspect inquiry on them for reinforcement learning. Currently on *passive status*[^1]
+- Dang Tri Trung - Researcher, working mainly on double descent and aspect inquiry on them for reinforcement learning. Currently on *passive status*[^1] [^2]
 
-[^1]: Per usual configuration, there exists the two extremum: *passive* where the member is still in the laboratory section, but with reduced notice, effort available and commitment, however expertises and contributions upon help are still available. The other is the *active* status, where they actively contribute with major efforts of the laboratory effect. In between them is the *semi-active/passive* phase where these are balanced out, and with the consideration of *fuzzy boundary*, I guess we can make it so that gauging commitment is a rather deliberate move than not.  
+[^1]: Per usual configuration, there exists the two extremum: *passive* where the member is still in the laboratory section, but with reduced notice, effort available and commitment, however expertises and contributions upon help are still available. The other is the *active* status, where they actively contribute with major efforts of the laboratory effect. In between them is the *semi-active/passive* phase where these are balanced out, and with the consideration of *fuzzy boundary*, I guess we can make it so that gauging commitment is a rather deliberate move than not.
 
-So far, only **two** (2) person are responsible for the group, with all others are collaborators or rather major additions. We are looking for people sharing our visions, as described in [Information](about.qmd). 
+[^2]: So far, only **two** (2) person are responsible on active sessions for the group, with all others are collaborators or rather major additions. We are looking for people sharing our visions, as described in [Information](about.qmd). 
+
+Past members include:
+
+- Le Anh Thu (Vin University, Hanoi, Vietnam): Experimental Researcher, worked on designs of large system testing of double descent. 
+- Daud Shahbaz (COMSAT University Islamabad, Islamabad, Pakistan): Experimental Research, worked on experimental designs and wide-testing of double descents throughout models. 
 
 #### For the double descent and learning theory sections
 
@@ -53,11 +76,18 @@ Double descent is **one of the main research**, started back from the early 2024
 - **Main manuscript** - constructed on [This Particular Repository (TPR)](https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper) of which holds from the first to the last manuscript. Current active manuscript in total is the `Draft` folder itself document. Alongside that, [this paper](https://arxiv.org/pdf/2103.05127) would form chapter 6 of the manuscript itself. The manuscript of the *Theoretical Learning manuscript* of **this project** can be found [in here](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf) of its latest version. Recently, the statistical direction has been **updated** substantially, and currently intensive tests are going on. 
 - The code repository includes [this one on GitHub](https://github.com/Izzie1911/DD-with-basic-model-), with its copy and extension on GitLab. The link will be routed later. 
 
+### II. UNIG-1 - Supporting Information
+
+:::{.callout-note}
+Since RHINE@MTAIL is dedicated as an **UNIG** (Универсальная научно-исследовательская группа, or *universal scientific research group*) for RHINELAB in total, this framework is to serve as lab-based evaluation on theoretical directive and dependency ledger tasking.
+:::
+
 #### Temporary Framework: The rough ordering level
 
-For certain purposes, the rather higher partition in the list contains another foundation group on the **theoretical theory directive**, which is the encompassing category of both the artificial intelligence group and the physics studies group right now. By category, we have the dependency or foundational order concept, which categorizes the following by order of **C(X)** for X count as the ascending level (I being the highest). By virtue of the position that *modelling precedes axiom* [^2], the inversion invites the following ladder as to be true, in a restricted form, yet nevertheless appropriate of its propensity to be taken forward:
 
-[^2]: Of this, befitting of the goal thereof to be said, picking out structure, deciding what to represent, choosing what relationships matter - which represents the part of which modelling takes place, and of which such word gains its strength - is epistemically and ontologically prior to the formalization that axioms represent, nor the act of isolation. One can see the fact that idealization and of which universality, is the fact being compressed, of the messy world where one to controls it requires simplification, not the act to be disbanded and berated, but the delusion thereof to subsume of the reality it belongs toward. 
+For certain purposes, the rather higher partition in the list contains another foundation group on the **theoretical theory directive**, which is the encompassing category of both the artificial intelligence group and the physics studies group right now. By category, we have the dependency or foundational order concept, which categorizes the following by order of **C(X)** for X count as the ascending level (I being the highest). By virtue of the position that *modelling precedes axiom* [^3], the inversion invites the following ladder as to be true, in a restricted form, yet nevertheless appropriate of its propensity to be taken forward:
+
+[^3]: Of this, befitting of the goal thereof to be said, picking out structure, deciding what to represent, choosing what relationships matter - which represents the part of which modelling takes place, and of which such word gains its strength - is epistemically and ontologically prior to the formalization that axioms represent, nor the act of isolation. One can see the fact that idealization and of which universality, is the fact being compressed, of the messy world where one to controls it requires simplification, not the act to be disbanded and berated, but the delusion thereof to subsume of the reality it belongs toward. 
 
 - Theory of modelling and the application thereof (CI). 
 - Mathematical theory and encoding language research (CI). 
