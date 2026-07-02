@@ -1,5 +1,5 @@
 ---
-title: Introducton and Navigation
+title: Introduction and Navigation
 description: "The introduction to double descent - the particular phenomenon where current dogma faces reality as it sees fit."
 ---
 
@@ -15,19 +15,33 @@ Double descent research is part of the *series* of theoretical machine learning,
 
 ## Information
 
-
+Here, we can dub the project or rather classification thereof for this section, as being a theoretical inquiry module that is conducted to serve a larger picture there be, of the **theoretical modelling principles system of artificial intelligence**. However, for such to flow, it requires us to introduce the central problem of what to be said of double descent. 
 
 ### Research goal
 
+The current goal of the research group by definition, is to follow the underlying analytical results, stated: 
 
+### Research resources
 
-### Current progress and research artefacts
+As far as it is considered, our progresses are in the end of **phase II**, i.e. the final phase of the core theoretical discourse, analysis and dissection. Phase I is the **probing, analytical fundamentals gathering**, and *review performing*, basically to build the relevant resources and materials needed for a serious critique and expansion thereof. Insofar, we have the following. 
 
-As far as it is considered, our progresses are in the end of **phase II**, i.e. the final phase of the core theoretical discourse, analysis and dissection. Phase I is the **probing, analytical fundamentals gathering**, and *review performing*, basically to build the relevant resources and materials needed for a serious critique and expansion thereof. Insofar, 
+#### Principal guideline
 
-- [The Universal Guideline on Artificial Automata](https://github.com/Amane-Fujimiya/UAI_Book) - still under construction, is the foremost document itself. The name is again, Amane Fujimiya or Bui Gia Khanh (as I use two names), and is more about theoretical attempts on AI theory in its entirety. So far, [this link will be the one](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/UAI_Book/master/A/A1.AI/A1%20-%20UAI/main.pdf) that gives you the last available rendered manuscript of the book (note that it is on the `master` branch). The other documents, the one accessible of *physical learning theory*, is also avaialble.
-- **Main manuscript** - constructed on [This Particular Repository (TPR)](https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper) of which holds from the first to the last manuscript. Current active manuscript in total is the `Draft` folder itself document. Alongside that, [this paper](https://arxiv.org/pdf/2103.05127) would form chapter 6 of the manuscript itself. The manuscript of the *Theoretical Learning manuscript* of **this project** can be found [in here](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf) of its latest version. 
-- **Main manuscripts, statistical physics** - is a separation. 
+[The Universal Guideline on Artificial Automata](https://github.com/Amane-Fujimiya/UAI_Book) - still under construction, is the foremost document itself. The name is again, Amane Fujimiya or Bui Gia Khanh (as I use two names), and is more about theoretical attempts on AI theory in its entirety. So far, [this link will be the one](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/UAI_Book/master/A/A1.AI/A1%20-%20UAI/main.pdf) that gives you the last available rendered manuscript of the book (note that it is on the `master` branch). The other documents, the one accessible of *physical learning theory*, is also available.
+
+#### Knowledge and documentation, laboratory wiki
+
+There are many of such resources, which is realized after the fact and observation that the discovery and research about double descent, is rather profound and can be said quite so as impressively complex, with many logistics to be fulfilled. As a result of said resolution, the decision is then used to build up the **knowledge and documentation logistics**, making up the complete or rather aimed for of a comprehensive system of information, documentation, frontier discussions and ideas, and tracks. Most often would be useful however, to check out for the expository papers, knowledge base and laboratory-specific wiki, in connection to the wider RHINELAB, though this would for now take precedences of only the domain of theoretical machine learning. 
+
+#### Core manuscript
+
+The **Main manuscript** - constructed on [This Particular Repository (TPR)](https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper) of which holds from the first to the last manuscript. Current active manuscript in total is the `Draft` folder itself document. Alongside that, [this paper](https://arxiv.org/pdf/2103.05127) would form chapter 6 of the manuscript itself for analysis, because the issue with *model complexity* is a rather interesting and very much understudied area. 
+
+The manuscript of the *Theoretical Learning manuscript* of **this project** can be found [in here](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf) of its latest version. 
+
+**Main manuscripts, statistical physics** - is a separation from the main one. It is mostly focused on **interpretation of learning theory in statistical physics**, dissection of such, and so on. 
+
+#### Experiments and setup
 
 For experimental setup, code and implementations, we have a few one, most of their results are given in the major manuscript. 
 

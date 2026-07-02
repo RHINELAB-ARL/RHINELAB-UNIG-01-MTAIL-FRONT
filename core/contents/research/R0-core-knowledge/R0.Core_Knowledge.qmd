@@ -4,9 +4,17 @@ title: R0. Documentations and Knowledge
 
 ::: {.callout-important}
 
-The main contents for this part are given in [the core main content wiki](https://rhinelab-mtail-core-documentation-1ed70a.gitlab.io/), available in such link. The system itself is built on Quartz 4, which is the incorporation of properties and features similar to how Obsidian works.  
-
+The main contents for this part are given in [the core main content wiki](https://rhinelab-mtail-core-documentation-1ed70a.gitlab.io/), available in such link. The system itself is built on Quartz 4, which is the incorporation of properties and features similar to how Obsidian works. However, it is still good to have core documentations and so on floating around here, just in cases, and for organization without switching to backwater streaming line. 
 :::
+
+
+There exists many frameworks, many documents and many books that are present in the wider public domain, or perhaps in *homegrown* and often not widely exposed repositories. That said, it also means we need to, in any given particular capacity, internalize them, or create them for ourselves. This page is the holding of such. 
+
+## Books and lecture notes
+
+The laboratory produces some notes and technical book, or at least compressed and separated *knowledge base capsules*. The following lists them out as for future researcher, collaborators and observer to look for what they are. Note that it will be updated gradually, so there will be gaps here and there of what to cover and what is included, and so on. 
+
+1. The [Learning Theory Coursebook](https://rhine-mtail-tml-theoretical-learning-framework-3e6420.gitlab.io/) as written mainly for theory of learning, related topics and learning theory in general. 
 
 
 
