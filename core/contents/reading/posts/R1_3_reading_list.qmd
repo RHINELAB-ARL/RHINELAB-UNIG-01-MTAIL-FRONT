@@ -1,0 +1,53 @@
+---
+title: R.R.3. Theoretical Reading List C (Probability Theory)
+description: ""
+author: Fujimiya Amane (Bui Gia Khanh)
+date: 2025/02/07
+date-modified: 2026/06/08
+---
+
+Some of the section of the [Learning Theory Coursebook](https://rhine-mtail-tml-theoretical-learning-framework-3e6420.gitlab.io/) requires some papers and some books and materials, mostly through and through probability theory, statistical learning theory, and statistics (mathematical statistics in general), alongside some materials about *concentration inequalities*. 
+
+## Probability and Statistics
+
+We have, for now, some resources being the foundational books and materials as followed. First, for *probability theory*:
+
+1. **Basic Probability Theory** (Sharon Goldwater, University of Edinburgh) - [here](https://homepages.inf.ed.ac.uk/sgwater/teaching/general/probability.pdf).
+2. **An Introduction to Probability Theory** (Cristin Toninelli) - [here](https://www.ceremade.dauphine.fr/~toninelli/notesCT.pdf). 
+3. **Wiley Series in Probability and Mathematical Statistics** - *An introduction to Probability Theory and Its Applications* (William Feller) - [here (volume I)](https://bitcoinwords.github.io/assets/papers/an-introduction-to-probability-theory-and-its-applications.pdf). 
+4. **Probability Theory - The Logic of Science** (E. T. Jaynes) - [here](https://jhanley.biostat.mcgill.ca/bios601/GaussianModel/JaynesProbabilityTheory.pdf). 
+5. **Probability: Theory and Examples** (Rick Durrett) - [here](https://sites.math.duke.edu/~rtd/PTE/PTE5_011119.pdf). 
+6. **Probability and Stochastic Processes with Applications** (Oliver Knill) - [here](https://people.math.harvard.edu/~knill/books/KnillProbability.pdf). 
+7. **Fundamental of Probability Theory** (M. E. Harr, Purdue University) - [here](https://onlinepubs.trb.org/Onlinepubs/trr/1976/575/575-001.pdf).
+
+For statistics:
+
+1. **Fundamentals of Mathematical Statistics** (S. C. Gupta and V. K. Kapoor) - available on multiple platforms. 
+2. **Introduction to Mathematical Statistics** (Hogg McKean Craig) - [here](https://minerva.it.manchester.ac.uk/~saralees/statbook2.pdf). 
+3. **All of Statistics** (Larry Wasserman) - [here](https://egrcc.github.io/docs/math/all-of-statistics.pdf). 
+4. **Core Statistics** (Simon N. Wood) - [here](https://webhomes.maths.ed.ac.uk/~swood34/core-statistics.pdf). 
+
+## Statistical Learning Theory 
+
+For statistical learning theory, major works are enough often time. For example, we will have canonical works like [@10.5555/1671238] and [@10.5555/2371238]. However, there are, for example: 
+
+1. **Understanding Machine Learning: From Theory to Algorithms** as in [@10.5555/2621980]. 
+2. **Introduction to Statistical Learning Theory** (Oliver Bousquet, Stephane Boucheron, Gabor Lugosi) - [here](https://www.cs.columbia.edu/~verma/classes/ml/ref/ref_intro_lt.pdf). 
+3. **Statistical Learning Theory: Models, Concepts, and Results** (Ulrike von Luxburg, Bernhard Schoelkopf) - [here](https://arxiv.org/abs/0810.4752).
+4. **An Introduction to Statistical Learning (with Application in R)** - [here](https://www.stat.berkeley.edu/~rabbee/s154/ISLR_First_Printing.pdf). 
+5. **ECE 543: Statistical Learning Theory** (Bruce Hajek and Maxim Raginsky) - [@STL_Hajek_Maxim_2021] and can be found [here](https://maxim.ece.illinois.edu/teaching/SLT/SLT.pdf).
+6. **A Theory of Universal Learning** (Bousquet et al.) - [here](https://arxiv.org/abs/2011.04483).
+7. **An Overview of Statistical Learning Theory** (V. N. Vapnik) - [here](https://www.mit.edu/~6.454/www_spring_2001/emin/slt.pdf). 
+8. Vladimir N. Vapnik's **The Nature of Statistical Learning** - [@Vapnik1999-VAPTNO].
+9. **Math 547. Statistical Learning Theory, Fall 2019** (Steven Heilman) - [Here](https://www.stevenheilman.org/~heilman/teach/547.pdf). 
+10. **Statistical learning in high dimension: a rigorous statistical physics approach** (Doctorate Thesis, Cedric Gerbelot) - [Here](https://theses.hal.science/tel-04199403v1/file/Gerbelot_2022_These.pdf). 
+11. **CPSC 532D — Statistical Learning Theory** (Danica J. Sutherland, University of British Columbia, Vancouver) - [Here](https://www.cs.ubc.ca/~dsuth/532D/24w1/notes/all.pdf). 
+12. **An Elementary Introduction to Statistical Learning Theory** (Sanjeev Kulkarni, Gilbert Harman) - This can be taken from [here](https://github.com/maidamai0/ML-FDbooks) inside this repository. 
+
+
+Those are the majority of sources that would be presented mostly coherent, by some and obvious standards. Some of them are lecture notes, and while some like the overview of SLT is a paper, most are standard references in the field, which I believe would be rather good. That said, we do have something like:
+
+- While [@10.5555/2371238] and [@10.5555/2621980] is standard, both of them are essentially the same with only added semantic on the *notation* part. At that, not a lot even happened. 
+- Many sources are limited to simple binary classification then jump straight into general case. Most probable, their learning setting is extremely limited. 
+
+Some observations at that can be taken into account, and also the fact about the system in general. In the same length, Hastie's **The Elements of Statistical Learning** (which can be accessed [here](https://www.sas.upenn.edu/~fdiebold/NoHesitations/BookAdvanced.pdf)), is rather trivial in hindsight. 
