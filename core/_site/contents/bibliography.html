@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Bibliography – Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTAIL)</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -50,19 +53,18 @@ div.csl-indent {
 <meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-16365895d012c6821ad2015e20b8b579.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-16365895d012c6821ad2015e20b8b579.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-16365895d012c6821ad2015e20b8b579.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8e563bccdeb7e5b4bf8f1d510bb78af9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8e563bccdeb7e5b4bf8f1d510bb78af9.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8e563bccdeb7e5b4bf8f1d510bb78af9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3bc5b09ebb99bfd818f8db2a1f4f4c6d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-1b5e816658432384a489dc69c9ce8314.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3bc5b09ebb99bfd818f8db2a1f4f4c6d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5943c0ec79e76fa0fca51cedc34cf029.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-a94bbadc756ecdbe7f744627f35652d2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5943c0ec79e76fa0fca51cedc34cf029.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,6 +94,35 @@ div.csl-indent {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -264,8 +295,6 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTAIL)</span>
     </a>
@@ -313,10 +342,6 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -327,13 +352,13 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text">Welcome to MTAIL</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Reading</span></a>
+ <span class="menu-text">Documentations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -341,8 +366,8 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contents/reading/reading_list_R1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R1 Reading List - Double Descent</span></a>
+  <a href="../contents/research/R0-core-knowledge/R0.Core_Knowledge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R0. Documentations and Knowledge</span></a>
   </div>
 </li>
       </ul>
@@ -350,39 +375,73 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Research</span></a>
+ <span class="menu-text">Literature and Reading</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/reading/library.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reading list</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">Double Descent</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Research</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/research/research.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research and Development</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Double Descent</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../contents/research/R1-double-descent/R1.1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Gateway</span></a>
+ <span class="menu-text">Introduction and Navigation</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Analysis</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contents/research/R1-double-descent/R1.O1.html" class="sidebar-item-text sidebar-link">
+  <a href="../contents/research/R1-double-descent/contents/R1.O1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sub-topic - GNN Analysis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contents/research/R1-double-descent/R1.O2.html" class="sidebar-item-text sidebar-link">
+  <a href="../contents/research/R1-double-descent/contents/R1.O2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sub-topic - Memo</span></a>
   </div>
 </li>
+      </ul>
+  </li>
       </ul>
   </li>
       </ul>
@@ -424,8 +483,1045 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-abhishek2019introductionconcentrationinequalities" class="csl-entry" role="listitem">
+Abhishek, Kumar, Sneha Maheshwari, and Sujit Gujar. 2019. <em>Introduction to Concentration Inequalities</em>. <a href="https://arxiv.org/abs/1910.02884">https://arxiv.org/abs/1910.02884</a>.
+</div>
+<div id="ref-abrahamsen2021existential" class="csl-entry" role="listitem">
+Abrahamsen, Mikkel, Linda Kleist, and Tillmann Miltzow. 2021. <span>“Training Neural Networks Is <span><span class="math inline">\(\exists\mathbb{R}\)</span></span>-Complete.”</span> <em>Proceedings of NeurIPS 2021</em>. <a href="https://arxiv.org/abs/2102.09798">https://arxiv.org/abs/2102.09798</a>.
+</div>
+<div id="ref-abreu2025topologicalmachinelearningunreduced" class="csl-entry" role="listitem">
+Abreu, Nicole, Parker B. Edwards, and Francis Motta. 2025. <em>Topological Machine Learning with Unreduced Persistence Diagrams</em>. <a href="https://arxiv.org/abs/2507.07156">https://arxiv.org/abs/2507.07156</a>.
+</div>
+<div id="ref-achlioptas_stochastic_nodate" class="csl-entry" role="listitem">
+Achlioptas, Panos. n.d. <span>“Stochastic <span>Gradient</span> <span>Descent</span> in <span>Theory</span> and <span>Practice</span>.”</span> <em>Lecture Note, Stanford’s AI</em>.
+</div>
+<div id="ref-adlam2020understandingdoubledescentrequires" class="csl-entry" role="listitem">
+Adlam, Ben, and Jeffrey Pennington. 2020. <em>Understanding Double Descent Requires a Fine-Grained Bias-Variance Decomposition</em>. <a href="https://arxiv.org/abs/2011.03321">https://arxiv.org/abs/2011.03321</a>.
+</div>
+<div id="ref-advani2017highdimensionaldynamicsgeneralizationerror" class="csl-entry" role="listitem">
+Advani, Madhu S., and Andrew M. Saxe. 2017. <em>High-Dimensional Dynamics of Generalization Error in Neural Networks</em>. <a href="https://arxiv.org/abs/1710.03667">https://arxiv.org/abs/1710.03667</a>.
+</div>
+<div id="ref-Ainsworth2016FormMatter" class="csl-entry" role="listitem">
+Ainsworth, Thomas. 2016. <span>“Form Vs. Matter.”</span> In <em>The Stanford Encyclopedia of Philosophy</em>, edited by Edward N. Zalta and Uri Nodelman. <a href="https://plato.stanford.edu/entries/form-matter/">https://plato.stanford.edu/entries/form-matter/</a>.
+</div>
+<div id="ref-AIWashington" class="csl-entry" role="listitem">
+<span class="nocase">al., Chris Smith et</span>. 2006. <em>The History of Artificial Intelligence</em>. Technical review.
+</div>
+<div id="ref-modelcomplex_exp" class="csl-entry" role="listitem">
+<span class="nocase">al., Molavi et</span>. n.d. <em>Model <span>Complexity</span>, <span>Expectations</span>, and <span>Asset</span> <span>Prices</span> <span></span> <span>The</span> <span>Review</span> of <span>Economic</span> <span>Studies</span> <span></span> <span>Oxford</span> <span>Academic</span></em>. Accessed July 16, 2024. <a href="https://academic.oup.com/restud/article-abstract/91/4/2462/7222145?redirectedFrom=fulltext&amp;login=false">https://academic.oup.com/restud/article-abstract/91/4/2462/7222145?redirectedFrom=fulltext&amp;login=false</a>.
+</div>
+<div id="ref-alon2021bottleneckgraphneuralnetworks" class="csl-entry" role="listitem">
+Alon, Uri, and Eran Yahav. 2021. <em>On the Bottleneck of Graph Neural Networks and Its Practical Implications</em>. <a href="https://arxiv.org/abs/2006.05205">https://arxiv.org/abs/2006.05205</a>.
+</div>
+<div id="ref-alquier2008pac" class="csl-entry" role="listitem">
+Alquier, Pierre. 2008. <span>“PAC-Bayesian Bounds for Randomized Empirical Risk Minimizers.”</span> <em>Mathematical Methods of Statistics</em> 17 (4): 279–304. <a href="https://doi.org/10.3103/S1066530708040017">https://doi.org/10.3103/S1066530708040017</a>.
+</div>
+<div id="ref-Alquier_2024" class="csl-entry" role="listitem">
+Alquier, Pierre. 2024. <span>“User-Friendly Introduction to PAC-Bayes Bounds.”</span> <em>Foundations and Trends® in Machine Learning</em> 17 (2): 174–303. <a href="https://doi.org/10.1561/2200000100">https://doi.org/10.1561/2200000100</a>.
+</div>
+<div id="ref-acs_lavoisier_landmark" class="csl-entry" role="listitem">
+American Chemical Society (ACS). n.d.a. <em>Antoine Laurent Lavoisier — the Chemical Revolution (Landmark)</em>. American Chemical Society website. <a href="https://www.acs.org/education/whatischemistry/landmarks/lavoisier.html">https://www.acs.org/education/whatischemistry/landmarks/lavoisier.html</a>.
+</div>
+<div id="ref-acs_priestley_landmark" class="csl-entry" role="listitem">
+American Chemical Society (ACS). n.d.-b. <em>Joseph Priestley — Discoverer of Oxygen (National Historic Chemical Landmark)</em>. American Chemical Society website. Accessed March 18, 2026. <a href="https://www.acs.org/education/whatischemistry/landmarks/josephpriestleyoxygen.html">https://www.acs.org/education/whatischemistry/landmarks/josephpriestleyoxygen.html</a>.
+</div>
+<div id="ref-ANDRILLI20101" class="csl-entry" role="listitem">
+Andrilli, Stephen, and David Hecker. 2010. <span>“Chapter 1 - Vectors and Matrices.”</span> In <em>Elementary Linear Algebra (Fourth Edition)</em>, Fourth Edition, edited by Stephen Andrilli and David Hecker. Academic Press. https://doi.org/<a href="https://doi.org/10.1016/B978-0-12-374751-8.00001-9">https://doi.org/10.1016/B978-0-12-374751-8.00001-9</a>.
+</div>
+<div id="ref-w14193149" class="csl-entry" role="listitem">
+Angelakis, Andreas N., Jens Krasilnikoff, and Vasileios A. Tzanakakis. 2022. <span>“Evolution of Water Technologies and Corresponding Philosophy and Sciences Focusing on the Hellenic World Through the Millennia.”</span> <em>Water</em> 14 (19). <a href="https://doi.org/10.3390/w14193149">https://doi.org/10.3390/w14193149</a>.
+</div>
+<div id="ref-angluin1988queries" class="csl-entry" role="listitem">
+Angluin, Dana. 1988. <span>“Queries and Concept Learning.”</span> <em>Machine Learning</em> 2 (4): 319–42. <a href="https://doi.org/10.1007/BF00116828">https://doi.org/10.1007/BF00116828</a>.
+</div>
+<div id="ref-computationallimits1989" class="csl-entry" role="listitem">
+Angluin, Dana. 1989. <span>“Computational Limitations on Learning from Examples.”</span> <em>Journal of the ACM</em> 36 (4): 955–81. <a href="https://doi.org/10.1145/76322.76335">https://doi.org/10.1145/76322.76335</a>.
+</div>
+<div id="ref-Anscombe1957" class="csl-entry" role="listitem">
+Anscombe, G. E. M. 1957. <em>Intention</em>. Basil Blackwell.
+</div>
+<div id="ref-arjevani2025geometryoptimizationshallowpolynomial" class="csl-entry" role="listitem">
+Arjevani, Yossi, Joan Bruna, Joe Kileel, Elzbieta Polak, and Matthew Trager. 2025. <em>Geometry and Optimization of Shallow Polynomial Networks</em>. <a href="https://arxiv.org/abs/2501.06074">https://arxiv.org/abs/2501.06074</a>.
+</div>
+<div id="ref-Armstrong_2010" class="csl-entry" role="listitem">
+Armstrong, M. A. 2010. <em>Groups and Symmetry</em>. Undergraduate Texts in Mathematics. Springer.
+</div>
+<div id="ref-arora2019finegrained" class="csl-entry" role="listitem">
+Arora, Sanjeev, Simon Du, Wei Hu, Zhiyuan Li, and Ruslan Salakhutdinov. 2019. <span>“On Exact Computation with an Infinitely Wide Neural Net.”</span> <em>Advances in Neural Information Processing Systems (NeurIPS)</em> 32.
+</div>
+<div id="ref-Artin_2011" class="csl-entry" role="listitem">
+Artin, Michael. 2011. <em>Algebra</em>. 2nd ed. Pearson Prentice Hall.
+</div>
+<div id="ref-d_ascoli_triple_2020" class="csl-entry" role="listitem">
+Ascoli, Stéphane d’, Levent Sagun, and Giulio Biroli. 2020. <span>“Triple Descent and the Two Kinds of Overfitting: Where &amp; Why Do They Appear?”</span> <em>Advances in <span>Neural</span> <span>Information</span> <span>Processing</span> <span>Systems</span></em> 33: 3058–69. <a href="https://proceedings.neurips.cc/paper/2020/hash/1fd09c5f59a8ff35d499c0ee25a1d47e-Abstract.html">https://proceedings.neurips.cc/paper/2020/hash/1fd09c5f59a8ff35d499c0ee25a1d47e-Abstract.html</a>.
+</div>
+<div id="ref-doi:10.1073/pnas.2311878121" class="csl-entry" role="listitem">
+Bahri, Yasaman, Ethan Dyer, Jared Kaplan, Jaehoon Lee, and Utkarsh Sharma. 2024. <span>“Explaining Neural Scaling Laws.”</span> <em>Proceedings of the National Academy of Sciences</em> 121 (27): e2311878121. <a href="https://doi.org/10.1073/pnas.2311878121">https://doi.org/10.1073/pnas.2311878121</a>.
+</div>
+<div id="ref-Balcan2010TrueSampleComplexity" class="csl-entry" role="listitem">
+Balcan, Maria-Florina, Steve Hanneke, and Jennifer Wortman Vaughan. 2010. <span>“The True Sample Complexity of Active Learning.”</span> <em>Machine Learning</em> 80 (2–3): 111–39. <a href="https://doi.org/10.1007/s10994-010-5174-y">https://doi.org/10.1007/s10994-010-5174-y</a>.
+</div>
+<div id="ref-barak2016nearly" class="csl-entry" role="listitem">
+Barak, Boaz, Samuel B. Hopkins, Jonathan Kelner, Pravesh Kothari, Ankur Moitra, and Aaron Potechin. 2016. <span>“A Nearly Tight Sum-of-Squares Lower Bound for the Planted Clique Problem.”</span> <em>Proceedings of the 57th Annual IEEE Symposium on Foundations of Computer Science (FOCS)</em>, 428–37. <a href="https://doi.org/10.1109/FOCS.2016.52">https://doi.org/10.1109/FOCS.2016.52</a>.
+</div>
+<div id="ref-electronics13020416" class="csl-entry" role="listitem">
+Barbierato, Enrico, and Alice Gatti. 2024. <span>“The Challenges of Machine Learning: A Critical Review.”</span> <em>Electronics</em> 13 (2). <a href="https://doi.org/10.3390/electronics13020416">https://doi.org/10.3390/electronics13020416</a>.
+</div>
+<div id="ref-barceló2020modelinterpretabilitylenscomputational" class="csl-entry" role="listitem">
+Barceló, Pablo, Mikaël Monet, Jorge Pérez, and Bernardo Subercaseaux. 2020. <em>Model Interpretability Through the Lens of Computational Complexity</em>. <a href="https://arxiv.org/abs/2010.12265">https://arxiv.org/abs/2010.12265</a>.
+</div>
+<div id="ref-Bartlett:1998:MarginComplexity" class="csl-entry" role="listitem">
+Bartlett, Peter L. 1998. <span>“The Sample Complexity of Pattern Classification with Margin.”</span> <em>IEEE Transactions on Information Theory</em> 44 (2): 525–36.
+</div>
+<div id="ref-BartlettBousquetMendelson:2005:LocalRademacher" class="csl-entry" role="listitem">
+Bartlett, Peter L., Olivier Bousquet, and Shahar Mendelson. 2005. <span>“Local Rademacher Complexities.”</span> <em>Annals of Statistics</em> 33 (4): 1497–537.
+</div>
+<div id="ref-bartlett2017spectrally" class="csl-entry" role="listitem">
+Bartlett, Peter L., Dylan J. Foster, and Matus Telgarsky. 2017. <span>“Spectrally-Normalized Margin Bounds for Neural Networks.”</span> <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 6241–50.
+</div>
+<div id="ref-BartlettMendelson:2002:Rademacher" class="csl-entry" role="listitem">
+Bartlett, Peter L., and Shahar Mendelson. 2002. <span>“Rademacher and Gaussian Complexities: Risk Bounds and Structural Results.”</span> <em>Journal of Machine Learning Research</em> 3: 463–82.
+</div>
+<div id="ref-bartlett2005local" class="csl-entry" role="listitem">
+Bartlett, Peter L., and Shahar Mendelson. 2005. <span>“Empirical Minimization.”</span> <em>Probability Theory and Related Fields</em> 135: 311–34. <a href="https://doi.org/10.1007/s00440-005-0460-0">https://doi.org/10.1007/s00440-005-0460-0</a>.
+</div>
+<div id="ref-bartlett2021deep" class="csl-entry" role="listitem">
+Bartlett, Peter L., Andrea Montanari, and Alexander Rakhlin. 2021. <span>“Deep Learning: A Statistical Viewpoint.”</span> <em>Acta Numerica</em> 30: 87–201.
+</div>
+<div id="ref-Bathaee2018TheAI" class="csl-entry" role="listitem">
+Bathaee, Yavar. 2018. <span>“The Artificial Intelligence Black Box and the Failure of Intent and Causation.”</span> <em>Harvard Journal of Law &amp; Technology</em> 31: 889. <a href="https://api.semanticscholar.org/CorpusID:158988823">https://api.semanticscholar.org/CorpusID:158988823</a>.
+</div>
+<div id="ref-Beardon_2005" class="csl-entry" role="listitem">
+Beardon, Alan F. 2005. <em>Algebra and Geometry</em>. Cambridge University Press.
+</div>
+<div id="ref-belkin_reconciling_2019" class="csl-entry" role="listitem">
+Belkin, Mikhail, Daniel Hsu, Siyuan Ma, and Soumik Mandal. 2019a. <span>“Reconciling Modern Machine Learning Practice and the Bias-Variance Trade-Off.”</span> <em>Proc. Natl. Acad. Sci. U.S.A.</em> 116 (32): 15849–54. <a href="https://doi.org/10.1073/pnas.1903070116">https://doi.org/10.1073/pnas.1903070116</a>.
+</div>
+<div id="ref-belkin_reconciling_2019-1" class="csl-entry" role="listitem">
+Belkin, Mikhail, Daniel Hsu, Siyuan Ma, and Soumik Mandal. 2019b. <span>“Reconciling Modern Machine Learning Practice and the Bias-Variance Trade-Off.”</span> <em>Proc. Natl. Acad. Sci. U.S.A.</em> 116 (32): 15849–54. <a href="https://doi.org/10.1073/pnas.1903070116">https://doi.org/10.1073/pnas.1903070116</a>.
+</div>
+<div id="ref-belkin2018understanddeeplearningneed" class="csl-entry" role="listitem">
+Belkin, Mikhail, Siyuan Ma, and Soumik Mandal. 2018. <em>To Understand Deep Learning We Need to Understand Kernel Learning</em>. <a href="https://arxiv.org/abs/1802.01396">https://arxiv.org/abs/1802.01396</a>.
+</div>
+<div id="ref-bennett2025conscious" class="csl-entry" role="listitem">
+Bennett, Michael Timothy. 2025. <span>“How to Build Conscious Machines.”</span> Ph.D. thesis, Australian National University. <a href="https://osf.io/preprints/thesiscommons/wehmg_v1">https://osf.io/preprints/thesiscommons/wehmg_v1</a>.
+</div>
+<div id="ref-noauthor_bias-variance_nodate" class="csl-entry" role="listitem">
+<em>Bias-Variance Tradeoffs in Program Analysis <span></span> <span>Proceedings</span> of the 41st <span>ACM</span> <span>SIGPLAN</span>-<span>SIGACT</span> <span>Symposium</span> on <span>Principles</span> of <span>Programming</span> <span>Languages</span></em>. n.d. Accessed July 16, 2024. <a href="https://dl.acm.org/doi/10.1145/2535838.2535853">https://dl.acm.org/doi/10.1145/2535838.2535853</a>.
+</div>
+<div id="ref-blum1992training" class="csl-entry" role="listitem">
+Blum, Avrim L., and Ronald L. Rivest. 1992. <span>“Training a 3-Node Neural Network Is NP-Complete.”</span> <em>Neural Networks</em> 5 (1): 117–27.
+</div>
+<div id="ref-blum2003noise" class="csl-entry" role="listitem">
+Blum, Avrim, Adam Tauman Kalai, and Hal Wasserman. 2003. <span>“Noise-Tolerant Learning, the Parity Problem, and the Statistical Query Model.”</span> <em>Journal of the ACM</em> 50 (4): 506–19. <a href="https://doi.org/10.1145/792538.792543">https://doi.org/10.1145/792538.792543</a>.
+</div>
+<div id="ref-board1992necessity" class="csl-entry" role="listitem">
+Board, Raymond, and Leonard Pitt. 1992. <span>“On the Necessity of Occam Algorithms.”</span> <em>Theoretical Computer Science</em> 100 (1): 157–84. <a href="https://doi.org/10.1016/0304-3975(92)90367-O">https://doi.org/10.1016/0304-3975(92)90367-O</a>.
+</div>
+<div id="ref-Boole_Everest_1909" class="csl-entry" role="listitem">
+Boole Everest, Mary. 1909. <em>Philosophy and Fun of Algebra</em>. C. W. Daniel.
+</div>
+<div id="ref-Boole_1854" class="csl-entry" role="listitem">
+Boole, George. 1854. <em>An Investigation of the Laws of Thought on Which Are Founded the Mathematical Theories of Logic and Probabilities</em>. Walton; Maberly.
+</div>
+<div id="ref-boucheron_concentration_2013" class="csl-entry" role="listitem">
+Boucheron, Stéphane, Gábor Lugosi, and Pascal Massart. 2013. <em>Concentration <span>Inequalities</span>: <span>A</span> <span>Nonasymptotic</span> <span>Theory</span> of <span>Independence</span></em>. Oxford University Press. <a href="https://doi.org/10.1093/acprof:oso/9780199535255.001.0001">https://doi.org/10.1093/acprof:oso/9780199535255.001.0001</a>.
+</div>
+<div id="ref-Bourne2003Mixing" class="csl-entry" role="listitem">
+Bourne, John R. 2003. <span>“Mixing and the Selectivity of Chemical Reactions.”</span> <em>Organic Process Research &amp; Development</em> 7 (4): 471–508. <a href="https://doi.org/10.1021/op020074q">https://doi.org/10.1021/op020074q</a>.
+</div>
+<div id="ref-BousquetElisseeff:2002:Stability" class="csl-entry" role="listitem">
+Bousquet, Olivier, and André Elisseeff. 2002a. <span>“Stability and Generalization.”</span> <em>Journal of Machine Learning Research</em> 2: 499–526.
+</div>
+<div id="ref-bousquet2002stability" class="csl-entry" role="listitem">
+Bousquet, Olivier, and André Elisseeff. 2002b. <span>“Stability and Generalization.”</span> <em>Journal of Machine Learning Research</em> 2: 499–526.
+</div>
+<div id="ref-bousquet2020theoryuniversallearning" class="csl-entry" role="listitem">
+Bousquet, Olivier, Steve Hanneke, Shay Moran, Ramon van Handel, and Amir Yehudayoff. 2020. <em>A Theory of Universal Learning</em>. <a href="https://arxiv.org/abs/2011.04483">https://arxiv.org/abs/2011.04483</a>.
+</div>
+<div id="ref-Briggs2014MachineE" class="csl-entry" role="listitem">
+Briggs, Gordon. 2014. <span>“Machine Ethics , the Frame Problem , and Theory of Mind.”</span> <a href="https://api.semanticscholar.org/CorpusID:14954096">https://api.semanticscholar.org/CorpusID:14954096</a>.
+</div>
+<div id="ref-bronstein2021geometricdeeplearninggrids" class="csl-entry" role="listitem">
+Bronstein, Michael M., Joan Bruna, Taco Cohen, and Petar Veličković. 2021. <em>Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges</em>. <a href="https://arxiv.org/abs/2104.13478">https://arxiv.org/abs/2104.13478</a>.
+</div>
+<div id="ref-Bronstein_2017" class="csl-entry" role="listitem">
+Bronstein, Michael M., Joan Bruna, Yann LeCun, Arthur Szlam, and Pierre Vandergheynst. 2017. <span>“Geometric Deep Learning: Going Beyond Euclidean Data.”</span> <em>IEEE Signal Processing Magazine</em> 34 (4): 18–42. <a href="https://doi.org/10.1109/msp.2017.2693418">https://doi.org/10.1109/msp.2017.2693418</a>.
+</div>
+<div id="ref-brooks1991intelligence" class="csl-entry" role="listitem">
+Brooks, Rodney A. 1991. <span>“Intelligence Without Representation.”</span> <em>Artificial Intelligence</em> 47: 139–59. <a href="https://doi.org/10.1016/0004-3702(91)90053-M">https://doi.org/10.1016/0004-3702(91)90053-M</a>.
+</div>
+<div id="ref-brown2024biasvariance" class="csl-entry" role="listitem">
+Brown, Gavin, and Riccardo Ali. 2024. <span>“Bias/Variance Is Not the Same as Approximation/Estimation.”</span> <em>Transactions on Machine Learning Research</em>. <a href="https://openreview.net/forum?id=4TnFbv16hK">https://openreview.net/forum?id=4TnFbv16hK</a>.
+</div>
+<div id="ref-sep-algebra-logic-tradition" class="csl-entry" role="listitem">
+Burris, Stanley, and Javier Legris. 2021. <span>“<span class="nocase">The Algebra of Logic Tradition</span>.”</span> In <em>The <span>Stanford</span> Encyclopedia of Philosophy</em>, <span>S</span>pring 2021, edited by Edward N. Zalta. <a href="https://plato.stanford.edu/archives/spr2021/entries/algebra-logic-tradition/" class="uri">Https://plato.stanford.edu/archives/spr2021/entries/algebra-logic-tradition/</a>; Metaphysics Research Lab, Stanford University.
+</div>
+<div id="ref-Busch2023XrayPriority" class="csl-entry" role="listitem">
+Busch, Uwe. 2023. <span>“Claims of Priority – the Scientific Path to the Discovery of x-Rays.”</span> <em>Radiography</em> 29 (3): e245–54. <a href="https://doi.org/10.1016/j.radi.2023.05.007">https://doi.org/10.1016/j.radi.2023.05.007</a>.
+</div>
+<div id="ref-buschjager_generalized_2020" class="csl-entry" role="listitem">
+Buschjäger, Sebastian, Lukas Pfahler, and Katharina Morik. 2020a. <em>Generalized <span>Negative</span> <span>Correlation</span> <span>Learning</span> for <span>Deep</span> <span>Ensembling</span></em>. arXiv. <a href="https://doi.org/10.48550/arXiv.2011.02952">https://doi.org/10.48550/arXiv.2011.02952</a>.
+</div>
+<div id="ref-buschjager_generalized_2020-1" class="csl-entry" role="listitem">
+Buschjäger, Sebastian, Lukas Pfahler, and Katharina Morik. 2020b. <em>Generalized <span>Negative</span> <span>Correlation</span> <span>Learning</span> for <span>Deep</span> <span>Ensembling</span></em>. arXiv. <a href="http://arxiv.org/abs/2011.02952">http://arxiv.org/abs/2011.02952</a>.
+</div>
+<div id="ref-cahn2001coming" class="csl-entry" role="listitem">
+Cahn, Robert W., ed. 2001. <em>The Coming of Materials Science</em>. Vol. 5. Pergamon Materials Series. Elsevier / Pergamon.
+</div>
+<div id="ref-Cameron_2008" class="csl-entry" role="listitem">
+Cameron, Peter J. 2008. <em>Introduction to Algebra</em>. Oxford University Press.
+</div>
+<div id="ref-Carter_2009" class="csl-entry" role="listitem">
+Carter, Nathan C. 2009. <em>Visual Group Theory</em>. Classroom Resource Materials. Mathematical Association of America.
+</div>
+<div id="ref-Cartuyvels_2021" class="csl-entry" role="listitem">
+Cartuyvels, Ruben, Graham Spinks, and Marie-Francine Moens. 2021. <span>“Discrete and Continuous Representations and Processing in Deep Learning: Looking Forward.”</span> <em>AI Open</em> 2: 143–59. <a href="https://doi.org/10.1016/j.aiopen.2021.07.002">https://doi.org/10.1016/j.aiopen.2021.07.002</a>.
+</div>
+<div id="ref-chen2019neuralordinarydifferentialequations" class="csl-entry" role="listitem">
+Chen, Ricky T. Q., Yulia Rubanova, Jesse Bettencourt, and David Duvenaud. 2019. <em>Neural Ordinary Differential Equations</em>. <a href="https://arxiv.org/abs/1806.07366">https://arxiv.org/abs/1806.07366</a>.
+</div>
+<div id="ref-chizat2019lazy" class="csl-entry" role="listitem">
+Chizat, Lenaic, and Francis Bach. 2018. <span>“On the Global Convergence of Gradient Descent for over-Parameterized Models Using Optimal Transport.”</span> <em>Advances in Neural Information Processing Systems (NeurIPS)</em> 31.
+</div>
+<div id="ref-Chowdhary2020" class="csl-entry" role="listitem">
+Chowdhary, K. R. 2020. <em>Fundamentals of Artificial Intelligence</em>. Springer.
+</div>
+<div id="ref-churchland1986_neurophilosophy" class="csl-entry" role="listitem">
+Churchland, Patricia S. 1986. <em>Neurophilosophy: Toward a Unified Science of the Mind-Brain</em>. MIT Press.
+</div>
+<div id="ref-clocksin2003programming" class="csl-entry" role="listitem">
+Clocksin, William F., and Christopher S. Mellish. 2003. <em>Programming in Prolog: Using the ISO Standard</em>. 5th ed. Springer.
+</div>
+<div id="ref-collins1969retrieval" class="csl-entry" role="listitem">
+Collins, Allan M., and M. Ross Quillian. 1969. <span>“Retrieval Time from Semantic Memory.”</span> <em>Journal of Verbal Learning and Verbal Behavior</em> 8 (2): 240–47.
+</div>
+<div id="ref-colmerauer1972systeme" class="csl-entry" role="listitem">
+Colmerauer, Alain, Henry Kanoui, Robert Pasero, and Philippe Roussel. 1972. <em>Un Système de Communication Homme-Machine En Français</em>. Rapport préliminaire de fin de contrat IRIA. Groupe Intelligence Artificielle, Faculté des Sciences de Luminy, Université Aix-Marseille II.
+</div>
+<div id="ref-colmerauer1993birth" class="csl-entry" role="listitem">
+Colmerauer, Alain, and Philippe Roussel. 1993. <span>“The Birth of Prolog.”</span> In <em>History of Programming Languages—II</em>. ACM.
+</div>
+<div id="ref-copeland2018_evolution_computationalism" class="csl-entry" role="listitem">
+Copeland, Jack, and Diane Proudfoot. 2018. <span>“From Computer Metaphor to Computational Modeling: The Evolution of Computationalism.”</span> <em>Minds and Machines</em> 28 (4): 515–42. <a href="https://doi.org/10.1007/s11023-018-9468-3">https://doi.org/10.1007/s11023-018-9468-3</a>.
+</div>
+<div id="ref-cover1965geometrical" class="csl-entry" role="listitem">
+Cover, Thomas M. 1965. <span>“Geometrical and Statistical Properties of Systems of Linear Inequalities with Applications in Pattern Recognition.”</span> <em>IEEE Transactions on Electronic Computers</em> EC-14 (3): 326–34. <a href="https://doi.org/10.1109/PGEC.1965.264137">https://doi.org/10.1109/PGEC.1965.264137</a>.
+</div>
+<div id="ref-Cristianini2000AnIT" class="csl-entry" role="listitem">
+Cristianini, Nello, and John Shawe-Taylor. 2000. <span>“An Introduction to Support Vector Machines and Other Kernel-Based Learning Methods.”</span> <a href="https://api.semanticscholar.org/CorpusID:60486887">https://api.semanticscholar.org/CorpusID:60486887</a>.
+</div>
+<div id="ref-cybenko1989approximation" class="csl-entry" role="listitem">
+Cybenko, George. 1989. <span>“Approximation by Superpositions of a Sigmoidal Function.”</span> <em>Mathematics of Control, Signals and Systems</em> 2 (4): 303–14. <a href="https://doi.org/10.1007/BF02551274">https://doi.org/10.1007/BF02551274</a>.
+</div>
+<div id="ref-DarwicheMarquis2002" class="csl-entry" role="listitem">
+Darwiche, Adnan, and Pierre Marquis. 2002. <span>“A Knowledge Compilation Map.”</span> <em>Journal of Artificial Intelligence Research</em> 17: 229–64.
+</div>
+<div id="ref-Davidson1963" class="csl-entry" role="listitem">
+Davidson, Donald. 1963. <span>“Actions, Reasons, and Causes.”</span> <em>The Journal of Philosophy</em> 60 (23): 685–700. <a href="https://doi.org/10.2307/2023177">https://doi.org/10.2307/2023177</a>.
+</div>
+<div id="ref-Davidson1970" class="csl-entry" role="listitem">
+Davidson, Donald. 1970. <span>“Mental Events.”</span> In <em>Experience and Theory</em>, edited by Lawrence Foster and J. W. Swanson. Humanities Press.
+</div>
+<div id="ref-davies_unifying_2023" class="csl-entry" role="listitem">
+Davies, Xander, Lauro Langosco, and David Krueger. 2023. <em>Unifying <span>Grokking</span> and <span>Double</span> <span>Descent</span></em>. arXiv. <a href="http://arxiv.org/abs/2303.06173">http://arxiv.org/abs/2303.06173</a>.
+</div>
+<div id="ref-davis1977production" class="csl-entry" role="listitem">
+Davis, Randall, Bruce Buchanan, and Edward Shortliffe. 1977. <span>“Production Rules as a Representation for a Knowledge-Based Consultation Program.”</span> <em>Artificial Intelligence</em> 8 (1): 15–45.
+</div>
+<div id="ref-10.5555/2721661" class="csl-entry" role="listitem">
+Demuth, Howard B., Mark H. Beale, Orlando De Jess, and Martin T. Hagan. 2014. <em>Neural Network Design</em>. 2nd ed. Martin Hagan.
+</div>
+<div id="ref-dennett1978_brainstorms" class="csl-entry" role="listitem">
+Dennett, Daniel C. 1978. <em>Brainstorms: Philosophical Essays on Mind and Psychology</em>. MIT Press.
+</div>
+<div id="ref-dennett1991_consciousness" class="csl-entry" role="listitem">
+Dennett, Daniel C. 1991. <em>Consciousness Explained</em>. Little, Brown; Company.
+</div>
+<div id="ref-derouiche2025agentic" class="csl-entry" role="listitem">
+Derouiche, Hana, Zaki Brahmi, and Haithem Mazeni. 2025. <span>“Agentic AI Frameworks: Architectures, Protocols, and Design Challenges.”</span> <em>arXiv Preprint arXiv:2508.10146</em>. <a href="https://arxiv.org/abs/2508.10146">https://arxiv.org/abs/2508.10146</a>.
+</div>
+<div id="ref-Descartes1950-DESDOM" class="csl-entry" role="listitem">
+Descartes, Rene? 1950. <em>Discourse on Method</em>. Harmondsworth, Penguin.
+</div>
+<div id="ref-IntroChemNuclearAtom" class="csl-entry" role="listitem">
+<span>“Discoveries Leading to the Nuclear Atom Model.”</span> n.d. University of North Carolina Pressbooks / UEN. Accessed April 3, 2026. <a href="https://uen.pressbooks.pub/introductorychemistry/chapter/discoveries-leading-to-the-nuclear-atom-model/">https://uen.pressbooks.pub/introductorychemistry/chapter/discoveries-leading-to-the-nuclear-atom-model/</a>.
+</div>
+<div id="ref-dodig2012_infocomputationalism" class="csl-entry" role="listitem">
+Dodig-Crnkovic, Gordana. 2012. <span>“Info-Computationalism and Morphological Computing of Informational Structures.”</span> <em>Information</em> 3 (2): 204–18. <a href="https://doi.org/10.3390/info3020204">https://doi.org/10.3390/info3020204</a>.
+</div>
+<div id="ref-domingos_unifeid_2000" class="csl-entry" role="listitem">
+Domingos, Pedro M. 2000a. <span>“A <span>Unifeid</span> <span>Bias</span>-<span>Variance</span> <span>Decomposition</span> and Its <span>Applications</span>.”</span> <em>Semantic Scholar</em>, June. <a href="https://www.semanticscholar.org/paper/A-Unifeid-Bias-Variance-Decomposition-and-its-Domingos/e1ed9d24db5e8f7ab326aeb797e965a94f5ad6d3">https://www.semanticscholar.org/paper/A-Unifeid-Bias-Variance-Decomposition-and-its-Domingos/e1ed9d24db5e8f7ab326aeb797e965a94f5ad6d3</a>.
+</div>
+<div id="ref-Domingos2000AUB" class="csl-entry" role="listitem">
+Domingos, Pedro M. 2000b. <span>“A Unified Bias-Variance Decomposition for Zero-One and Squared Loss.”</span> <em>AAAI/IAAI</em>. <a href="https://api.semanticscholar.org/CorpusID:2063488">https://api.semanticscholar.org/CorpusID:2063488</a>.
+</div>
+<div id="ref-doshi2017towards" class="csl-entry" role="listitem">
+Doshi-Velez, Finale, and Been Kim. 2017. <span>“Towards a Rigorous Science of Interpretable Machine Learning.”</span> <em>arXiv Preprint arXiv:1702.08608</em>.
+</div>
+<div id="ref-dreyfus1965alchemy" class="csl-entry" role="listitem">
+Dreyfus, Hubert L. 1965. <em>Alchemy and Artificial Intelligence</em>. P-3244. RAND Corporation. <a href="https://www.rand.org/pubs/papers/P3244.html">https://www.rand.org/pubs/papers/P3244.html</a>.
+</div>
+<div id="ref-dreyfus1972what" class="csl-entry" role="listitem">
+Dreyfus, Hubert L. 1972. <em>What Computers Can’t Do: A Critique of Artificial Reason</em>. Harper &amp; Row.
+</div>
+<div id="ref-DreyfusImpasse1979" class="csl-entry" role="listitem">
+Dreyfus, Hubert L. 1979. <em>From Micro-Worlds to Knowledge Representation : AI at an Impasse</em>.
+</div>
+<div id="ref-dreyfus1991being" class="csl-entry" role="listitem">
+Dreyfus, Hubert L. 1991. <em>Being-in-the-World: A Commentary on Heidegger’s Being and Time, Division i</em>. MIT Press.
+</div>
+<div id="ref-dreyfus1986mind" class="csl-entry" role="listitem">
+Dreyfus, Hubert L., and Stuart E. Dreyfus. 1986. <em>Mind over Machine: The Power of Human Intuition and Expertise in the Era of the Computer</em>. Free Press.
+</div>
+<div id="ref-dubey2022activationfunctionsdeeplearning" class="csl-entry" role="listitem">
+Dubey, Shiv Ram, Satish Kumar Singh, and Bidyut Baran Chaudhuri. 2022. <em>Activation Functions in Deep Learning: A Comprehensive Survey and Benchmark</em>. <a href="https://arxiv.org/abs/2109.14545">https://arxiv.org/abs/2109.14545</a>.
+</div>
+<div id="ref-Dummit_Foote_2004" class="csl-entry" role="listitem">
+Dummit, David S., and Richard M. Foote. 2004. <em>Abstract Algebra</em>. 3rd ed. John Wiley &amp; Sons.
+</div>
+<div id="ref-LehmannCasella_theory_1998" class="csl-entry" role="listitem">
+E. L. Lehmann, George Casella. 1998. <em>Theory of <span>Point</span> <span>Estimation</span></em>. Springer <span>Texts</span> in <span>Statistics</span>. Springer-Verlag. <a href="https://doi.org/10.1007/b98854">https://doi.org/10.1007/b98854</a>.
+</div>
+<div id="ref-eldan2016power" class="csl-entry" role="listitem">
+Eldan, Ronen, and Ohad Shamir. 2016. <span>“The Power of Depth for Feedforward Neural Networks.”</span> <em>Proceedings of the 29th Annual Conference on Learning Theory (COLT)</em>, Proceedings of machine learning research, vol. 49: 907–40. <a href="https://proceedings.mlr.press/v49/eldan16.html">https://proceedings.mlr.press/v49/eldan16.html</a>.
+</div>
+<div id="ref-eliade1956forge" class="csl-entry" role="listitem">
+Eliade, Mircea. 1956. <em>The Forge and the Crucible: The Origins and Structure of Alchemy</em>. Flammarion.
+</div>
+<div id="ref-Elliot2019_DeFinettiPhilosophy" class="csl-entry" role="listitem">
+Elliot, C. 2019. <span>“On de Finetti’s Philosophy of Probability.”</span> PhD thesis, Tilburg University. <a href="https://research.tilburguniversity.edu/en/publications/on-de-finettis-philosophy-of-probability">https://research.tilburguniversity.edu/en/publications/on-de-finettis-philosophy-of-probability</a>.
+</div>
+<div id="ref-britannica_cartwright" class="csl-entry" role="listitem">
+Encyclopaedia Britannica Editors. n.d.-a. <em>Edmund Cartwright</em>. Britannica Online. Accessed March 18, 2026. <a href="https://www.britannica.com/biography/Edmund-Cartwright">https://www.britannica.com/biography/Edmund-Cartwright</a>.
+</div>
+<div id="ref-britannica_hargreaves" class="csl-entry" role="listitem">
+Encyclopaedia Britannica Editors. n.d.-b. <em>James Hargreaves</em>. Britannica Online. Accessed March 18, 2026. <a href="https://www.britannica.com/biography/James-Hargreaves">https://www.britannica.com/biography/James-Hargreaves</a>.
+</div>
+<div id="ref-britannica_wilkinson" class="csl-entry" role="listitem">
+Encyclopaedia Britannica Editors. n.d.-c. <em>John Wilkinson</em>. Britannica Online. Accessed March 18, 2026. <a href="https://www.britannica.com/biography/John-Wilkinson">https://www.britannica.com/biography/John-Wilkinson</a>.
+</div>
+<div id="ref-britannica_arkwright" class="csl-entry" role="listitem">
+Encyclopaedia Britannica Editors. n.d.-d. <em>Sir Richard Arkwright</em>. Britannica Online. Accessed March 18, 2026. <a href="https://www.britannica.com/biography/Richard-Arkwright">https://www.britannica.com/biography/Richard-Arkwright</a>.
+</div>
+<div id="ref-deFinetti1990_TheoryProbability" class="csl-entry" role="listitem">
+Finetti, Bruno de. 1990. <em>Theory of Probability: A Critical Introductory Treatment</em>. John Wiley &amp; Sons.
+</div>
+<div id="ref-flavell-while2011_leblanc" class="csl-entry" role="listitem">
+Flavell-While, Claudia. 2011. <span>“Nicolas Leblanc — Revolutionary Discoveries.”</span> <em>The Chemical Engineer (Features / Chemical Engineers Who Changed the World)</em>. <a href="https://www.thechemicalengineer.com/features/cewctw-nicolas-leblanc-revolutionary-discoveries/">https://www.thechemicalengineer.com/features/cewctw-nicolas-leblanc-revolutionary-discoveries/</a>.
+</div>
+<div id="ref-FloydWarmuth:1995:SampleCompression" class="csl-entry" role="listitem">
+Floyd, Stephen, and Manfred K. Warmuth. 1995. <span>“Sample Compression, Learnability, and the Vapnik-Chervonenkis Dimension.”</span> <em>Machine Learning</em> 21 (3): 269–304.
+</div>
+<div id="ref-fodor1975_languageofthought" class="csl-entry" role="listitem">
+Fodor, Jerry A. 1975. <em>The Language of Thought</em>. Harvard University Press.
+</div>
+<div id="ref-Scott_Fortmann_Bias" class="csl-entry" role="listitem">
+Fortmann, Scott. 2012. <em>Understanding the <span>Bias</span>-<span>Variance</span> <span>Tradeoff</span></em>. <a href="https://scott.fortmann-roe.com/docs/BiasVariance.html">https://scott.fortmann-roe.com/docs/BiasVariance.html</a>.
+</div>
+<div id="ref-frenkel1926shear" class="csl-entry" role="listitem">
+Frenkel, J. 1926. <span>“Zur Theorie Der Elastizitätsgrenze Und Der Festigkeit Kristallinischer Körper.”</span> <em>Zeitschrift Für Physik</em> 37: 572–609. <a href="https://doi.org/10.1007/BF01389854">https://doi.org/10.1007/BF01389854</a>.
+</div>
+<div id="ref-friedman2007pathwise" class="csl-entry" role="listitem">
+Friedman, Jerome, Trevor Hastie, Holger Höfling, and Robert Tibshirani. 2007. <span>“Pathwise Coordinate Optimization.”</span> <em>The Annals of Applied Statistics</em> 1 (2): 302–32. <a href="https://doi.org/10.1214/07-AOAS131">https://doi.org/10.1214/07-AOAS131</a>.
+</div>
+<div id="ref-Gallian_2013" class="csl-entry" role="listitem">
+Gallian, Joseph A. 2013. <em>Contemporary Abstract Algebra</em>. 8th ed. Brooks/Cole.
+</div>
+<div id="ref-gardner1983frames" class="csl-entry" role="listitem">
+Gardner, Howard. 1983. <em>Frames of Mind: The Theory of Multiple Intelligences</em>. Basic Books.
+</div>
+<div id="ref-garg2021memory" class="csl-entry" role="listitem">
+Garg, Sumegha, Pravesh K. Kothari, Pengda Liu, and Ran Raz. 2021. <span>“Memory-Sample Lower Bounds for Learning Parity with Noise.”</span> <em>arXiv Preprint arXiv:2107.02320</em>. <a href="https://arxiv.org/abs/2107.02320">https://arxiv.org/abs/2107.02320</a>.
+</div>
+<div id="ref-gauvrit2015_algorithmic_cognition" class="csl-entry" role="listitem">
+Gauvrit, Nicolas, Hector Zenil, and Per Tegnér. 2015. <span>“The Information-Theoretic and Algorithmic Approach to Human, Animal and Artificial Cognition.”</span> <em>arXiv Preprint</em>. <a href="https://arxiv.org/abs/1501.04242">https://arxiv.org/abs/1501.04242</a>.
+</div>
+<div id="ref-6797087" class="csl-entry" role="listitem">
+Geman, Stuart, Elie Bienenstock, and René Doursat. 1992. <span>“Neural Networks and the Bias/Variance Dilemma.”</span> <em>Neural Computation</em> 4 (1): 1–58. <a href="https://doi.org/10.1162/neco.1992.4.1.1">https://doi.org/10.1162/neco.1992.4.1.1</a>.
+</div>
+<div id="ref-gerlach1872struktur" class="csl-entry" role="listitem">
+Gerlach, Joseph von. 1872. <span>“Ueber Die Structur Der Grauen Substanz Des Menschlichen Grosshirns. Vorläufige Mitheilung.”</span> <em>Centralblatt Für Die Medizinischen Wissenschaften</em> 10: 273–88. <a href="https://www.booklooker.de/B%C3%BCcher/Joseph-Gerlach%2BUeber-die-Structur-der-grauen-Substanz-des-menschlichen-Grosshirns-Vorl%C3%A4ufige/id/A02ohXHY01ZZu">https://www.booklooker.de/B%C3%BCcher/Joseph-Gerlach%2BUeber-die-Structur-der-grauen-Substanz-des-menschlichen-Grosshirns-Vorl%C3%A4ufige/id/A02ohXHY01ZZu</a>.
+</div>
+<div id="ref-Goel_2022" class="csl-entry" role="listitem">
+Goel, Ashok. 2022. <span>“Looking Back, Looking Ahead: Symbolic Versus Connectionist AI.”</span> <em>AI Magazine</em> 42 (4): 83–85. <a href="https://doi.org/10.1609/aaai.12026">https://doi.org/10.1609/aaai.12026</a>.
+</div>
+<div id="ref-GoertzelPennachin2006" class="csl-entry" role="listitem">
+Goertzel, Ben, and Cassio Pennachin, eds. 2006. <em>Artificial General Intelligence</em>. Springer Science &amp; Business Media.
+</div>
+<div id="ref-gold1967language" class="csl-entry" role="listitem">
+Gold, E. Mark. 1967. <span>“Language Identification in the Limit.”</span> <em>Information and Control</em> 10 (5): 447–74. <a href="https://doi.org/10.1016/S0019-9958(67)91165-5">https://doi.org/10.1016/S0019-9958(67)91165-5</a>.
+</div>
+<div id="ref-goodfellow2016deep" class="csl-entry" role="listitem">
+Goodfellow, Ian, Yoshua Bengio, Aaron Courville, and Yoshua Bengio. 2016. <em>Deep Learning</em>. Vol. 1. MIT Press.
+</div>
+<div id="ref-GoodmanBakerTenenbaum2009" class="csl-entry" role="listitem">
+Goodman, Noah D., Chris L. Baker, and Joshua B. Tenenbaum. 2009. <span>“Cause and Intent: Social Reasoning in Causal Learning.”</span> <em>Proceedings of the Thirty-First Annual Conference of the Cognitive Science Society</em> (Amsterdam), 2759–64.
+</div>
+<div id="ref-10.5555/1513920" class="csl-entry" role="listitem">
+Gowers, Timothy, June Barrow-Green, and Imre Leader. 2008. <em>The Princeton Companion to Mathematics</em>. Illustrated edition. Princeton University Press.
+</div>
+<div id="ref-Grenander1952OnES" class="csl-entry" role="listitem">
+Grenander, Ulf. 1952. <span>“On Empirical Spectral Analysis of Stochastic Processes.”</span> <em>Arkiv f<span>ö</span>r Matematik</em> 1: 503–31. <a href="https://api.semanticscholar.org/CorpusID:122878699">https://api.semanticscholar.org/CorpusID:122878699</a>.
+</div>
+<div id="ref-FrameGryzJarek" class="csl-entry" role="listitem">
+Gryz, Jarek. 2013. <span>“The Frame Problem in Artificial Intelligence and Philosophy.”</span> <em>Filozofia Nauki</em> 21 (June): 15–30.
+</div>
+<div id="ref-STL_Hajek_Maxim_2021" class="csl-entry" role="listitem">
+Hajek, Bruce, and Maxim Raginsky. 2021. <em>Statistical Learning Theory</em>. Vol. 1. <a href="https://maxim.ece.illinois.edu/teaching/SLT/">https://maxim.ece.illinois.edu/teaching/SLT/</a>.
+</div>
+<div id="ref-GRP_Hamilton" class="csl-entry" role="listitem">
+Hamilton, William L. n.d. <span>“Graph Representation Learning.”</span> <em>Synthesis Lectures on Artificial Intelligence and Machine Learning</em> 14 (3): 1–159.
+</div>
+<div id="ref-harnad1990symbol" class="csl-entry" role="listitem">
+Harnad, Stevan. 1990. <span>“The Symbol Grounding Problem.”</span> <em>Physica D: Nonlinear Phenomena</em> 42: 335–46. <a href="https://doi.org/10.1016/0167-2789(90)90087-6">https://doi.org/10.1016/0167-2789(90)90087-6</a>.
+</div>
+<div id="ref-haussler1996rigorous" class="csl-entry" role="listitem">
+<span class="nocase">Haussler, David, Michael J. Kearns, H. Sebastian Seung, Naftali Tishby, et al.</span> 1996. <span>“Rigorous Learning Curve Bounds from Statistical Mechanics.”</span> <em>Machine Learning</em> 25 (2–3): 195–236. <a href="https://doi.org/10.1007/BF00116991">https://doi.org/10.1007/BF00116991</a>.
+</div>
+<div id="ref-heidegger1962being" class="csl-entry" role="listitem">
+Heidegger, Martin. 1962. <em>Being and Time</em>. Translated by John Macquarrie and Edward Robinson. Harper &amp; Row.
+</div>
+<div id="ref-hellstrom_bias_2020" class="csl-entry" role="listitem">
+Hellström, Thomas, Virginia Dignum, and Suna Bensch. 2020. <em>Bias in <span>Machine</span> <span>Learning</span> – <span>What</span> Is It <span>Good</span> for?</em> arXiv. <a href="https://doi.org/10.48550/arXiv.2004.00686">https://doi.org/10.48550/arXiv.2004.00686</a>.
+</div>
+<div id="ref-Herstein_1975" class="csl-entry" role="listitem">
+Herstein, I. N. 1975. <em>Topics in Algebra</em>. 2nd ed. Wiley.
+</div>
+<div id="ref-Hirsch2006-HIRDOO-2" class="csl-entry" role="listitem">
+Hirsch, P. B., R. W. Horne, and M. J. Whelan. 2006. <span>“Direct Observations of the Arrangement and Motion of Dislocations in Aluminium.”</span> <em>Philosophical Magazine</em> 86 (29-31): 4553–72. <a href="https://doi.org/10.1080/14786430600844674">https://doi.org/10.1080/14786430600844674</a>.
+</div>
+<div id="ref-980896" class="csl-entry" role="listitem">
+Ho, Yu-Chi, and D. L. Pepyne. 2001. <span>“Simple Explanation of the No Free Lunch Theorem of Optimization.”</span> <em>Proceedings of the 40th IEEE Conference on Decision and Control (Cat. No.01CH37228)</em> 5: 4409–4414 vol.5. <a href="https://doi.org/10.1109/CDC.2001.980896">https://doi.org/10.1109/CDC.2001.980896</a>.
+</div>
+<div id="ref-hon2013myth" class="csl-entry" role="listitem">
+Hon, Giora, and Bernard R. Goldstein. 2013. <span>“J. J. Thomson’s Plum-Pudding Atomic Model: The Making of a Scientific Myth.”</span> <em>Annalen Der Physik</em> 525 (8-9): A129–33. <a href="https://doi.org/10.1002/andp.201300732">https://doi.org/10.1002/andp.201300732</a>.
+</div>
+<div id="ref-hornik1991approximation" class="csl-entry" role="listitem">
+Hornik, Kurt. 1991. <span>“Approximation Capabilities of Multilayer Feedforward Networks.”</span> <em>Neural Networks</em> 4 (2): 251–57. <a href="https://doi.org/10.1016/0893-6080(91)90009-T">https://doi.org/10.1016/0893-6080(91)90009-T</a>.
+</div>
+<div id="ref-hornik1989multilayer" class="csl-entry" role="listitem">
+Hornik, Kurt, Maxwell Stinchcombe, and Halbert White. 1989. <span>“Multilayer Feedforward Networks Are Universal Approximators.”</span> <em>Neural Networks</em> 2 (5): 359–66. <a href="https://doi.org/10.1016/0893-6080(89)90020-8">https://doi.org/10.1016/0893-6080(89)90020-8</a>.
+</div>
+<div id="ref-Hornsby2004" class="csl-entry" role="listitem">
+Hornsby, Jennifer. 2004. <span>“Agency and Actions.”</span> In <em>Agency and Action</em>, edited by H. Steward and J. Hyman. Cambridge University Press.
+</div>
+<div id="ref-sep-philosophy-mathematics" class="csl-entry" role="listitem">
+Horsten, Leon et al. 2023. <span>“<span class="nocase">Philosophy of Mathematics</span>.”</span> In <em>The <span>Stanford</span> Encyclopedia of Philosophy</em>, <span>W</span>inter 2023, edited by Edward N. Zalta and Uri Nodelman. <a href="https://plato.stanford.edu/archives/win2023/entries/philosophy-mathematics/" class="uri">Https://plato.stanford.edu/archives/win2023/entries/philosophy-mathematics/</a>; Metaphysics Research Lab, Stanford University.
+</div>
+<div id="ref-hsieh2024comprehensiveguideexplainableai" class="csl-entry" role="listitem">
+Hsieh, Weiche, Ziqian Bi, Chuanqi Jiang, et al. 2024. <em>A Comprehensive Guide to Explainable AI: From Classical Models to LLMs</em>. <a href="https://arxiv.org/abs/2412.00800">https://arxiv.org/abs/2412.00800</a>.
+</div>
+<div id="ref-hu2021modelcomplexitydeeplearning" class="csl-entry" role="listitem">
+Hu, Xia, Lingyang Chu, Jian Pei, Weiqing Liu, and Jiang Bian. 2021a. <em>Model Complexity of Deep Learning: A Survey</em>. <a href="https://arxiv.org/abs/2103.05127">https://arxiv.org/abs/2103.05127</a>.
+</div>
+<div id="ref-hu_model_2021" class="csl-entry" role="listitem">
+Hu, Xia, Lingyang Chu, Jian Pei, Weiqing Liu, and Jiang Bian. 2021b. <em>Model <span>Complexity</span> of <span>Deep</span> <span>Learning</span>: <span>A</span> <span>Survey</span></em>. arXiv. <a href="https://doi.org/10.48550/arXiv.2103.05127">https://doi.org/10.48550/arXiv.2103.05127</a>.
+</div>
+<div id="ref-huang2025samplecomplexityrepresentationability" class="csl-entry" role="listitem">
+Huang, Baihe, Shanda Li, Tianhao Wu, et al. 2025. <em>Sample Complexity and Representation Ability of Test-Time Scaling Paradigms</em>. <a href="https://arxiv.org/abs/2506.05295">https://arxiv.org/abs/2506.05295</a>.
+</div>
+<div id="ref-Hungerford_1974" class="csl-entry" role="listitem">
+Hungerford, Thomas W. 1974. <em>Algebra</em>. Vol. 73. Graduate Texts in Mathematics. Springer-Verlag.
+</div>
+<div id="ref-ivgi-etal-2022-scaling" class="csl-entry" role="listitem">
+Ivgi, Maor, Yair Carmon, and Jonathan Berant. 2022. <span>“Scaling Laws Under the Microscope: Predicting Transformer Performance from Small Scale Experiments.”</span> In <em>Findings of the Association for Computational Linguistics: EMNLP 2022</em>, edited by Yoav Goldberg, Zornitsa Kozareva, and Yue Zhang. Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/2022.findings-emnlp.544">https://doi.org/10.18653/v1/2022.findings-emnlp.544</a>.
+</div>
+<div id="ref-Jackson2019" class="csl-entry" role="listitem">
+Jackson, Philip C. 2019. <em>Introduction to Artificial Intelligence</em>. 3rd ed. Dover Publications.
+</div>
+<div id="ref-jacot2018ntk" class="csl-entry" role="listitem">
+Jacot, Arthur, Franck Gabriel, and Clément Hongler. 2018. <span>“Neural Tangent Kernel: Convergence and Generalization in Neural Networks.”</span> <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 8571–80.
+</div>
+<div id="ref-Jacot:2018:NTK" class="csl-entry" role="listitem">
+Jacot, Arthur, François Gabriel, and Clément Hongler. 2018. <span>“Neural Tangent Kernel: Convergence and Generalization in Neural Networks.”</span> <em>Advances in Neural Information Processing Systems (NeurIPS)</em>.
+</div>
+<div id="ref-gareth_james_introduction_2013" class="csl-entry" role="listitem">
+James, Gareth, Trevor Hastie, Robert Tibshirani, and Daniela Witten. 2013. <em>An Introduction to Statistical Learning : With Applications in <span>R</span></em>. New York : Springer, [2013] ©2013. <a href="https://search.library.wisc.edu/catalog/9910207152902121">https://search.library.wisc.edu/catalog/9910207152902121</a>.
+</div>
+<div id="ref-janik2021complexitydeepneuralnetworks" class="csl-entry" role="listitem">
+Janik, Romuald A., and Przemek Witaszczyk. 2021. <em>Complexity for Deep Neural Networks and Other Characteristics of Deep Feature Representations</em>. <a href="https://arxiv.org/abs/2006.04791">https://arxiv.org/abs/2006.04791</a>.
+</div>
+<div id="ref-jeon2025informationtheoreticfoundationsmachinelearning" class="csl-entry" role="listitem">
+Jeon, Hong Jun, and Benjamin Van Roy. 2025. <em>Information-Theoretic Foundations for Machine Learning</em>. <a href="https://arxiv.org/abs/2407.12288">https://arxiv.org/abs/2407.12288</a>.
+</div>
+<div id="ref-Judson_2023" class="csl-entry" role="listitem">
+Judson, Thomas W. 2023. <em>Abstract Algebra: Theory and Applications</em>. Open source textbook. <a href="http://abstract.ups.edu/">http://abstract.ups.edu/</a>.
+</div>
+<div id="ref-1180370208" class="csl-entry" role="listitem">
+Kandel, Eric R., John D. Koester, Sarah H. Mack, and Steven A. Siegelbaum. 2021. In <em>Principles of Neural Science, 6e</em>. McGraw Hill. <a href="https://accessbiomedicalscience.mhmedical.com/content.aspx?aid=1180370208">accessbiomedicalscience.mhmedical.com/content.aspx?aid=1180370208</a>.
+</div>
+<div id="ref-kaplan2020scalinglawsneurallanguage" class="csl-entry" role="listitem">
+Kaplan, Jared, Sam McCandlish, Tom Henighan, et al. 2020. <em>Scaling Laws for Neural Language Models</em>. <a href="https://arxiv.org/abs/2001.08361">https://arxiv.org/abs/2001.08361</a>.
+</div>
+<div id="ref-kapoor2022leakage" class="csl-entry" role="listitem">
+Kapoor, Sayash, and Arvind Narayanan. 2022. <span>“Leakage and the Reproducibility Crisis in ML-Based Science.”</span> <em>arXiv Preprint arXiv:2207.07048</em>.
+</div>
+<div id="ref-MkayPretenceSignalStatistics1993" class="csl-entry" role="listitem">
+Kay, Steven M. 1993. <em>Fundamentals of Statistical Signal Processing: Estimation Theory <span></span> <span>Guide</span> Books <span></span> <span>ACM</span> <span>Digital</span> <span>Library</span></em>. <a href="https://dl.acm.org/doi/10.5555/151045">https://dl.acm.org/doi/10.5555/151045</a>.
+</div>
+<div id="ref-kearns1998efficient" class="csl-entry" role="listitem">
+Kearns, Michael J. 1998. <span>“Efficient Noise-Tolerant Learning from Statistical Queries.”</span> <em>Journal of the ACM</em> 45 (6): 983–1006.
+</div>
+<div id="ref-10.5555/200548" class="csl-entry" role="listitem">
+Kearns, Michael J., and Umesh V. Vazirani. 1994. <em>An Introduction to Computational Learning Theory</em>. MIT Press.
+</div>
+<div id="ref-khan_bayesian_2024" class="csl-entry" role="listitem">
+Khan, Mohammad Emtiyaz, and Håvard Rue. 2024. <em>The <span>Bayesian</span> <span>Learning</span> <span>Rule</span></em>. arXiv. <a href="https://doi.org/10.48550/arXiv.2107.04562">https://doi.org/10.48550/arXiv.2107.04562</a>.
+</div>
+<div id="ref-Kim1998" class="csl-entry" role="listitem">
+Kim, Jaegwon. 1998. <em>Mind in a Physical World: An Essay on the Mind–Body Problem and Mental Causation</em>. MIT Press.
+</div>
+<div id="ref-klein2007_materials" class="csl-entry" role="listitem">
+Klein, Ursula, and Wolfgang Lefèvre. 2007. <em>Materials in Eighteenth-Century Science: A Historical Ontology</em>. The MIT Press.
+</div>
+<div id="ref-kutyniok2022mathematics" class="csl-entry" role="listitem">
+Kutyniok, Gitta. 2022. <span>“The Mathematics of Artificial Intelligence.”</span> <em>arXiv Preprint arXiv:2203.08890</em>. <a href="https://arxiv.org/abs/2203.08890">https://arxiv.org/abs/2203.08890</a>.
+</div>
+<div id="ref-lafon_understanding_2024" class="csl-entry" role="listitem">
+Lafon, Marc, and Alexandre Thomas. 2024. <em>Understanding the <span>Double</span> <span>Descent</span> <span>Phenomenon</span> in <span>Deep</span> <span>Learning</span></em>. arXiv. <a href="http://arxiv.org/abs/2403.10459">http://arxiv.org/abs/2403.10459</a>.
+</div>
+<div id="ref-laforte1998_godel_computationalism" class="csl-entry" role="listitem">
+LaForte, Geoffrey. 1998. <span>“Why Gödel’s Theorem Cannot Refute Computationalism.”</span> <em>Minds and Machines</em> 8 (4): 577–93. <a href="https://doi.org/10.1023/A:1008320429318">https://doi.org/10.1023/A:1008320429318</a>.
+</div>
+<div id="ref-lee2019wide" class="csl-entry" role="listitem">
+Lee, Jaehoon, Lechao Xiao, Samuel S. Schoenholz, et al. 2019. <span>“Wide Neural Networks of Any Depth Evolve as Linear Models Under Gradient Descent.”</span> <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 8572–83.
+</div>
+<div id="ref-lee2025neuralscalinglawsleading" class="csl-entry" role="listitem">
+Lee, Siwoo, and Adji Bousso Dieng. 2025. <em>Are Neural Scaling Laws Leading Quantum Chemistry Astray?</em> <a href="https://arxiv.org/abs/2509.26397">https://arxiv.org/abs/2509.26397</a>.
+</div>
+<div id="ref-legg2007collectiondefinitionsintelligence" class="csl-entry" role="listitem">
+Legg, Shane, and Marcus Hutter. 2007. <em>A Collection of Definitions of Intelligence</em>. <a href="https://arxiv.org/abs/0706.3639">https://arxiv.org/abs/0706.3639</a>.
+</div>
+<div id="ref-leshno1993multilayer" class="csl-entry" role="listitem">
+Leshno, Moshe, Vladimir Ya Lin, Allan Pinkus, and Shimon Schocken. 1993. <span>“Multilayer Feedforward Networks with a Nonpolynomial Activation Function Can Approximate Any Function.”</span> <em>Neural Networks</em> 6 (6): 861–67. <a href="https://doi.org/10.1016/S0893-6080(05)80131-5">https://doi.org/10.1016/S0893-6080(05)80131-5</a>.
+</div>
+<div id="ref-math13111707" class="csl-entry" role="listitem">
+Liang, Baoyu, Yuchen Wang, and Chao Tong. 2025. <span>“AI Reasoning in Deep Learning Era: From Symbolic AI to Neural–Symbolic AI.”</span> <em>Mathematics</em> 13 (11). <a href="https://doi.org/10.3390/math13111707">https://doi.org/10.3390/math13111707</a>.
+</div>
+<div id="ref-Lindsay1993DENDRALAC" class="csl-entry" role="listitem">
+Lindsay, Robert K., Bruce G. Buchanan, Edward A. Feigenbaum, and Joshua Lederberg. 1993. <span>“DENDRAL: A Case Study of the First Expert System for Scientific Hypothesis Formation.”</span> <em>Artif. Intell.</em> 61: 209–61. <a href="https://api.semanticscholar.org/CorpusID:6929723">https://api.semanticscholar.org/CorpusID:6929723</a>.
+</div>
+<div id="ref-lipton2016mythos" class="csl-entry" role="listitem">
+Lipton, Zachary C. 2018. <span>“The Mythos of Model Interpretability.”</span> <em>Queue</em> 16 (3): 31–57.
+</div>
+<div id="ref-lipton2018troublingtrendsmachinelearning" class="csl-entry" role="listitem">
+Lipton, Zachary C., and Jacob Steinhardt. 2018. <em>Troubling Trends in Machine Learning Scholarship</em>. <a href="https://arxiv.org/abs/1807.03341">https://arxiv.org/abs/1807.03341</a>.
+</div>
+<div id="ref-LittlestoneWarmuth:1994:WeightedMajority" class="csl-entry" role="listitem">
+Littlestone, Nick, and Manfred K. Warmuth. 1994. <span>“The Weighted Majority Algorithm.”</span> <em>Information and Computation</em> 108 (2): 212–61. <a href="https://doi.org/10.1006/inco.1994.1009">https://doi.org/10.1006/inco.1994.1009</a>.
+</div>
+<div id="ref-liu2023understandingroleoptimizationdouble" class="csl-entry" role="listitem">
+Liu, Chris Yuhao, and Jeffrey Flanigan. 2023. <em>Understanding the Role of Optimization in Double Descent</em>. <a href="https://arxiv.org/abs/2312.03951">https://arxiv.org/abs/2312.03951</a>.
+</div>
+<div id="ref-liu2025kankolmogorovarnoldnetworks" class="csl-entry" role="listitem">
+Liu, Ziming, Yixuan Wang, Sachin Vaidya, et al. 2025. <em>KAN: Kolmogorov-Arnold Networks</em>. <a href="https://arxiv.org/abs/2404.19756">https://arxiv.org/abs/2404.19756</a>.
+</div>
+<div id="ref-lopushanskyy2024graphneuralnetworksgraph" class="csl-entry" role="listitem">
+Lopushanskyy, Dmytro, and Borun Shi. 2024. <em>Graph Neural Networks on Graph Databases</em>. <a href="https://arxiv.org/abs/2411.11375">https://arxiv.org/abs/2411.11375</a>.
+</div>
+<div id="ref-luo2024investigatingimpactmodelcomplexity" class="csl-entry" role="listitem">
+Luo, Jing, Huiyuan Wang, and Weiran Huang. 2024. <em>Investigating the Impact of Model Complexity in Large Language Models</em>. <a href="https://arxiv.org/abs/2410.00699">https://arxiv.org/abs/2410.00699</a>.
+</div>
+<div id="ref-luo1992convergence" class="csl-entry" role="listitem">
+Luo, Zhi-Quan, and Paul Tseng. 1992. <span>“On the Convergence of the Coordinate Descent Method for Convex Differentiable Minimization.”</span> <em>Journal of Optimization Theory and Applications</em> 72 (1): 7–35. <a href="https://doi.org/10.1007/BF00939948">https://doi.org/10.1007/BF00939948</a>.
+</div>
+<div id="ref-MacLane_1978" class="csl-entry" role="listitem">
+Mac Lane, Saunders. 1978. <em>Categories for the Working Mathematician</em>. 2nd ed. Vol. 5. Graduate Texts in Mathematics. Springer-Verlag.
+</div>
+<div id="ref-Manin_2024" class="csl-entry" role="listitem">
+Manin, Yuri, and Matilde Marcolli. 2024. <span>“Homotopy Theoretic and Categorical Models of Neural Information Networks.”</span> <em>Compositionality</em> Volume 6 (2024) (September). <a href="https://doi.org/10.46298/compositionality-6-4">https://doi.org/10.46298/compositionality-6-4</a>.
+</div>
+<div id="ref-marcus2018deep" class="csl-entry" role="listitem">
+Marcus, Gary. 2018. <em>Deep Learning: A Critical Appraisal</em>. arXiv preprint arXiv:1801.00631. <a href="https://arxiv.org/abs/1801.00631">https://arxiv.org/abs/1801.00631</a>.
+</div>
+<div id="ref-NEURIPS2019_bb04af0f" class="csl-entry" role="listitem">
+Maron, Haggai, Heli Ben-Hamu, Hadar Serviansky, and Yaron Lipman. 2019. <span>“Provably Powerful Graph Networks.”</span> In <em>Advances in Neural Information Processing Systems</em>, <span class="nocase">edited by H. Wallach, H. Larochelle, A. Beygelzimer, F. d'Alché-Buc, E. Fox, and R. Garnett</span>, vol. 32. Curran Associates, Inc. <a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/bb04af0f7ecaee4aae62035497da1387-Paper.pdf">https://proceedings.neurips.cc/paper_files/paper/2019/file/bb04af0f7ecaee4aae62035497da1387-Paper.pdf</a>.
+</div>
+<div id="ref-VeltenetalMathematicalModelling" class="csl-entry" role="listitem">
+<span>“Mathematical <span>Modeling</span> and <span>Simulation</span>: <span>Introduction</span> for <span>Scientists</span> and <span>Engineers</span>, 2nd <span>Edition</span> <span></span> <span>Wiley</span>.”</span> 2024. In <em>Wiley.com</em>. <a href="https://www.wiley.com/en-us/Mathematical+Modeling+and+Simulation%3A+Introduction+for+Scientists+and+Engineers%2C+2nd+Edition-p-9783527839407">https://www.wiley.com/en-us/Mathematical+Modeling+and+Simulation%3A+Introduction+for+Scientists+and+Engineers%2C+2nd+Edition-p-9783527839407</a>.
+</div>
+<div id="ref-MathLibreTexts_Algebra" class="csl-entry" role="listitem">
+Mathematics LibreTexts. 2024. <em>Algebra</em>. <a href="https://math.libretexts.org/Bookshelves/Algebra" class="uri">Https://math.libretexts.org/Bookshelves/Algebra</a>.
+</div>
+<div id="ref-McAllester:1999:PACBayes" class="csl-entry" role="listitem">
+McAllester, David A. 1999a. <span>“PAC-Bayesian Model Averaging.”</span> <em>Proceedings of the 12th Annual Conference on Computational Learning Theory (COLT)</em>, 164–70.
+</div>
+<div id="ref-mcallester1999some" class="csl-entry" role="listitem">
+McAllester, David A. 1999b. <span>“Some PAC-Bayesian Theorems.”</span> <em>Machine Learning</em> 37 (3): 355–63. <a href="https://doi.org/10.1023/A:1007618624809">https://doi.org/10.1023/A:1007618624809</a>.
+</div>
+<div id="ref-mccarthy1969philosophical" class="csl-entry" role="listitem">
+McCarthy, John, and Patrick J. Hayes. 1969. <span>“Some Philosophical Problems from the Standpoint of Artificial Intelligence.”</span> In <em>Machine Intelligence 4</em>, edited by B. Meltzer and D. Michie. Edinburgh University Press.
+</div>
+<div id="ref-mcculloch_logical_1943" class="csl-entry" role="listitem">
+McCulloch, Warren S., and Walter Pitts. 1943. <span>“A Logical Calculus of the Ideas Immanent in Nervous Activity.”</span> <em>The Bulletin of Mathematical Biophysics</em> 5 (4): 115–33. <a href="https://doi.org/10.1007/BF02478259">https://doi.org/10.1007/BF02478259</a>.
+</div>
+<div id="ref-mehrabi_survey_2022" class="csl-entry" role="listitem">
+Mehrabi, Ninareh, Fred Morstatter, Nripsuta Saxena, Kristina Lerman, and Aram Galstyan. 2022. <em>A <span>Survey</span> on <span>Bias</span> and <span>Fairness</span> in <span>Machine</span> <span>Learning</span></em>. arXiv. <a href="https://doi.org/10.48550/arXiv.1908.09635">https://doi.org/10.48550/arXiv.1908.09635</a>.
+</div>
+<div id="ref-Mei2022TowardsBridging" class="csl-entry" role="listitem">
+Mei, Shibin, Chenglong Zhao, Shengchao Yuan, and Bingbing Ni. 2022. <span>“Towards Bridging Sample Complexity and Model Capacity.”</span> <em>Proceedings of the AAAI Conference on Artificial Intelligence</em>, AAAI’22 technical tracks, vol. 36 (June): 1972–80. <a href="https://doi.org/10.1609/aaai.v36i2.20092">https://doi.org/10.1609/aaai.v36i2.20092</a>.
+</div>
+<div id="ref-mei2019generalization" class="csl-entry" role="listitem">
+Mei, Song, and Andrea Montanari. 2019. <span>“The Generalization Error of Random Features Regression: Precise Asymptotics and Double Descent Curve.”</span> <em>arXiv Preprint arXiv:1908.05355</em>.
+</div>
+<div id="ref-mei2020generalizationerrorrandomfeatures" class="csl-entry" role="listitem">
+Mei, Song, and Andrea Montanari. 2020. <em>The Generalization Error of Random Features Regression: Precise Asymptotics and Double Descent Curve</em>. <a href="https://arxiv.org/abs/1908.05355">https://arxiv.org/abs/1908.05355</a>.
+</div>
+<div id="ref-MenziesPrice1993" class="csl-entry" role="listitem">
+Menzies, Peter, and Huw Price. 1993. <span>“Causation as a Secondary Quality.”</span> <em>The British Journal for the Philosophy of Science</em> 44 (2): 187–203. <a href="https://doi.org/10.1093/bjps/44.2.187">https://doi.org/10.1093/bjps/44.2.187</a>.
+</div>
+<div id="ref-articleMetaxiotis" class="csl-entry" role="listitem">
+Metaxiotis, Kostas, and J-E Samouilidis. 2000. <span>“Expert Systems in Medicine: Academic Illusion or Real Power?”</span> <em>Information Management &amp; Computer Security</em> 8 (May): 75–79. <a href="https://doi.org/10.1108/09685220010694017">https://doi.org/10.1108/09685220010694017</a>.
+</div>
+<div id="ref-compmodel2016" class="csl-entry" role="listitem">
+Michael, Recorla. 2016. <span>“Computational Modeling of the Mind: What Role for Mental Representation?”</span> <em>UCLA Philosophy</em>. <a href="https://philosophy.ucla.edu/wp-content/uploads/2016/08/Computation-Modeling.pdf">https://philosophy.ucla.edu/wp-content/uploads/2016/08/Computation-Modeling.pdf</a>.
+</div>
+<div id="ref-michalski1969aq" class="csl-entry" role="listitem">
+Michalski, Ryszard S. 1969. <span>“On the Quasi-Inductive Learning: The AQ Approach to Rule Extraction.”</span> In <em>Machine Intelligence and Pattern Recognition</em>, vol. 4.
+</div>
+<div id="ref-MiltersenRadhakrishnanWegener2005" class="csl-entry" role="listitem">
+Miltersen, Peter B., Jaikumar Radhakrishnan, and Ingo Wegener. 2005. <span>“On Converting <span>CNF</span> to <span>DNF</span>.”</span> <em>Theoretical Computer Science</em> 347 (1–2): 325–35.
+</div>
+<div id="ref-minsky1961steps" class="csl-entry" role="listitem">
+Minsky, Marvin L. 1961. <span>“Steps Toward Artificial Intelligence.”</span> <em>Proceedings of the IRE</em> 49: 8–30. <a href="https://doi.org/10.1109/JRPROC.1961.287775">https://doi.org/10.1109/JRPROC.1961.287775</a>.
+</div>
+<div id="ref-minsky1968semantic" class="csl-entry" role="listitem">
+Minsky, Marvin L., ed. 1968. <em>Semantic Information Processing</em>. MIT Press. <a href="https://philpapers.org/rec/MINSIP">https://philpapers.org/rec/MINSIP</a>.
+</div>
+<div id="ref-10.5555/50066" class="csl-entry" role="listitem">
+Minsky, Marvin L., and Seymour A. Papert. 1988. <em>Perceptrons: Expanded Edition</em>. MIT Press.
+</div>
+<div id="ref-neurondoctrinemishqat" class="csl-entry" role="listitem">
+Mishqat, Isra. n.d. <em>The <span>Neuron</span> <span>Doctrine</span> (1860-1895) <span></span> <span>Embryo</span> <span>Project</span> <span>Encyclopedia</span></em>. Accessed April 30, 2025. <a href="https://embryo.asu.edu/pages/neuron-doctrine-1860-1895">https://embryo.asu.edu/pages/neuron-doctrine-1860-1895</a>.
+</div>
+<div id="ref-mitrovic2022_watt" class="csl-entry" role="listitem">
+Mitrović, Jovan. 2022. <span>“Some Ideas of James Watt in Contemporary Energy Conversion Thermodynamics.”</span> <em>Journal of Modern Physics</em> 13 (4): 385–409. <a href="https://doi.org/10.4236/jmp.2022.134027">https://doi.org/10.4236/jmp.2022.134027</a>.
+</div>
+<div id="ref-ModyMartin2020_MaterialsScience" class="csl-entry" role="listitem">
+Mody, Cyrus C. M., and Joseph D. Martin. 2020. <span>“Materials Science.”</span> <em>Encyclopedia of the History of Science (ETHOS)</em>. <a href="https://ethos.lps.library.cmu.edu/article/id/40/">https://ethos.lps.library.cmu.edu/article/id/40/</a>.
+</div>
+<div id="ref-mohajan2019firstIR" class="csl-entry" role="listitem">
+Mohajan, Haradhan Kumar. 2019. <span>“The First Industrial Revolution: Creation of a New Global Human Era.”</span> <em>Journal of Social Sciences and Humanities</em> 5 (4): 377–87. <a href="https://www.researchgate.net/profile/Haradhan-Mohajan/publication/336675822_The_First_Industrial_Revolution_Creation_of_a_New_Global_Human_Era/links/5dabedf8299bf111d4bf45c3/The-First-Industrial-Revolution-Creation-of-a-New-Global-Human-Era.pdf">https://www.researchgate.net/profile/Haradhan-Mohajan/publication/336675822_The_First_Industrial_Revolution_Creation_of_a_New_Global_Human_Era/links/5dabedf8299bf111d4bf45c3/The-First-Industrial-Revolution-Creation-of-a-New-Global-Human-Era.pdf</a>.
+</div>
+<div id="ref-10.5555/2371238" class="csl-entry" role="listitem">
+Mohri, Mehryar, Afshin Rostamizadeh, and Ameet Talwalkar. 2012. <em>Foundations of Machine Learning</em>. The MIT Press.
+</div>
+<div id="ref-molavi_model_2024" class="csl-entry" role="listitem">
+Molavi, Pooya, Alireza Tahbaz-Salehi, and Andrea Vedolin. 2024. <span>“Model <span>Complexity</span>, <span>Expectations</span>, and <span>Asset</span> <span>Prices</span>.”</span> <em>The Review of Economic Studies</em> 91 (4): 2462–507. <a href="https://doi.org/10.1093/restud/rdad073">https://doi.org/10.1093/restud/rdad073</a>.
+</div>
+<div id="ref-Molnar_2020" class="csl-entry" role="listitem">
+Molnar, Christoph, Giuseppe Casalicchio, and Bernd Bischl. 2020. <span>“Quantifying Model Complexity via Functional Decomposition for Better Post-Hoc Interpretability.”</span> In <em>Machine Learning and Knowledge Discovery in Databases</em>. Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-43823-4_17">https://doi.org/10.1007/978-3-030-43823-4_17</a>.
+</div>
+<div id="ref-molnar2020general" class="csl-entry" role="listitem">
+Molnar, Christoph, Gunnar König, Julia Herbinger, et al. 2020. <span>“General Pitfalls of Model-Agnostic Interpretation Methods for Machine Learning Models.”</span> <em>arXiv Preprint arXiv:2007.04131</em>.
+</div>
+<div id="ref-M_ller_2022" class="csl-entry" role="listitem">
+Müller, Thomas, Alex Evans, Christoph Schied, and Alexander Keller. 2022. <span>“Instant Neural Graphics Primitives with a Multiresolution Hash Encoding.”</span> <em>ACM Transactions on Graphics</em> 41 (4): 1–15. <a href="https://doi.org/10.1145/3528223.3530127">https://doi.org/10.1145/3528223.3530127</a>.
+</div>
+<div id="ref-muller2025_symbolgrounding" class="csl-entry" role="listitem">
+Müller, Vincent C. 2025. <span>“Symbol Grounding in Computational Systems: A Paradox of Intentions.”</span> <em>arXiv Preprint</em>. <a href="https://arxiv.org/abs/2505.00002">https://arxiv.org/abs/2505.00002</a>.
+</div>
+<div id="ref-Musil2021PhysicsInspired" class="csl-entry" role="listitem">
+Musil, Felix, Andrea Grisafi, Albert P. Bartók, Christoph Ortner, Gábor Csányi, and Michele Ceriotti. 2021. <span>“Physics-Inspired Structural Representations for Molecules and Materials.”</span> <em>Chemical Reviews</em> 121 (16): 9759–815. <a href="https://doi.org/10.1021/acs.chemrev.1c00021">https://doi.org/10.1021/acs.chemrev.1c00021</a>.
+</div>
+<div id="ref-nagarajan2021uniformconvergenceunableexplain" class="csl-entry" role="listitem">
+Nagarajan, Vaishnavh, and J. Zico Kolter. 2021. <em>Uniform Convergence May Be Unable to Explain Generalization in Deep Learning</em>. <a href="https://arxiv.org/abs/1902.04742">https://arxiv.org/abs/1902.04742</a>.
+</div>
+<div id="ref-nagel2012_mindandcosmos" class="csl-entry" role="listitem">
+Nagel, Thomas. 2012. <em>Mind and Cosmos: Why the Materialist Neo-Darwinian Conception of Nature Is Almost Certainly False</em>. Oxford University Press.
+</div>
+<div id="ref-nakkiran_deep_2019" class="csl-entry" role="listitem">
+Nakkiran, Preetum, Gal Kaplun, Yamini Bansal, Tristan Yang, Boaz Barak, and Ilya Sutskever. 2019. <em>Deep <span>Double</span> <span>Descent</span>: <span>Where</span> <span>Bigger</span> <span>Models</span> and <span>More</span> <span>Data</span> <span>Hurt</span></em>. arXiv. <a href="https://doi.org/10.48550/arXiv.1912.02292">https://doi.org/10.48550/arXiv.1912.02292</a>.
+</div>
+<div id="ref-Nau2001_DeFinettiWasRight" class="csl-entry" role="listitem">
+Nau, Robert F. 2001. <span>“De Finetti Was Right: Probability Does Not Exist.”</span> <em>Theory and Decision</em> 51 (2/4): 89–124. <a href="https://doi.org/10.1023/A:1015525808214">https://doi.org/10.1023/A:1015525808214</a>.
+</div>
+<div id="ref-neal2019biasvariancetradeofftextbooksneed" class="csl-entry" role="listitem">
+Neal, Brady. 2019. <em>On the Bias-Variance Tradeoff: Textbooks Need an Update</em>. <a href="https://arxiv.org/abs/1912.08286">https://arxiv.org/abs/1912.08286</a>.
+</div>
+<div id="ref-noauthor_neural_nodate" class="csl-entry" role="listitem">
+<em>Neural <span>Networks</span> and the <span>Bias</span>/<span>Variance</span> <span>Dilemma</span> <span></span> <span>MIT</span> <span>Press</span> <span>Journals</span> &amp; <span>Magazine</span> <span></span> <span>IEEE</span> <span>Xplore</span></em>. n.d. Accessed July 18, 2024. <a href="https://ieeexplore.ieee.org/document/6797087">https://ieeexplore.ieee.org/document/6797087</a>.
+</div>
+<div id="ref-newell1958elements" class="csl-entry" role="listitem">
+Newell, Allen, J. C. Shaw, and Herbert A. Simon. 1958. <span>“Elements of a Theory of Human Problem Solving.”</span> <em>Psychological Review</em> 65 (3): 151–66. <a href="https://doi.org/10.1037/h0048495">https://doi.org/10.1037/h0048495</a>.
+</div>
+<div id="ref-newell1959gps" class="csl-entry" role="listitem">
+Newell, Allen, J. C. Shaw, and Herbert A. Simon. 1959. <span>“Report on a General Problem-Solving Program.”</span> <em>Proceedings of the International Conference on Information Processing</em>, 256–64. <a href="https://bitsavers.informatik.uni-stuttgart.de/pdf/rand/ipl/P-1584_Report_On_A_General_Problem-Solving_Program_Feb59.pdf">https://bitsavers.informatik.uni-stuttgart.de/pdf/rand/ipl/P-1584_Report_On_A_General_Problem-Solving_Program_Feb59.pdf</a>.
+</div>
+<div id="ref-newell1976computer" class="csl-entry" role="listitem">
+Newell, Allen, and Herbert A. Simon. 1976. <span>“Computer Science as Empirical Inquiry: Symbols and Search.”</span> <em>Communications of the ACM</em> 19 (3): 113–26.
+</div>
+<div id="ref-1056797NewellSimon" class="csl-entry" role="listitem">
+Newell, A., and H. Simon. 1956. <span>“The Logic Theory Machine–a Complex Information Processing System.”</span> <em>IRE Transactions on Information Theory</em> 2 (3): 61–79. <a href="https://doi.org/10.1109/TIT.1956.1056797">https://doi.org/10.1109/TIT.1956.1056797</a>.
+</div>
+<div id="ref-neyshabur2017exploring" class="csl-entry" role="listitem">
+Neyshabur, Behnam, Srinadh Bhojanapalli, David McAllester, and Nathan Srebro. 2017. <span>“Exploring Generalization in Deep Learning.”</span> <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 5947–56.
+</div>
+<div id="ref-neyshabur2015norm" class="csl-entry" role="listitem">
+Neyshabur, Behnam, Ryota Tomioka, and Nathan Srebro. 2015. <span>“Norm-Based Capacity Control in Neural Networks.”</span> <em>Conference on Learning Theory (COLT)</em>, 1376–401.
+</div>
+<div id="ref-olmin2024understandingepochwisedoubledescent" class="csl-entry" role="listitem">
+Olmin, Amanda, and Fredrik Lindsten. 2024. <em>Towards Understanding Epoch-Wise Double Descent in Two-Layer Linear Neural Networks</em>. <a href="https://arxiv.org/abs/2407.09845">https://arxiv.org/abs/2407.09845</a>.
+</div>
+<div id="ref-Oono2020Graph" class="csl-entry" role="listitem">
+Oono, Kenta, and Taiji Suzuki. 2020. <span>“Graph Neural Networks Exponentially Lose Expressive Power for Node Classification.”</span> <em>International Conference on Learning Representations</em>. <a href="https://openreview.net/forum?id=S1ldO2EFPr">https://openreview.net/forum?id=S1ldO2EFPr</a>.
+</div>
+<div id="ref-orowan1934plastic" class="csl-entry" role="listitem">
+Orowan, E. 1934. <span>“Zur Kristallplastizität i.”</span> <em>Zeitschrift Für Physik</em> 89: 605–13. <a href="https://doi.org/10.1007/BF01341400">https://doi.org/10.1007/BF01341400</a>.
+</div>
+<div id="ref-OstaszewskaZajkowski2014" class="csl-entry" role="listitem">
+Ostaszewska, Urszula, and Krzysztof Zajkowski. 2014. <span>“Cramér Transform and t-Entropy.”</span> <em>Positivity</em> 18: 347–58. <a href="https://doi.org/10.1007/s11117-013-0247-3">https://doi.org/10.1007/s11117-013-0247-3</a>.
+</div>
+<div id="ref-Oygarden2019" class="csl-entry" role="listitem">
+Øygarden, Even. 2019. <span>“What Is Intelligence? A Proposed Framework of Four Different Concepts of Intelligence.”</span> Master’s thesis, University of Agder. <a href="https://uia.brage.unit.no/uia-xmlui/bitstream/handle/11250/2632728/%C3%98ygarden%2C%20Even.pdf?sequence=1">https://uia.brage.unit.no/uia-xmlui/bitstream/handle/11250/2632728/%C3%98ygarden%2C%20Even.pdf?sequence=1</a>.
+</div>
+<div id="ref-liam_statistics_2005" class="csl-entry" role="listitem">
+Paninski, Liam. 2005. <em>Statistics 4107: <span>Intro</span> to <span>Math</span> <span>Stat</span> (Fall 2005)</em>. <a href="https://sites.stat.columbia.edu/liam/teaching/4107-fall05/">https://sites.stat.columbia.edu/liam/teaching/4107-fall05/</a>.
+</div>
+<div id="ref-unified_bias_composition" class="csl-entry" role="listitem">
+<em>[<span>PDF</span>] <span>A</span> <span>Unifeid</span> <span>Bias</span>-<span>Variance</span> <span>Decomposition</span> and Its <span>Applications</span> <span></span> <span>Semantic</span> <span>Scholar</span></em>. n.d.-b. Accessed July 16, 2024. <a href="https://www.semanticscholar.org/paper/A-Unifeid-Bias-Variance-Decomposition-and-its-Domingos/e1ed9d24db5e8f7ab326aeb797e965a94f5ad6d3">https://www.semanticscholar.org/paper/A-Unifeid-Bias-Variance-Decomposition-and-its-Domingos/e1ed9d24db5e8f7ab326aeb797e965a94f5ad6d3</a>.
+</div>
+<div id="ref-noauthor_pdf_nodate-1" class="csl-entry" role="listitem">
+<em>[<span>PDF</span>] <span>A</span> <span>Unifeid</span> <span>Bias</span>-<span>Variance</span> <span>Decomposition</span> and Its <span>Applications</span> <span></span> <span>Semantic</span> <span>Scholar</span></em>. n.d.-a. Accessed July 16, 2024. <a href="https://www.semanticscholar.org/paper/A-Unifeid-Bias-Variance-Decomposition-and-its-Domingos/e1ed9d24db5e8f7ab326aeb797e965a94f5ad6d3">https://www.semanticscholar.org/paper/A-Unifeid-Bias-Variance-Decomposition-and-its-Domingos/e1ed9d24db5e8f7ab326aeb797e965a94f5ad6d3</a>.
+</div>
+<div id="ref-pearl2009causality" class="csl-entry" role="listitem">
+Pearl, Judea. 2009. <em>Causality: Models, Reasoning, and Inference</em>. 2nd ed. Cambridge University Press. <a href="https://doi.org/10.1017/CBO9780511803161">https://doi.org/10.1017/CBO9780511803161</a>.
+</div>
+<div id="ref-penrose1989_emperorsmind" class="csl-entry" role="listitem">
+Penrose, Roger. 1989. <em>The Emperor’s New Mind: Concerning Computers, Minds, and the Laws of Physics</em>. Oxford University Press.
+</div>
+<div id="ref-penrose1994_shadows" class="csl-entry" role="listitem">
+Penrose, Roger. 1994. <em>Shadows of the Mind: A Search for the Missing Science of Consciousness</em>. Oxford University Press.
+</div>
+<div id="ref-penrose1997artificial" class="csl-entry" role="listitem">
+Penrose, Roger, and Emanuele Severino. 1997. <em>Artificial Intelligence Versus Natural Intelligence</em>. Springer. <a href="https://link.springer.com/book/10.1007/978-3-030-85480-5">https://link.springer.com/book/10.1007/978-3-030-85480-5</a>.
+</div>
+<div id="ref-peyres2025mathematics" class="csl-entry" role="listitem">
+Peyré, Gabriel. 2025. <span>“The Mathematics of Artificial Intelligence.”</span> <em>arXiv Preprint arXiv:2501.10465</em>. <a href="https://arxiv.org/abs/2501.10465">https://arxiv.org/abs/2501.10465</a>.
+</div>
+<div id="ref-PfauBregmanDivergence" class="csl-entry" role="listitem">
+Pfau, David. 2013. <em>A Generalized Bias-Variance Decomposition for Bregman Divergences</em>. Technical report.
+</div>
+<div id="ref-McArtneyInterpolation2003" class="csl-entry" role="listitem">
+Phillips, George McArtney. 2003. <em>Interpolation and Approximation by Polynomials</em>. 1st ed. CMS Books in Mathematics. Springer. <a href="https://doi.org/10.1007/b97417">https://doi.org/10.1007/b97417</a>.
+</div>
+<div id="ref-piera_sample_2005" class="csl-entry" role="listitem">
+Piera, Villares, and Nemesio Javier. 2005. <span>“Sample <span>Covariance</span> <span>Based</span> <span>Parameter</span> <span>Estimation</span> <span>For</span> <span>Digital</span> <span>Communications</span>.”</span> Doctoral thesis, Universitat Politècnica de Catalunya. <a href="https://doi.org/10.5821/dissertation-2117-94206">https://doi.org/10.5821/dissertation-2117-94206</a>.
+</div>
+<div id="ref-Pinter2019ABO" class="csl-entry" role="listitem">
+Pinter, Charles C. 2019. <span>“A Book of Abstract Algebra: Second Edition (Dover Books on Mathematics) by Charles c Pinter.”</span> <a href="https://api.semanticscholar.org/CorpusID:195814552">https://api.semanticscholar.org/CorpusID:195814552</a>.
+</div>
+<div id="ref-polanyi1934plastic" class="csl-entry" role="listitem">
+Polanyi, M. 1934. <span>“Über Eine Art Gitterstörung, Die Einen Kristall Plastisch Machen Könnte.”</span> <em>Zeitschrift Für Physik</em> 89: 660–64. <a href="https://doi.org/10.1007/BF01341418">https://doi.org/10.1007/BF01341418</a>.
+</div>
+<div id="ref-power2022grokkinggeneralizationoverfittingsmall" class="csl-entry" role="listitem">
+Power, Alethea, Yuri Burda, Harri Edwards, Igor Babuschkin, and Vedant Misra. 2022. <em>Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets</em>. <a href="https://arxiv.org/abs/2201.02177">https://arxiv.org/abs/2201.02177</a>.
+</div>
+<div id="ref-purves_neuroscience_2004" class="csl-entry" role="listitem">
+Purves, Dale, George J. Augustine, David Fitzpatrick, et al., eds. 2004. <em>Neuroscience, 3rd Ed</em>. Neuroscience, 3rd Ed. Sinauer Associates.
+</div>
+<div id="ref-putnam1988_representation" class="csl-entry" role="listitem">
+Putnam, Hilary. 1988. <em>Representation and Reality</em>. MIT Press.
+</div>
+<div id="ref-quetu_can_2023" class="csl-entry" role="listitem">
+Quétu, Victor, and Enzo Tartaglione. 2023a. <span>“Can We Avoid <span>Double</span> <span>Descent</span> in <span>Deep</span> <span>Neural</span> <span>Networks</span>?”</span> <em>2023 <span>IEEE</span> <span>International</span> <span>Conference</span> on <span>Image</span> <span>Processing</span> (<span>ICIP</span>)</em>, October, 1625–29. <a href="https://doi.org/10.1109/ICIP49359.2023.10222624">https://doi.org/10.1109/ICIP49359.2023.10222624</a>.
+</div>
+<div id="ref-quetu_can_2023-1" class="csl-entry" role="listitem">
+Quétu, Victor, and Enzo Tartaglione. 2023b. <span>“Can We Avoid <span>Double</span> <span>Descent</span> in <span>Deep</span> <span>Neural</span> <span>Networks</span>?”</span> <em>2023 <span>IEEE</span> <span>International</span> <span>Conference</span> on <span>Image</span> <span>Processing</span> (<span>ICIP</span>)</em>, October, 1625–29. <a href="https://doi.org/10.1109/ICIP49359.2023.10222624">https://doi.org/10.1109/ICIP49359.2023.10222624</a>.
+</div>
+<div id="ref-quinlan1986induction" class="csl-entry" role="listitem">
+Quinlan, J. R. 1986. <em>Induction of Decision Trees</em>. Morgan Kaufmann. <a href="https://www.sciencedirect.com/science/article/pii/B9781558602485500092">https://www.sciencedirect.com/science/article/pii/B9781558602485500092</a>.
+</div>
+<div id="ref-Rashed_2009" class="csl-entry" role="listitem">
+Rashed, Roshdi. 2009. <em>Al-Khwarizmi: The Beginnings of Algebra</em>. Translated by Angela Armstrong. Saqi Books.
+</div>
+<div id="ref-raza2025trism" class="csl-entry" role="listitem">
+Raza, Shaina, Ranjan Sapkota, Manoj Karkee, and Christos Emmanouilidis. 2025. <span>“TRiSM for Agentic AI: A Review of Trust, Risk, and Security Management in LLM-Based Agentic Multi-Agent Systems.”</span> <em>arXiv Preprint arXiv:2506.04133</em>. <a href="https://arxiv.org/abs/2506.04133">https://arxiv.org/abs/2506.04133</a>.
+</div>
+<div id="ref-renstrom2022textbook" class="csl-entry" role="listitem">
+Renstrøm, Rasmus. 2022. <span>“Textbook Myths about Early Atomic Models.”</span> <em>arXiv Preprint arXiv:2212.08572</em>.
+</div>
+<div id="ref-roberts2022principles" class="csl-entry" role="listitem">
+Roberts, Daniel A., Sho Yaida, and Boris Hanin. 2022. <em>The Principles of Deep Learning Theory: An Effective Theory Approach to Understanding Neural Networks</em>. Cambridge University Press.
+</div>
+<div id="ref-roebuck_lead_chamber_1746" class="csl-entry" role="listitem">
+Roebuck, John R., John; secondary article by Phillips. n.d. / c. 1746. <em>Roebuck Develops the Lead-Chamber Process</em>. EBSCO Research Starters (history). <a href="https://www.ebsco.com/research-starters/history/john-roebuck">https://www.ebsco.com/research-starters/history/john-roebuck</a>.
+</div>
+<div id="ref-romer2015mathiness" class="csl-entry" role="listitem">
+Romer, Paul M. 2015. <span>“Mathiness in the Theory of Economic Growth.”</span> <em>American Economic Review</em> 105 (5): 89–93.
+</div>
+<div id="ref-Rosenblatt1958ThePA" class="csl-entry" role="listitem">
+Rosenblatt, Frank. 1958. <span>“The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain.”</span> <em>Psychological Review</em> 65 6: 386–408. <a href="https://api.semanticscholar.org/CorpusID:12781225">https://api.semanticscholar.org/CorpusID:12781225</a>.
+</div>
+<div id="ref-rozo_cajal_2024" class="csl-entry" role="listitem">
+Rozo, Jairo A., Irene Martínez-Gallego, and Antonio Rodríguez-Moreno. 2024. <span>“Cajal, the Neuronal Theory and the Idea of Brain Plasticity.”</span> <em>Front Neuroanat</em> 18 (February): 1331666. <a href="https://doi.org/10.3389/fnana.2024.1331666">https://doi.org/10.3389/fnana.2024.1331666</a>.
+</div>
+<div id="ref-rumelhart1986learning" class="csl-entry" role="listitem">
+Rumelhart, David E, Geoffrey E Hinton, and Ronald J Williams. 1986. <span>“Learning Representations by Back-Propagating Errors.”</span> <em>Nature</em> 323 (6088): 533–36.
+</div>
+<div id="ref-Russell_1919" class="csl-entry" role="listitem">
+Russell, Bertrand. 1919. <em>Introduction to Mathematical Philosophy</em>. George Allen &amp; Unwin.
+</div>
+<div id="ref-10.5555/1671238" class="csl-entry" role="listitem">
+Russell, Stuart, and Peter Norvig. 2009. <em>Artificial Intelligence: A Modern Approach</em>. 3rd ed. Prentice Hall Press.
+</div>
+<div id="ref-RussoZou:2016:InformationTheory" class="csl-entry" role="listitem">
+Russo, Daniel, and James Zou. 2016. <span>“Controlling Bias in Adaptive Data Analysis Using Information Theory.”</span> <em>Proceedings of AISTATS</em>.
+</div>
+<div id="ref-sapkota2025agentic" class="csl-entry" role="listitem">
+Sapkota, Ranjan, Konstantinos I. Rosenthal, and Manoj Karkee. 2025. <span>“AI Agents Vs. Agentic AI: A Conceptual Taxonomy, Applications, and Challenges.”</span> <em>arXiv Preprint arXiv:2505.10468</em>. <a href="https://arxiv.org/abs/2505.10468">https://arxiv.org/abs/2505.10468</a>.
+</div>
+<div id="ref-Scar04" class="csl-entry" role="listitem">
+Scarselli, Franco, Marco Gori, Ah Chung Tsoi, Markus Hagenbuchner, and Gabriele Monfardini. 2009. <span>“The Graph Neural Network Model.”</span> <em>IEEE Transactions on Neural Networks</em> 20 (1): 61–80. <a href="https://doi.org/10.1109/TNN.2008.2005605">https://doi.org/10.1109/TNN.2008.2005605</a>.
+</div>
+<div id="ref-schaeffer_double_2023" class="csl-entry" role="listitem">
+Schaeffer, Rylan, Mikail Khona, Zachary Robertson, et al. 2023. <em>Double <span>Descent</span> <span>Demystified</span>: <span>Identifying</span>, <span>Interpreting</span> &amp; <span>Ablating</span> the <span>Sources</span> of a <span>Deep</span> <span>Learning</span> <span>Puzzle</span></em>. arXiv. <a href="https://doi.org/10.48550/arXiv.2303.14151">https://doi.org/10.48550/arXiv.2303.14151</a>.
+</div>
+<div id="ref-scheutz2002_computationalism" class="csl-entry" role="listitem">
+Scheutz, Matthias, ed. 2002. <em>Computationalism: New Directions</em>. MIT Press.
+</div>
+<div id="ref-schneider2025generative" class="csl-entry" role="listitem">
+Schneider, J. 2025. <span>“Generative to Agentic AI: Survey, Conceptualization, and Future Directions.”</span> <em>arXiv Preprint arXiv:2504.18875</em>. <a href="https://arxiv.org/abs/2504.18875">https://arxiv.org/abs/2504.18875</a>.
+</div>
+<div id="ref-SeagerFrameAxiological" class="csl-entry" role="listitem">
+Seager, William. 2010s (or older). <span>“Frame Problems, Emotions and Axiological Projectionism.”</span> <em>Philosophical Report</em>, 2010s (or older).
+</div>
+<div id="ref-searle1980minds" class="csl-entry" role="listitem">
+Searle, John R. 1980b. <span>“Minds, Brains, and Programs.”</span> <em>Behavioral and Brain Sciences</em> 3 (3): 417–57.
+</div>
+<div id="ref-searle1980_mindsbrains" class="csl-entry" role="listitem">
+Searle, John R. 1980a. <span>“Minds, Brains, and Programs.”</span> <em>Behavioral and Brain Sciences</em> 3 (3): 417–57. <a href="https://doi.org/10.1017/S0140525X00005756">https://doi.org/10.1017/S0140525X00005756</a>.
+</div>
+<div id="ref-searle1992_rediscovery" class="csl-entry" role="listitem">
+Searle, John R. 1992. <em>The Rediscovery of the Mind</em>. MIT Press.
+</div>
+<div id="ref-10.5555/2621980" class="csl-entry" role="listitem">
+Shalev-Shwartz, Shai, and Shai Ben-David. 2014. <em>Understanding Machine Learning: From Theory to Algorithms</em>. Cambridge University Press.
+</div>
+<div id="ref-JMLR:v11:shalev-shwartz10a" class="csl-entry" role="listitem">
+Shalev-Shwartz, Shai, Ohad Shamir, Nathan Srebro, and Karthik Sridharan. 2010a. <span>“Learnability, Stability and Uniform Convergence.”</span> <em>Journal of Machine Learning Research</em> 11 (90): 2635–70. <a href="http://jmlr.org/papers/v11/shalev-shwartz10a.html">http://jmlr.org/papers/v11/shalev-shwartz10a.html</a>.
+</div>
+<div id="ref-shalev-shwartz2010learnability" class="csl-entry" role="listitem">
+Shalev-Shwartz, Shai, Ohad Shamir, Nathan Srebro, and Karthik Sridharan. 2010b. <span>“Learnability, Stability and Uniform Convergence.”</span> <em>Journal of Machine Learning Research</em> 11: 2635–70. <a href="http://jmlr.org/papers/v11/shalev-shwartz10a.html">http://jmlr.org/papers/v11/shalev-shwartz10a.html</a>.
+</div>
+<div id="ref-sep-frame-problem" class="csl-entry" role="listitem">
+Shanahan, Murray. 2016. <span>“<span>The Frame Problem</span>.”</span> In <em>The <span>Stanford</span> Encyclopedia of Philosophy</em>, <span>S</span>pring 2016, edited by Edward N. Zalta. <a href="https://plato.stanford.edu/archives/spr2016/entries/frame-problem/" class="uri">Https://plato.stanford.edu/archives/spr2016/entries/frame-problem/</a>; Metaphysics Research Lab, Stanford University.
+</div>
+<div id="ref-Shapiro1997-SHAPOM-18" class="csl-entry" role="listitem">
+Shapiro, Stewart. 1997. <em>Philosophy of Mathematics: Structure and Ontology</em>. Edited by NA. Oxford University Press USA.
+</div>
+<div id="ref-sharma2022_materials_timeline" class="csl-entry" role="listitem">
+Sharma, Prince. 2022. <span>“A Brief Account of Man, Material and Manufacturing: On the Timeline.”</span> <em>Materials Today: Proceedings</em> 66: 3572–77. <a href="https://doi.org/10.1016/j.matpr.2022.07.016">https://doi.org/10.1016/j.matpr.2022.07.016</a>.
+</div>
+<div id="ref-sharma_bias-variance_2014" class="csl-entry" role="listitem">
+Sharma, Rahul, and Alex Aiken. 2014. <span>“Bias-Variance Tradeoffs in Program Analysis.”</span> <em>Proceedings of the 41st <span>ACM</span> <span>SIGPLAN</span>-<span>SIGACT</span> <span>Symposium</span> on <span>Principles</span> of <span>Programming</span> <span>Languages</span></em> (New York, NY, USA), <span>POPL</span> ’14, 127–37. <a href="https://doi.org/10.1145/2535838.2535853">https://doi.org/10.1145/2535838.2535853</a>.
+</div>
+<div id="ref-shi2024homophilymodulatesdoubledescent" class="csl-entry" role="listitem">
+Shi, Cheng, Liming Pan, Hong Hu, and Ivan Dokmanić. 2024. <em>Homophily Modulates Double Descent Generalization in Graph Convolution Networks</em>. <a href="https://arxiv.org/abs/2212.13069">https://arxiv.org/abs/2212.13069</a>.
+</div>
+<div id="ref-shortliffe1976computer" class="csl-entry" role="listitem">
+Shortliffe, Edward Hance. 1976. <em>Computer-Based Medical Consultations: MYCIN</em>. Elsevier.
+</div>
+<div id="ref-siegelmann1991turing" class="csl-entry" role="listitem">
+Siegelmann, Hava T., and Eduardo D. Sontag. 1991. <span>“Turing Computability with Neural Nets.”</span> <em>Applied Mathematics Letters</em> 4 (6): 77–80. <a href="https://doi.org/10.1016/0893-9659(91)90080-F">https://doi.org/10.1016/0893-9659(91)90080-F</a>.
+</div>
+<div id="ref-simon1969_sciences" class="csl-entry" role="listitem">
+Simon, Herbert A. 1969. <em>The Sciences of the Artificial</em>. 1st ed. MIT Press.
+</div>
+<div id="ref-Smith_Tabachnikova_2000" class="csl-entry" role="listitem">
+Smith, Geoff, and Olga Tabachnikova. 2000. <em>Topics in Group Theory</em>. Springer Undergraduate Mathematics Series. Springer.
+</div>
+<div id="ref-solomonoff1964formal1" class="csl-entry" role="listitem">
+Solomonoff, Ray J. 1964a. <span>“A Formal Theory of Inductive Inference. Part i.”</span> <em>Information and Control</em> 7 (1): 1–22. <a href="https://doi.org/10.1016/S0019-9958(64)90223-2">https://doi.org/10.1016/S0019-9958(64)90223-2</a>.
+</div>
+<div id="ref-solomonoff1964formal2" class="csl-entry" role="listitem">
+Solomonoff, Ray J. 1964b. <span>“A Formal Theory of Inductive Inference. Part II.”</span> <em>Information and Control</em> 7 (2): 224–54. <a href="https://doi.org/10.1016/S0019-9958(64)90131-7">https://doi.org/10.1016/S0019-9958(64)90131-7</a>.
+</div>
+<div id="ref-song2025languagemodelsfailintrospect" class="csl-entry" role="listitem">
+Song, Siyuan, Jennifer Hu, and Kyle Mahowald. 2025. <em>Language Models Fail to Introspect about Their Knowledge of Language</em>. <a href="https://arxiv.org/abs/2503.07513">https://arxiv.org/abs/2503.07513</a>.
+</div>
+<div id="ref-sorscher2023neuralscalinglawsbeating" class="csl-entry" role="listitem">
+Sorscher, Ben, Robert Geirhos, Shashank Shekhar, Surya Ganguli, and Ari S. Morcos. 2023. <em>Beyond Neural Scaling Laws: Beating Power Law Scaling via Data Pruning</em>. <a href="https://arxiv.org/abs/2206.14486">https://arxiv.org/abs/2206.14486</a>.
+</div>
+<div id="ref-soudry2024implicitbiasgradientdescent" class="csl-entry" role="listitem">
+Soudry, Daniel, Elad Hoffer, Mor Shpigel Nacson, Suriya Gunasekar, and Nathan Srebro. 2024. <em>The Implicit Bias of Gradient Descent on Separable Data</em>. <a href="https://arxiv.org/abs/1710.10345">https://arxiv.org/abs/1710.10345</a>.
+</div>
+<div id="ref-stanford2018ai" class="csl-entry" role="listitem">
+Stanford Encyclopedia of Philosophy. 2018. <em>Artificial Intelligence</em>. <a href="https://plato.stanford.edu/entries/artificial-intelligence/" class="uri">Https://plato.stanford.edu/entries/artificial-intelligence/</a>.
+</div>
+<div id="ref-Sterkenburg_2024" class="csl-entry" role="listitem">
+Sterkenburg, Tom F. 2024. <span>“Statistical Learning Theory and Occam’s Razor: The Core Argument.”</span> <em>Minds and Machines</em> 35 (1). <a href="https://doi.org/10.1007/s11023-024-09703-y">https://doi.org/10.1007/s11023-024-09703-y</a>.
+</div>
+<div id="ref-su2024unravelingmysteryscalinglaws" class="csl-entry" role="listitem">
+Su, Hui, Zhi Tian, Xiaoyu Shen, and Xunliang Cai. 2024. <em>Unraveling the Mystery of Scaling Laws: Part i</em>. <a href="https://arxiv.org/abs/2403.06563">https://arxiv.org/abs/2403.06563</a>.
+</div>
+<div id="ref-suchman1987plans" class="csl-entry" role="listitem">
+Suchman, Lucy A. 1987. <em>Plans and Situated Actions: The Problem of Human–Machine Communication</em>. Cambridge University Press.
+</div>
+<div id="ref-10.5555/2930837" class="csl-entry" role="listitem">
+Sugiyama, Masashi. 2015. <em>Introduction to Statistical Machine Learning</em>. Morgan Kaufmann Publishers Inc.
+</div>
+<div id="ref-sutton2019bitter" class="csl-entry" role="listitem">
+Sutton, Richard S. 2019. <em>The Bitter Lesson</em>. Web essay / blog post. <a href="https://www.incompleteideas.net/IncIdeas/BitterLesson.html">https://www.incompleteideas.net/IncIdeas/BitterLesson.html</a>.
+</div>
+<div id="ref-syll2024postreal" class="csl-entry" role="listitem">
+Syll, Lars Pålsson. 2024. <em>Post-Real Economics — a Severe Case of Mathiness</em>. Blog post, Heterodox Economic Blogs.
+</div>
+<div id="ref-tanis2024introductiongraphneuralnetworks" class="csl-entry" role="listitem">
+Tanis, James H., Chris Giannella, and Adrian V. Mariano. 2024. <em>Introduction to Graph Neural Networks: A Starting Point for Machine Learning Engineers</em>. <a href="https://arxiv.org/abs/2412.19419">https://arxiv.org/abs/2412.19419</a>.
+</div>
+<div id="ref-taylor1934plastic" class="csl-entry" role="listitem">
+Taylor, G. I. 1934. <span>“The Mechanism of Plastic Deformation of Crystals.”</span> <em>Proceedings of the Royal Society A</em> 145: 362–87. <a href="https://doi.org/10.1098/rspa.1934.0106">https://doi.org/10.1098/rspa.1934.0106</a>.
+</div>
+<div id="ref-taylor2007_review_klein" class="csl-entry" role="listitem">
+Taylor, Georgette. 2007. <span>“Materials in Eighteenth-Century Science: A Historical Ontology (Review).”</span> <em>Aestimatio</em> 4: 101–11. <a href="https://jps.library.utoronto.ca/index.php/aestimatio/article/download/25808/18962/0">https://jps.library.utoronto.ca/index.php/aestimatio/article/download/25808/18962/0</a>.
+</div>
+<div id="ref-telgarsky2016benefits" class="csl-entry" role="listitem">
+Telgarsky, Matus. 2016. <span>“Benefits of Depth in Neural Networks.”</span> <em>Proceedings of COLT 2016</em>. <a href="https://arxiv.org/abs/1602.04485">https://arxiv.org/abs/1602.04485</a>.
+</div>
+<div id="ref-thomson1897cathode" class="csl-entry" role="listitem">
+Thomson, J. J. 1897. <span>“Cathode Rays.”</span> <em>Philosophical Magazine</em> 44: 293–316.
+</div>
+<div id="ref-thomson1903magnetic" class="csl-entry" role="listitem">
+Thomson, J. J. 1903. <span>“On the Magnetic Properties of Systems of Corpuscles Describing Circular Orbits.”</span> <em>Philosophical Magazine</em> 6: 673–93.
+</div>
+<div id="ref-thomson1904electricity" class="csl-entry" role="listitem">
+Thomson, J. J. 1904a. <em>Electricity and Matter</em>. Yale University Press.
+</div>
+<div id="ref-thomson1904structure" class="csl-entry" role="listitem">
+Thomson, J. J. 1904b. <span>“On the Structure of the Atom: An Investigation of the Stability and Periods of Oscillation of a Number of Corpuscles Arranged at Equal Intervals Around the Circumference of a Circle; with Application of the Results to the Theory of Atomic Structure.”</span> <em>The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science</em>, 6th series, vol. 7 (39): 237–65. <a href="https://doi.org/10.1080/14786440409463107">https://doi.org/10.1080/14786440409463107</a>.
+</div>
+<div id="ref-thomson1907corpuscular" class="csl-entry" role="listitem">
+Thomson, J. J. 1907. <em>The Corpuscular Theory of Matter</em>. Archibald Constable.
+</div>
+<div id="ref-truong2025rademachercomplexitybasedgeneralizationbounds" class="csl-entry" role="listitem">
+Truong, Lan V. 2025. <em>On Rademacher Complexity-Based Generalization Bounds for Deep Learning</em>. <a href="https://arxiv.org/abs/2208.04284">https://arxiv.org/abs/2208.04284</a>.
+</div>
+<div id="ref-tseng2001convergence" class="csl-entry" role="listitem">
+Tseng, Paul. 2001. <span>“Convergence of a Block Coordinate Descent Method for Nondifferentiable Minimization.”</span> <em>Journal of Optimization Theory and Applications</em> 109 (3): 475–94. <a href="https://doi.org/10.1007/s10957-001-0006-4">https://doi.org/10.1007/s10957-001-0006-4</a>.
+</div>
+<div id="ref-tseng2009coordinate" class="csl-entry" role="listitem">
+Tseng, Paul, and Sangwoon Yun. 2009. <span>“A Coordinate Gradient Descent Method for Nonsmooth Separable Minimization.”</span> <em>Mathematical Programming</em> 117 (1): 387–423. <a href="https://doi.org/10.1007/s10107-007-0170-0">https://doi.org/10.1007/s10107-007-0170-0</a>.
+</div>
+<div id="ref-tunali2019empirical" class="csl-entry" role="listitem">
+Tunali, Onur. 2019. <span>“Empirical Rademacher Complexity and Its Implications to Deep Learning.”</span> February 1. <a href="https://www.onurtunali.com/ml/2019/02/01/empirical-rademacher-complexity-and-its-implications-to-deep-learning.html">https://www.onurtunali.com/ml/2019/02/01/empirical-rademacher-complexity-and-its-implications-to-deep-learning.html</a>.
+</div>
+<div id="ref-turing1950computing" class="csl-entry" role="listitem">
+Turing, Alan M. 1950. <span>“Computing Machinery and Intelligence.”</span> <em>Mind</em> 59 (236): 433–60.
+</div>
+<div id="ref-10.1145/1968.1972" class="csl-entry" role="listitem">
+Valiant, L. G. 1984. <span>“A Theory of the Learnable.”</span> <em>Commun. ACM</em> (New York, NY, USA) 27 (11): 1134–42. <a href="https://doi.org/10.1145/1968.1972">https://doi.org/10.1145/1968.1972</a>.
+</div>
+<div id="ref-valiant1984learnable" class="csl-entry" role="listitem">
+Valiant, Leslie G. 1984. <span>“A Theory of the Learnable.”</span> <em>Communications of the ACM</em> 27 (11): 1134–42. <a href="https://doi.org/10.1145/1968.1972">https://doi.org/10.1145/1968.1972</a>.
+</div>
+<div id="ref-valiev2003paradoxes" class="csl-entry" role="listitem">
+Valiev, Ruslan Z. 2003. <span>“Paradoxes of Severe Plastic Deformation.”</span> <em>Advanced Engineering Materials</em> 5 (5): 296–300. <a href="https://doi.org/10.1002/adem.200310089">https://doi.org/10.1002/adem.200310089</a>.
+</div>
+<div id="ref-valiev2002paradox" class="csl-entry" role="listitem">
+Valiev, Ruslan Z., I. V. Alexandrov, Yuntian T. Zhu, and T. C. Lowe. 2002. <span>“Paradox of Strength and Ductility in Metals Processed by Severe Plastic Deformation.”</span> <em>Journal of Materials Research</em> 17 (1): 5–8. <a href="https://doi.org/10.1557/JMR.2002.0002">https://doi.org/10.1557/JMR.2002.0002</a>.
+</div>
+<div id="ref-vapnik1968uniform" class="csl-entry" role="listitem">
+Vapnik, V. N., and A. Ya. Chervonenkis. 1968. <span>“The Uniform Convergence of the Frequencies of Events to Their Probabilities.”</span> <em>Doklady Akademii Nauk SSSR</em> 181 (4): 781–83. <a href="https://mi.mathnet.ru/eng/tvrf/v181/i4/p781">https://mi.mathnet.ru/eng/tvrf/v181/i4/p781</a>.
+</div>
+<div id="ref-vapnik1971uniform" class="csl-entry" role="listitem">
+Vapnik, V. N., and A. Ya. Chervonenkis. 1971. <span>“On the Uniform Convergence of Relative Frequencies of Events to Their Probabilities.”</span> <em>Theory of Probability &amp; Its Applications</em> 16 (2): 264–80. <a href="https://doi.org/10.1137/1116025">https://doi.org/10.1137/1116025</a>.
+</div>
+<div id="ref-Vapnik1999-VAPTNO" class="csl-entry" role="listitem">
+Vapnik, Vladimir. 1999. <em>The Nature of Statistical Learning Theory</em>. Springer: New York.
+</div>
+<div id="ref-VapnikChervonenkis:1971" class="csl-entry" role="listitem">
+Vapnik, Vladimir N., and Alexey Y. Chervonenkis. 1971. <span>“On the Uniform Convergence of Relative Frequencies to Their Probabilities.”</span> <em>Theory of Probability and Its Applications</em> 16 (2): 264–80.
+</div>
+<div id="ref-Veli_kovi__2023" class="csl-entry" role="listitem">
+Veličković, Petar. 2023. <span>“Everything Is Connected: Graph Neural Networks.”</span> <em>Current Opinion in Structural Biology</em> 79 (April): 102538. <a href="https://doi.org/10.1016/j.sbi.2023.102538">https://doi.org/10.1016/j.sbi.2023.102538</a>.
+</div>
+<div id="ref-vandeven2024continuallearningcatastrophicforgetting" class="csl-entry" role="listitem">
+Ven, Gido M. van de, Nicholas Soures, and Dhireesha Kudithipudi. 2024. <em>Continual Learning and Catastrophic Forgetting</em>. <a href="https://arxiv.org/abs/2403.05175">https://arxiv.org/abs/2403.05175</a>.
+</div>
+<div id="ref-voelkel2017designorderofadditionexperiments" class="csl-entry" role="listitem">
+Voelkel, Joseph G. 2017. <em>The Design of Order-of-Addition Experiments</em>. <a href="https://arxiv.org/abs/1701.02786">https://arxiv.org/abs/1701.02786</a>.
+</div>
+<div id="ref-vanderWaerden_1930" class="csl-entry" role="listitem">
+Waerden, Bartel Leendert van der. 1930-1931. <em>Moderne Algebra</em>. Vol. 2. Springer.
+</div>
+<div id="ref-wang2017research" class="csl-entry" role="listitem">
+Wang, Huibing, Jinbo Xiong, Zhiqiang Yao, Mingwei Lin, and Jun Ren. 2017. <span>“Research Survey on Support Vector Machine.”</span> <em>Proceedings of the 10th EAI International Conference on Mobile Multimedia Communications (MOBIMEDIA)</em>, December. <a href="https://doi.org/10.4108/eai.13-7-2017.2270596">https://doi.org/10.4108/eai.13-7-2017.2270596</a>.
+</div>
+<div id="ref-watt1769_patent" class="csl-entry" role="listitem">
+Watt, James. 1769. <em>A Method of Lessening the Consumption of Steam in Steam Engines</em>. British patent (specification) / patent record. <a href="https://www.datamp.org/patents/displayPatent.php?pn=176900913&amp;id=57320">https://www.datamp.org/patents/displayPatent.php?pn=176900913&amp;id=57320</a>.
+</div>
+<div id="ref-wegel2025samplecomplexitysemisupervisedmultiobjective" class="csl-entry" role="listitem">
+Wegel, Tobias, Geelon So, Junhyung Park, and Fanny Yang. 2025. <em>On the Sample Complexity of Semi-Supervised Multi-Objective Learning</em>. <a href="https://arxiv.org/abs/2508.17152">https://arxiv.org/abs/2508.17152</a>.
+</div>
+<div id="ref-Wegener1987" class="csl-entry" role="listitem">
+Wegener, Ingo. 1987. <em>The Complexity of Boolean Functions</em>. John Wiley &amp; Sons.
+</div>
+<div id="ref-wei2022theory" class="csl-entry" role="listitem">
+Wei, Colin, Zeyuan Allen-Zhu Shen, and Tengyu Ma. 2022. <span>“Theoretical Understanding of Deep Learning.”</span> <em>Communications of the ACM</em> 65 (11): 98–106.
+</div>
+<div id="ref-wei2022emergentabilitieslargelanguage" class="csl-entry" role="listitem">
+Wei, Jason, Yi Tay, Rishi Bommasani, et al. 2022. <em>Emergent Abilities of Large Language Models</em>. <a href="https://arxiv.org/abs/2206.07682">https://arxiv.org/abs/2206.07682</a>.
+</div>
+<div id="ref-wei2025agentic" class="csl-entry" role="listitem">
+<span class="nocase">Wei, Jiaqi et al.</span> 2025. <span>“From AI for Science to Agentic Science: A Survey on Autonomous Scientific Discovery.”</span> <em>arXiv Preprint arXiv:2508.14111</em>. <a href="https://arxiv.org/abs/2508.14111">https://arxiv.org/abs/2508.14111</a>.
+</div>
+<div id="ref-weiss2018practical" class="csl-entry" role="listitem">
+Weiss, Gail, Yoav Goldberg, and Eran Yahav. 2018. <span>“On the Practical Computational Power of Finite Precision RNNs for Language Recognition.”</span> <em>Proceedings of ACL (Short Papers) / arXiv</em>. <a href="https://arxiv.org/abs/1805.04908">https://arxiv.org/abs/1805.04908</a>.
+</div>
+<div id="ref-WERKER198449" class="csl-entry" role="listitem">
+Werker, Janet F., and Richard C. Tees. 1984. <span>“Cross-Language Speech Perception: Evidence for Perceptual Reorganization During the First Year of Life.”</span> <em>Infant Behavior and Development</em> 7 (1): 49–63. https://doi.org/<a href="https://doi.org/10.1016/S0163-6383(84)80022-3">https://doi.org/10.1016/S0163-6383(84)80022-3</a>.
+</div>
+<div id="ref-Whitehead_2003" class="csl-entry" role="listitem">
+Whitehead, C. 2003. <em>Guide to Abstract Algebra</em>. 2nd ed. Palgrave Mathematical Guides. Palgrave Macmillan.
+</div>
+<div id="ref-winograd1972understanding" class="csl-entry" role="listitem">
+Winograd, Terry. 1972. <em>Understanding Natural Language</em>. Academic Press. <a href="https://archive.org/details/understandingnat0000wino">https://archive.org/details/understandingnat0000wino</a>.
+</div>
+<div id="ref-wolpert1996lack" class="csl-entry" role="listitem">
+Wolpert, David H. 1996. <span>“The Lack of a Priori Distinctions Between Learning Algorithms.”</span> <em>Neural Computation</em> 8 (7): 1341–90. <a href="https://doi.org/10.1162/neco.1996.8.7.1341">https://doi.org/10.1162/neco.1996.8.7.1341</a>.
+</div>
+<div id="ref-wolpert1997nofree" class="csl-entry" role="listitem">
+Wolpert, David H., and William G. Macready. 1997a. <span>“No Free Lunch Theorems for Optimization.”</span> <em>IEEE Transactions on Evolutionary Computation</em> 1 (1): 67–82. <a href="https://doi.org/10.1109/4235.585893">https://doi.org/10.1109/4235.585893</a>.
+</div>
+<div id="ref-wolpert1997no" class="csl-entry" role="listitem">
+Wolpert, David H, and William G Macready. 1997b. <span>“No Free Lunch Theorems for Optimization.”</span> <em>IEEE Transactions on Evolutionary Computation</em> 1 (1): 67–82.
+</div>
+<div id="ref-wolpert2005coevolutionary" class="csl-entry" role="listitem">
+Wolpert, David H, and William G Macready. 2005. <span>“Coevolutionary Free Lunches.”</span> <em>IEEE Transactions on Evolutionary Computation</em> 9 (6): 721–35.
+</div>
+<div id="ref-Woodward2003" class="csl-entry" role="listitem">
+Woodward, James. 2003. <em>Making Things Happen: A Theory of Causal Explanation</em>. Oxford University Press.
+</div>
+<div id="ref-wright2015coordinate" class="csl-entry" role="listitem">
+Wright, Stephen J. 2015. <span>“Coordinate Descent Algorithms.”</span> <em>Mathematical Programming</em> 151 (1): 3–34. <a href="https://doi.org/10.1007/s10107-015-0892-3">https://doi.org/10.1007/s10107-015-0892-3</a>.
+</div>
+<div id="ref-XuRaginsky:2017:InfoGen" class="csl-entry" role="listitem">
+Xu, An, and Maxim Raginsky. 2017. <span>“Information-Theoretic Analysis of Generalization Capability of Learning Algorithms.”</span> <em>NeurIPS</em>.
+</div>
+<div id="ref-XuCaramanisMannor:2009:RobustRegSVM" class="csl-entry" role="listitem">
+Xu, Huan, Constantine Caramanis, and Shie Mannor. 2009. <span>“Robustness and Regularization of Support Vector Machines.”</span> <em>Journal of Machine Learning Research</em> 10: 1485–510. <a href="http://www.jmlr.org/papers/volume10/xu09a/xu09a.pdf">http://www.jmlr.org/papers/volume10/xu09a/xu09a.pdf</a>.
+</div>
+<div id="ref-XuMannor:2010:RobustnessGeneralization" class="csl-entry" role="listitem">
+Xu, Huan, and Shie Mannor. 2010. <span>“Robustness and Generalization.”</span> <em>Proceedings of the 23rd Annual Conference on Learning Theory (COLT)</em>. <a href="https://arxiv.org/abs/1005.2243">https://arxiv.org/abs/1005.2243</a>.
+</div>
+<div id="ref-yang2019scaling" class="csl-entry" role="listitem">
+Yang, Greg. 2019. <span>“Scaling Limits of Wide Neural Networks with Weight Sharing: Gaussian Process Behavior, Gradient Independence, and Neural Tangent Kernel Derivation.”</span> <em>arXiv Preprint arXiv:1902.04760</em>.
+</div>
+<div id="ref-yang_rethinking_2020" class="csl-entry" role="listitem">
+Yang, Zitong, Yaodong Yu, Chong You, Jacob Steinhardt, and Yi Ma. 2020. <em>Rethinking <span>Bias</span>-<span>Variance</span> <span>Trade</span>-Off for <span>Generalization</span> of <span>Neural</span> <span>Networks</span></em>. arXiv. <a href="http://arxiv.org/abs/2002.11328">http://arxiv.org/abs/2002.11328</a>.
+</div>
+<div id="ref-zhang2023divedeeplearning" class="csl-entry" role="listitem">
+Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. 2023. <em>Dive into Deep Learning</em>. <a href="https://arxiv.org/abs/2106.11342">https://arxiv.org/abs/2106.11342</a>.
+</div>
+<div id="ref-zhang2017understandingdeeplearningrequires" class="csl-entry" role="listitem">
+Zhang, Chiyuan, Samy Bengio, Moritz Hardt, Benjamin Recht, and Oriol Vinyals. 2017. <em>Understanding Deep Learning Requires Rethinking Generalization</em>. <a href="https://arxiv.org/abs/1611.03530">https://arxiv.org/abs/1611.03530</a>.
+</div>
+<div id="ref-zou2019implicit" class="csl-entry" role="listitem">
+Zou, Difan, Yuan Cao, Dongruo Zhou, and Quanquan Gu. 2019. <span>“Stochastic Gradient Descent Optimizes over-Parameterized Deep ReLU Networks.”</span> <em>Machine Learning Research (ICML)</em>, 6962–72.
+</div>
 </div>
 
 

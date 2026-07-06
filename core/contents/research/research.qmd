@@ -2,4 +2,18 @@
 title: Research and Development
 ---
 
-The title is just the roundabout way to speak of R&D in its full form, but the page itself is indeed. 
+The title is just the roundabout way to speak of R&D in its full form, but the page itself is indeed. This page is, in its purpose, the general house to store in general for all operations on research of MTAIL, listing its contents, introduction, and navigation in this site. 
+
+## Research Directions
+
+Currently, the following are what can be said as *active and passive* research direction that RHINELAB is pulling toward. 
+
+### Double Descent
+
+### Statistical Learning Theory
+
+### Neural Network Formalism 
+
+### Artificial Intelligence Conceptions
+
+

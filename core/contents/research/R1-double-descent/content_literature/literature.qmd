@@ -1,6 +1,6 @@
 ---
+title: Literature and review
 author: Bui Gia Khanh
-title: "Reading list"
 page-layout: article
 listing:
   date-format: iso
@@ -13,4 +13,4 @@ listing:
   sort-ui: false
   filter-ui: false
 ---
-There are a few literatures that we would want to put into storage, or at least as reminder, which will be in here. Of course, we cannot bring the entire paper here also. 
+

@@ -1,0 +1,17 @@
+---
+title: Research series and paper encapsulations
+author: Bui Gia Khanh
+---
+Since the research onto double descent has extended verily into many topics, many papers and so on that stretched the original manuscript to its length, this page is created to organize all of those spinters going forward, what they mean and the list of upcoming and organized publication, to `arxiv` or to *journals conference* like JMLR, TMLR or so. 
+
+## Section I. Double descent and conceptions
+
+The first part of the list would be the introduction and forward deployment thereof, on different report, different scaling and different analysis on simple models, difficult models, or such, sweeping through the contemporary reflection of what *double descent is*, and what is the potential conjectures and thereof asserted within such. 
+
+### What is double descent - a critical review
+
+### Neural scaling law and double descent - controversies and contradictions
+
+### The origin dilemma of double descent - a symbolic learning theory perspective
+
+

@@ -1,9 +1,39 @@
 ---
-title: Welcome to  MTAIL
+title: Welcome to RHINE@MTAIL
 format:
   html:
     grid:
-      body-width: 1000px
+      body-width: 1100px
+author:
+  - name: "Bui Gia Khanh"
+    roles: "Laboratory Director"
+    affiliations:
+      - ref: vnu-hus
+  - name: "Luong Van Tam"
+    roles: "Researcher and Partial Advisor"
+    affiliations:
+      - ref: vnu-hus
+  - name: "Dang Tri Trung"
+    roles: "Researcher and Experimental Design"
+    note: "Currently passive"
+    affiliations:
+      - ref: monash
+  - name: "Nguyen Ai Viet"
+    degrees: "Associate Professor"
+    roles: "Advisor"
+    affiliations:
+      - ref: vnu-ignite
+
+affiliations:
+  - id: vnu-hus
+    name: "Vietnam National University, Hanoi University of Science"
+    group: "RHINELAB"
+  - id: monash
+    name: "Monash University"
+    country: "Australia"
+  - id: vnu-ignite
+    name: "Vietnam National University"
+    department: "IGNITE Institute"
 ---
 
 ## Specification

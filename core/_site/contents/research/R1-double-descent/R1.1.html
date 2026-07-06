@@ -2,14 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="The introduction to double descent - the particular phenomenon where current dogma faces reality as it sees fit.">
 
-<title>Introducton and Navigation – Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTAIL)</title>
+<title>Introduction and Navigation – Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTAIL)</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -32,19 +35,18 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../../">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-16365895d012c6821ad2015e20b8b579.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-16365895d012c6821ad2015e20b8b579.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-16365895d012c6821ad2015e20b8b579.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-8e563bccdeb7e5b4bf8f1d510bb78af9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8e563bccdeb7e5b4bf8f1d510bb78af9.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-8e563bccdeb7e5b4bf8f1d510bb78af9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-4181892cbcaa0d2ab377cd113996dde7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-800b96e6baabc2b8f10348d8d42941a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-4181892cbcaa0d2ab377cd113996dde7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-5943c0ec79e76fa0fca51cedc34cf029.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-a94bbadc756ecdbe7f744627f35652d2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-5943c0ec79e76fa0fca51cedc34cf029.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -246,8 +248,6 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTAIL)</span>
     </a>
@@ -282,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../contents/research/research.html">Research</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Introducton and Navigation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../contents/research/research.html">Research</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Introduction and Navigation</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -295,10 +295,6 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../../../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -341,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../contents/reading/library.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reading</span></a>
+ <span class="menu-text">Reading list</span></a>
   </div>
 </li>
       </ul>
@@ -373,7 +369,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../contents/research/R1-double-descent/R1.1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Introducton and Navigation</span></a>
+ <span class="menu-text">Introduction and Navigation</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
@@ -422,7 +418,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#information" id="toc-information" class="nav-link active" data-scroll-target="#information">Information</a>
   <ul class="collapse">
   <li><a href="#research-goal" id="toc-research-goal" class="nav-link" data-scroll-target="#research-goal">Research goal</a></li>
-  <li><a href="#current-progress-and-research-artefacts" id="toc-current-progress-and-research-artefacts" class="nav-link" data-scroll-target="#current-progress-and-research-artefacts">Current progress and research artefacts</a></li>
+  <li><a href="#research-resources" id="toc-research-resources" class="nav-link" data-scroll-target="#research-resources">Research resources</a></li>
   <li><a href="#navigating-the-current-materials" id="toc-navigating-the-current-materials" class="nav-link" data-scroll-target="#navigating-the-current-materials">Navigating the current materials</a></li>
   </ul></li>
   </ul>
@@ -432,9 +428,9 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../contents/research/research.html">Research</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Introducton and Navigation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../contents/research/research.html">Research</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Double Descent</a></li><li class="breadcrumb-item"><a href="../../../contents/research/R1-double-descent/R1.1.html">Introduction and Navigation</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introducton and Navigation</h1>
+<h1 class="title">Introduction and Navigation</h1>
 </div>
 
 <div>
@@ -472,22 +468,36 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="information" class="level2">
 <h2 class="anchored" data-anchor-id="information">Information</h2>
+<p>Here, we can dub the project or rather classification thereof for this section, as being a theoretical inquiry module that is conducted to serve a larger picture there be, of the <strong>theoretical modelling principles system of artificial intelligence</strong>. However, for such to flow, it requires us to introduce the central problem of what to be said of double descent.</p>
 <section id="research-goal" class="level3">
 <h3 class="anchored" data-anchor-id="research-goal">Research goal</h3>
+<p>The current goal of the research group by definition, is to follow the underlying analytical results, stated:</p>
 </section>
-<section id="current-progress-and-research-artefacts" class="level3">
-<h3 class="anchored" data-anchor-id="current-progress-and-research-artefacts">Current progress and research artefacts</h3>
-<p>As far as it is considered, our progresses are in the end of <strong>phase II</strong>, i.e.&nbsp;the final phase of the core theoretical discourse, analysis and dissection. Phase I is the <strong>probing, analytical fundamentals gathering</strong>, and <em>review performing</em>, basically to build the relevant resources and materials needed for a serious critique and expansion thereof. Insofar,</p>
-<ul>
-<li><a href="https://github.com/Amane-Fujimiya/UAI_Book">The Universal Guideline on Artificial Automata</a> - still under construction, is the foremost document itself. The name is again, Amane Fujimiya or Bui Gia Khanh (as I use two names), and is more about theoretical attempts on AI theory in its entirety. So far, <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/UAI_Book/master/A/A1.AI/A1%20-%20UAI/main.pdf">this link will be the one</a> that gives you the last available rendered manuscript of the book (note that it is on the <code>master</code> branch). The other documents, the one accessible of <em>physical learning theory</em>, is also avaialble.</li>
-<li><strong>Main manuscript</strong> - constructed on <a href="https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper">This Particular Repository (TPR)</a> of which holds from the first to the last manuscript. Current active manuscript in total is the <code>Draft</code> folder itself document. Alongside that, <a href="https://arxiv.org/pdf/2103.05127">this paper</a> would form chapter 6 of the manuscript itself. The manuscript of the <em>Theoretical Learning manuscript</em> of <strong>this project</strong> can be found <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf">in here</a> of its latest version.</li>
-<li><strong>Main manuscripts, statistical physics</strong> - is a separation.</li>
-</ul>
+<section id="research-resources" class="level3">
+<h3 class="anchored" data-anchor-id="research-resources">Research resources</h3>
+<p>As far as it is considered, our progresses are in the end of <strong>phase II</strong>, i.e.&nbsp;the final phase of the core theoretical discourse, analysis and dissection. Phase I is the <strong>probing, analytical fundamentals gathering</strong>, and <em>review performing</em>, basically to build the relevant resources and materials needed for a serious critique and expansion thereof. Insofar, we have the following.</p>
+<section id="principal-guideline" class="level4">
+<h4 class="anchored" data-anchor-id="principal-guideline">Principal guideline</h4>
+<p><a href="https://github.com/Amane-Fujimiya/UAI_Book">The Universal Guideline on Artificial Automata</a> - still under construction, is the foremost document itself. The name is again, Amane Fujimiya or Bui Gia Khanh (as I use two names), and is more about theoretical attempts on AI theory in its entirety. So far, <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/UAI_Book/master/A/A1.AI/A1%20-%20UAI/main.pdf">this link will be the one</a> that gives you the last available rendered manuscript of the book (note that it is on the <code>master</code> branch). The other documents, the one accessible of <em>physical learning theory</em>, is also available.</p>
+</section>
+<section id="knowledge-and-documentation-laboratory-wiki" class="level4">
+<h4 class="anchored" data-anchor-id="knowledge-and-documentation-laboratory-wiki">Knowledge and documentation, laboratory wiki</h4>
+<p>There are many of such resources, which is realized after the fact and observation that the discovery and research about double descent, is rather profound and can be said quite so as impressively complex, with many logistics to be fulfilled. As a result of said resolution, the decision is then used to build up the <strong>knowledge and documentation logistics</strong>, making up the complete or rather aimed for of a comprehensive system of information, documentation, frontier discussions and ideas, and tracks. Most often would be useful however, to check out for the expository papers, knowledge base and laboratory-specific wiki, in connection to the wider RHINELAB, though this would for now take precedences of only the domain of theoretical machine learning.</p>
+</section>
+<section id="core-manuscript" class="level4">
+<h4 class="anchored" data-anchor-id="core-manuscript">Core manuscript</h4>
+<p>The <strong>Main manuscript</strong> - constructed on <a href="https://github.com/Amane-Fujimiya/ML_Double_Descent_Paper">This Particular Repository (TPR)</a> of which holds from the first to the last manuscript. Current active manuscript in total is the <code>Draft</code> folder itself document. Alongside that, <a href="https://arxiv.org/pdf/2103.05127">this paper</a> would form chapter 6 of the manuscript itself for analysis, because the issue with <em>model complexity</em> is a rather interesting and very much understudied area.</p>
+<p>The manuscript of the <em>Theoretical Learning manuscript</em> of <strong>this project</strong> can be found <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/Amane-Fujimiya/ML_Double_Descent_Paper/main/Draft/main.pdf">in here</a> of its latest version.</p>
+<p><strong>Main manuscripts, statistical physics</strong> - is a separation from the main one. It is mostly focused on <strong>interpretation of learning theory in statistical physics</strong>, dissection of such, and so on.</p>
+</section>
+<section id="experiments-and-setup" class="level4">
+<h4 class="anchored" data-anchor-id="experiments-and-setup">Experiments and setup</h4>
 <p>For experimental setup, code and implementations, we have a few one, most of their results are given in the major manuscript.</p>
 <ul>
 <li>The code repository includes <a href="https://github.com/Izzie1911/DD-with-basic-model-">this one on GitHub</a>, with its copy and extension on GitLab. The link will be routed later. We note that this is the <em>canonical repository</em> for <em>testing</em> and crude <em>experimental sessions</em>. Some of them would be messy, and in the meantime, a second repository is coming up as expansion.</li>
 <li>A <strong>separated library</strong> for testing and identifying double descent, and structural analysis. Currently, it is in private build-up, with many features and analytical toolings missing.</li>
 </ul>
+</section>
 </section>
 <section id="navigating-the-current-materials" class="level3">
 <h3 class="anchored" data-anchor-id="navigating-the-current-materials">Navigating the current materials</h3>
