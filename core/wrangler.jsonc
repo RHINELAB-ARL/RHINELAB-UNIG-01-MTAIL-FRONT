@@ -1,11 +1,9 @@
 {
-  "name": "MTAIL Front Pages",
+  "name": "mtail-front-pages",
   "compatibility_date": "2026-08-24",
   "assets": {
     "directory": "./public"
-  }
-}
-{
+  },
   "observability": {
     "enabled": false,
     "head_sampling_rate": 1,
