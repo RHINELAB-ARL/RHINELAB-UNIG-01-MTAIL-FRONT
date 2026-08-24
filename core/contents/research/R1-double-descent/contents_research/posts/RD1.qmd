@@ -10,8 +10,17 @@ The first part of the list would be the introduction and forward deployment ther
 
 ### What is double descent - a critical review
 
+This paper is the **starting point**
+
+### The landscape of learning theory - a comprehensive survey 
+
+### Major problems to learning theory and artificial intelligence - a comprehensive analysis
+
 ### Neural scaling law and double descent - controversies and contradictions
 
 ### The origin dilemma of double descent - a symbolic learning theory perspective
+
+## Section II. (Statistical learning theory)
+
 
 

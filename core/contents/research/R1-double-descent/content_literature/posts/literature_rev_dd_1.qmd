@@ -7,11 +7,11 @@ author: Bui Gia Khanh
 This long-term article contains all resources available and ready to be used, on the study of artificial intelligence and related concepts. 
 ___
 
-## 0.IXS - Research Journals Collection
+## 0.I - Research Journals Collection
 
 - [Computational Intelligence (Diana Inkpen)](https://onlinelibrary.wiley.com/journal/14678640) - _Computational Intelligence_ is an artificial intelligence journal publishing novel research on a broad range of experimental and theoretical topics in AI and computer science.
 	- Coverage: Machine learning, knowledge mining, web intelligence, AI language, and philosophical implications.
-- 
+
 ## I - Research Papers Reading
 
 1. An efficient encoder-decoder architecture with top-down attention for speech separation [Kai Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+K),[Runxuan Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang,+R), [Xiaolin Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu,+X) - [Arxiv Paper](https://arxiv.org/abs/2209.15200)
@@ -30,13 +30,13 @@ ___
 - [Tutorial on Artificial Intelligence](https://developer.ibm.com/technologies/artificial-intelligence/tutorials/)
 - [What is self-supervised learning?](https://www.ibm.com/topics/self-supervised-learning#:~:text=Driven%20by%20this%20key%20difference,regression%20tasks%20typical%20to%20supervised)
 
-##  Statistic StackExchange PL
+###  Statistic StackExchange PL
 
 - Which notation and why: $\text{P}()$, $\Pr()$, $\text{Prob}()$, or $\mathbb{P}()$? - [link](https://stats.stackexchange.com/questions/108441/which-notation-and-why-textp-pr-textprob-or-mathbbp).
 - [How to calculate the likelihood function](https://stats.stackexchange.com/questions/132877/how-to-calculate-the-likelihood-function) - Surprisingly, this question has an answer that really, well, explain likelihood than other "answers". 
 - [Statistical learning theory versus computational learning theory?](https://stats.stackexchange.com/questions/63077/statistical-learning-theory-vs-computational-learning-theory) 
 
-## Artificial Intelligence PL
+### Artificial Intelligence PL
 
 - [What is the difference between self-supervised and unsupervised learning?](https://ai.stackexchange.com/questions/40341/what-is-the-difference-between-self-supervised-and-unsupervised-learning)
 - [What is self-supervised learning in machine learning?](https://ai.stackexchange.com/questions/10623/what-is-self-supervised-learning-in-machine-learning)
@@ -54,33 +54,35 @@ ___
 4. [Regression Analysis](https://en.wikipedia.org/wiki/Regression_analysis)
 5. [8803 Machine Learning Theory - CMU](https://www.cs.cmu.edu/~ninamf/ML11/lect0825.pdf). 
 
-## Mathematical Aspects of Deep Learning
+### Mathematical Aspects of Deep Learning
 
 Main link: [here](https://elmos.scripts.mit.edu/mathofdeeplearning/). 
 
-## Czech Technical University in Prague DokuWiki
+### Czech Technical University in Prague DokuWiki
 
 Main site: [link](https://cw.fel.cvut.cz/wiki/start). 
 
-## Principles and Techniques of Data Science (UC Berkeley, Summer 2020)
+### Principles and Techniques of Data Science (UC Berkeley, Summer 2020)
+
 - [Syllabus](https://ds100.org/su20/syllabus/)
 - [Calendar](https://ds100.org/su20/calendar/)
 - [Resources](https://ds100.org/su20/resources/)
 - [Staff](https://ds100.org/su20/staff/)
 - [Github Repository Account - Berkeley Data Science](https://github.com/DS-100)
 
-## Cambridge MSc Advanced Study - Department of Quantum Physics and Computing
+### Cambridge MSc Advanced Study - Department of Quantum Physics and Computing
+
 [Quantum Computation, Information and Foundations](https://www.maths.cam.ac.uk/postgrad/part-iii/prospective/preparation/resources/quantum-computation)
 [Part III - Quantum Computation](https://www.qi.damtp.cam.ac.uk/part-iii-quantum-computation)
 [Part IB - Quantum Mechanics](https://www.qi.damtp.cam.ac.uk/part-ib-quantum-mechanics#)
 [Part II - Quantum Information and Computation](https://www.qi.damtp.cam.ac.uk/part-ii-quantum-information-and-computation)
 
-## Anne Sabourin's Courses on Statistic and Statistical Learning
+### Anne Sabourin's Courses on Statistic and Statistical Learning
 
 She is a professor at previously Telecom ParisTech and is now a professor in Université Paris Cité. There are many interesting, high level lecture notes and previous notes on lectures of advanced study on statistics, as well as learning theory and machine learning theory. 
 - Main link: [here](https://helios2.mi.parisdescartes.fr/~asabouri/Teaching.html)
 
-### Present Courses
+#### Present Courses
 
 - Exploratory Data Analysis (Master's program [Mathematics and Applications (MDA), 1st year](https://math-info.u-paris.fr/en/master-in-mathematics-and-applications/) )
 - Mathematical statistics, jointly with Fabienne Comte (Master's program [Mathematics and Applications (MDA)](https://math-info.u-paris.fr/en/master-in-mathematics-and-applications/) ), track IMB, 1st year
@@ -88,7 +90,7 @@ She is a professor at previously Telecom ParisTech and is now a professor in Uni
 - High Dimensional statistics ( [master MDA](https://math-info.u-paris.fr/en/master-in-mathematics-and-applications/) , 2nd year, track MMA)
 - [Statistical Learning with Extreme Values](https://helios2.mi.parisdescartes.fr/~asabouri/extremes-cours-MVA/extreme-course-MVA.html) [, master MVA](https://www.master-mva.com/cours/statistical-learning-with-extreme-values/)
 
-### Main Past Courses
+#### Main Past Courses
 
 - Survival analysis (Master's program [Mathematics and Applications (MDA), IMB track, 2nd year, Université Paris-Cité](https://math-info.u-paris.fr/en/master-in-mathematics-and-applications/) )
 - Tail events analysis: Robustness, outliers and models for extreme values (Joint course with Pavlo Mozharovskyi)
@@ -101,19 +103,19 @@ She is a professor at previously Telecom ParisTech and is now a professor in Uni
 - Probability MDI-104 (Telecom ParisTech, Fall semester)
 - Computational statistics and optimisation, Master 'Data Science', Ecole Polytechnique. ( [Lecture notes](http://www.lix.polytechnique.fr/bigdata/mathbigdata/wp-content/uploads/2014/10/Lnotes_CvxAn_FullEn.pdf) ): Convex problems in Machine Learning, non smooth convex analysis, Fenchel-Legendre transform, duality.
 
-## A Short Course on Nonparametric Curve Estimation - MSc in Applied Mathematics at EAFIT University (Colombia), 2017
+### A Short Course on Nonparametric Curve Estimation - MSc in Applied Mathematics at EAFIT University (Colombia), 2017
 
 Main links to the course: [here](https://bookdown.org/egarpor/NP-EAFIT/)
 
-## Introduction to Programming Synthesis (MIT, Solar-Lezama)
+### Introduction to Programming Synthesis (MIT, Solar-Lezama)
 [Lectures 1 and Main site](https://people.csail.mit.edu/asolar/SynthesisCourse/Lecture1.htm) - Overall course have 24 lectures. **Important**.
 
-## Dive Deep into Deep Learning (Alex J. Smola et al)
+### Dive Deep into Deep Learning (Alex J. Smola et al)
 
 Main link to source: [link](https://d2l.ai/index.html). 
 This is a very important text, and is used to be the main resource for deep learning study. 
 
-## AstroML Project
+### AstroML Project
 
 [Main page](https://www.astroml.org).
 [Ridge and Lasso: Geometric Interpretation](https://www.astroml.org/book_figures/chapter8/fig_lasso_ridge.html) - Illustration on Ridge and Lasso Regularized Regression (L1 and L2). 

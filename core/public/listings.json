@@ -1,0 +1,31 @@
+[
+  {
+    "listing": "/contents/research/R1-double-descent/content_literature/literature.html",
+    "items": [
+      "/contents/research/R1-double-descent/content_literature/posts/literature_rev_dd_1.html"
+    ]
+  },
+  {
+    "listing": "/contents/reading/library.html",
+    "items": [
+      "/contents/reading/posts/R1_1_reading_list.html",
+      "/contents/reading/posts/R1_2_reading_list.html",
+      "/contents/reading/posts/R1_3_reading_list.html"
+    ]
+  },
+  {
+    "listing": "/contents/research/R1-double-descent/contents_research/research_details.html",
+    "items": [
+      "/contents/research/R1-double-descent/contents_research/posts/R1.O1.html",
+      "/contents/research/R1-double-descent/contents_research/posts/R1.O2.html",
+      "/contents/research/R1-double-descent/contents_research/posts/RD1.html"
+    ]
+  },
+  {
+    "listing": "/contents/updates/post.html",
+    "items": [
+      "/contents/updates/posts/2026/2026-1.html",
+      "/contents/updates/posts/2026/2026-2.html"
+    ]
+  }
+]

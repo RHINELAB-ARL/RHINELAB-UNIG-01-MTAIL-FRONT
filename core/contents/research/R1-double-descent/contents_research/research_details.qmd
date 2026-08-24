@@ -1,5 +1,6 @@
 ---
 title: Research Details & Resources
+description: "Posts, research articles, laboratory-based inquiry and materials. Discussions from researcher and internal laboratory work, personnel-based notification or relevant information for researcher in MTAIL."
 author: Fujimiya Amane
 page-layout: article
 listing:
