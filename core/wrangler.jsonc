@@ -1,0 +1,7 @@
+{
+  "name": "MTAIL Front Pages",
+  "compatibility_date": "2026-08-24",
+  "assets": {
+    "directory": "./public"
+  }
+}
